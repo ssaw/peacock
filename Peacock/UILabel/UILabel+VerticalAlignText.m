@@ -12,15 +12,8 @@
 {
     if (text == nil) {return;}
     
-    if (isIOS7OrLater()) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wunknown-pragmas"
-#pragma deploymate push "ignored-api-availability"
-        NSDictionary *offsetAttrbute = @{ NSBaselineOffsetAttributeName : @(offset)};
-        [self setText:text withAttributes:offsetAttrbute];
-#pragma deploymate pop
-#pragma clang diagnostic pop
-    }
+    NSDictionary *offsetAttrbute = @{ NSBaselineOffsetAttributeName : @(offset)};
+    [self setText:text withAttributes:offsetAttrbute];
 }
 
 - (void) setText:(NSString *)text withAttributes:(NSDictionary *)offset

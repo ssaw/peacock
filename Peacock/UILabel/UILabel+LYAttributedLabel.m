@@ -3,8 +3,6 @@
 //  Copyright (c) 2014 Lyst. All rights reserved.
 //
 
-#import "LYConstants.h"
-
 #import "UILabel+LYAttributedLabel.h"
 #import "UILabel+FontAppearance.h"
 

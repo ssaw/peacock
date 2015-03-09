@@ -10,6 +10,7 @@
 		CD59FEBF1AACDA0900FB8D9E /* Peacock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD59FEBE1AACDA0900FB8D9E /* Peacock.h */; };
 		CD59FEC11AACDA0900FB8D9E /* Peacock.m in Sources */ = {isa = PBXBuildFile; fileRef = CD59FEC01AACDA0900FB8D9E /* Peacock.m */; };
 		CD59FEC71AACDA0900FB8D9E /* libPeacock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */; };
+		CD85FC841AAE58B2000B1318 /* LYCGFloatSizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD85FC831AAE58B2000B1318 /* LYCGFloatSizeHelper.m */; };
 		CDA8A5C91AAD0CEE007EAC99 /* UIButton+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AA1AAD0CEE007EAC99 /* UIButton+LYAppearance.m */; };
 		CDA8A5CA1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AC1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m */; };
 		CDA8A5CB1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AF1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */; };
@@ -54,6 +55,8 @@
 		CD59FEC01AACDA0900FB8D9E /* Peacock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Peacock.m; sourceTree = "<group>"; };
 		CD59FEC61AACDA0900FB8D9E /* PeacockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD59FECC1AACDA0900FB8D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD85FC821AAE58B2000B1318 /* LYCGFloatSizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYCGFloatSizeHelper.h; path = Peacock/LYCGFloatSizeHelper.h; sourceTree = SOURCE_ROOT; };
+		CD85FC831AAE58B2000B1318 /* LYCGFloatSizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYCGFloatSizeHelper.m; path = Peacock/LYCGFloatSizeHelper.m; sourceTree = SOURCE_ROOT; };
 		CDA8A5A91AAD0CEE007EAC99 /* UIButton+LYAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LYAppearance.h"; sourceTree = "<group>"; };
 		CDA8A5AA1AAD0CEE007EAC99 /* UIButton+LYAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYAppearance.m"; sourceTree = "<group>"; };
 		CDA8A5AB1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LYAttributedButton.h"; sourceTree = "<group>"; };
@@ -122,6 +125,7 @@
 		CD59FEBD1AACDA0900FB8D9E /* Peacock */ = {
 			isa = PBXGroup;
 			children = (
+				CD85FC811AAE58A2000B1318 /* Helpers */,
 				CD59FEBE1AACDA0900FB8D9E /* Peacock.h */,
 				CD59FEC01AACDA0900FB8D9E /* Peacock.m */,
 				CDA8A5A81AAD0CEE007EAC99 /* UIButton */,
@@ -149,6 +153,15 @@
 				CD59FECC1AACDA0900FB8D9E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD85FC811AAE58A2000B1318 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD85FC821AAE58B2000B1318 /* LYCGFloatSizeHelper.h */,
+				CD85FC831AAE58B2000B1318 /* LYCGFloatSizeHelper.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		CDA8A5A81AAD0CEE007EAC99 /* UIButton */ = {
@@ -327,6 +340,7 @@
 				CDA8A5CE1AAD0CEE007EAC99 /* UILabel+SizeToFitText.m in Sources */,
 				CDA8A5D31AAD0CEE007EAC99 /* UITextView+LYAppearance.m in Sources */,
 				CDA8A5D41AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m in Sources */,
+				CD85FC841AAE58B2000B1318 /* LYCGFloatSizeHelper.m in Sources */,
 				CDA8A5CC1AAD0CEE007EAC99 /* UILabel+FontAppearance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +380,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Raimon Lapuente (VSWEP4F6PL)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -406,6 +421,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Raimon Lapuente (VSWEP4F6PL)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
