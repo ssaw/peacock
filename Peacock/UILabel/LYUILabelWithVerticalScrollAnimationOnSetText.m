@@ -42,10 +42,10 @@
     
     self.animationYOffset = self.font.lineHeight;
 
-    dispatch_async_main(^{
+    dispatch_async(dispatch_get_main_queue(),(^{
         CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(animateUp:)];
         [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
-    });
+    }));
     
 }
 
