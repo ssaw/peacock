@@ -4,7 +4,7 @@
 //
 
 #ifndef LYCGFLOATSIZEHELPER_H
-#import <CoreGraphics/CGBase.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 CGFloat round64Helper(CGFloat fl);
 
