@@ -6,7 +6,6 @@
 // for just what we need
 
 #import "LYCGFloatSizeHelper.h"
-#import <CoreGraphics/CGBase.h>
 #import "math.h"
 
 CGFloat round64Helper(CGFloat fl)
