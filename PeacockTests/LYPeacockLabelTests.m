@@ -5,12 +5,13 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <KIF/KIF.h>
 #import "UILabel+FontAppearance.h"
 
-@interface LYPeacockLabelTests : XCTestCase
+@interface LYPeacockLabelTests : KIFTestCase
 
-@property (nonatomic, strong, readonly) UIView *SUT;
 @property (nonatomic, strong, readonly) UILabel *SUTLabel;
+@property (nonatomic ,strong, readonly) UIViewController *SUTController;
 
 @end
 
@@ -18,15 +19,20 @@
 
 -(void)setUp {
     [super setUp];
-    _SUT = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 200.0f, 200.0f)];
     _SUTLabel = [[UILabel alloc] initWithFrame:CGRectMake(50.0f, 0.0f, 100.0f, 40.0f)];
-    [_SUT addSubview:_SUTLabel];
+    _SUTController = [[UIViewController alloc] init];
+    [_SUTController.view addSubview:_SUTLabel];
 }
 
 -(void)testThatWeCanSetUILabelFontName
 {
     //given
     [[UILabel appearance] setAppearanceFont:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:20.0f]];
+    
+    //when
+    UIWindow *window = [[UIWindow alloc]initWithFrame:CGRectMake(0.0, 0.0, 320.0, 468.0)];
+    [window setRootViewController:self.SUTController];
+    [window makeKeyAndVisible];
     
     //then
     id appearance = [[self.SUTLabel class] appearance];
