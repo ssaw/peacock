@@ -11,7 +11,8 @@
 @interface LYPeacockLabelTests : KIFTestCase
 
 @property (nonatomic, strong, readonly) UILabel *SUTLabel;
-@property (nonatomic ,strong, readonly) UIViewController *SUTController;
+@property (nonatomic, strong, readonly) UIViewController *SUTController;
+@property (nonatomic, strong, readonly) UIWindow *window;
 
 @end
 
@@ -22,6 +23,8 @@
     _SUTLabel = [[UILabel alloc] initWithFrame:CGRectMake(50.0f, 0.0f, 100.0f, 40.0f)];
     _SUTController = [[UIViewController alloc] init];
     [_SUTController.view addSubview:_SUTLabel];
+    _window = [[UIWindow alloc]initWithFrame:CGRectMake(0.0, 0.0, 320.0, 468.0)];
+    [_window setRootViewController:self.SUTController];
 }
 
 -(void)testThatWeCanSetUILabelFontName
@@ -30,14 +33,11 @@
     [[UILabel appearance] setAppearanceFont:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:20.0f]];
     
     //when
-    UIWindow *window = [[UIWindow alloc]initWithFrame:CGRectMake(0.0, 0.0, 320.0, 468.0)];
-    [window setRootViewController:self.SUTController];
-    [window makeKeyAndVisible];
+    [self.window makeKeyAndVisible];
     
     //then
-    id appearance = [[self.SUTLabel class] appearance];
-    UIFont *fontFromAppearance = [appearance appearanceFont];
-    XCTAssertTrue([fontFromAppearance.fontName isEqualToString:@"HelveticaNeue-UltraLight"]);
+    UIFont *font = self.SUTLabel.font;
+    XCTAssertTrue([font.fontName isEqualToString:@"HelveticaNeue-UltraLight"]);
 }
 
 -(void)testThatWeCanSetUILabelFontSize
@@ -45,10 +45,12 @@
     //given
     [[UILabel appearance] setAppearanceFont:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:20.0f]];
     
+    //when
+    [self.window makeKeyAndVisible];
+    
     //then
-    id appearance = [[self.SUTLabel class] appearance];
-    UIFont *fontFromAppearance = [appearance appearanceFont];
-    XCTAssertTrue(fontFromAppearance.pointSize == 20.0f);
+    UIFont *font = self.SUTLabel.font;
+    XCTAssertTrue(font.pointSize == 20.0f);
 }
 
 -(void)testThatWeCanSetUILabelTextColor
@@ -56,9 +58,11 @@
     //given
     [[UILabel appearance] setAppearanceTextColor:[UIColor greenColor]];
     
+    //when
+    [self.window makeKeyAndVisible];
+    
     //then
-    id appearance = [[self.SUTLabel class] appearance];
-    XCTAssertEqualObjects([appearance appearanceTextColor], [UIColor greenColor]);
+    XCTAssertEqualObjects(self.SUTLabel.textColor, [UIColor greenColor]);
 }
 
 -(void)testThatWeCanSetUILabelBackgroundColor
@@ -66,9 +70,11 @@
     //given
     [[UILabel appearance] setAppearanceBackgroundColor:[UIColor redColor]];
     
+    //when
+    [self.window makeKeyAndVisible];
+    
     //then
-    id appearance = [[self.SUTLabel class] appearance];
-    XCTAssertEqualObjects([appearance appearanceBackgroundColor], [UIColor redColor]);
+    XCTAssertEqualObjects(self.SUTLabel.backgroundColor, [UIColor redColor]);
 }
 
 -(void)testThatWeCanSetUILabelHighlightedTextColor
@@ -77,11 +83,11 @@
     [[UILabel appearance] setAppearanceHighlightedTextColor:[UIColor grayColor]];
     
     //when
+    [self.window makeKeyAndVisible];
     [self.SUTLabel setHighlighted:YES];
     
     //then
-    id appearance = [[self.SUTLabel class] appearance];
-    XCTAssertEqualObjects([appearance appearanceHighlightedTextColor], [UIColor grayColor]);
+    XCTAssertEqualObjects(self.SUTLabel.highlightedTextColor, [UIColor grayColor]);
 }
 
 -(void)testThatWeCanSetUILabelLineSpacingParagraphStyle
@@ -89,9 +95,11 @@
     //given
     [[UILabel appearance] setAppearanceLineSpacingParagraphStyle:5.0f];
     
+    //when
+    [self.window makeKeyAndVisible];
+    
     //then
-    id appearance = [[self.SUTLabel class] appearance];
-    XCTAssertEqual([appearance appearanceLineSpacingParagraphStyle], 5.0f);
+    XCTAssertEqual(self.SUTLabel.appearanceLineSpacingParagraphStyle, 5.0f);
 }
 
 @end
