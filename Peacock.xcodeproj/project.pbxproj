@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88573D8A805FA53681D3CEFD /* libPods-PeacockTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BAB75836F39D871AA88C20 /* libPods-PeacockTests.a */; };
+		CD2C08021AC3741200E5C412 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C08011AC3741200E5C412 /* main.m */; };
+		CD2C08051AC3741200E5C412 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C08041AC3741200E5C412 /* AppDelegate.m */; };
+		CD2C08081AC3741200E5C412 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C08071AC3741200E5C412 /* ViewController.m */; };
+		CD2C080B1AC3741200E5C412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C08091AC3741200E5C412 /* Main.storyboard */; };
+		CD2C080D1AC3741200E5C412 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2C080C1AC3741200E5C412 /* Images.xcassets */; };
+		CD2C08101AC3741200E5C412 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2C080E1AC3741200E5C412 /* LaunchScreen.xib */; };
+		CD2C081C1AC3741200E5C412 /* PeacockAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C081B1AC3741200E5C412 /* PeacockAppTests.m */; };
 		CD59FEBF1AACDA0900FB8D9E /* Peacock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD59FEBE1AACDA0900FB8D9E /* Peacock.h */; };
 		CD59FEC11AACDA0900FB8D9E /* Peacock.m in Sources */ = {isa = PBXBuildFile; fileRef = CD59FEC01AACDA0900FB8D9E /* Peacock.m */; };
 		CD59FEC71AACDA0900FB8D9E /* libPeacock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */; };
@@ -29,6 +37,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CD2C08161AC3741200E5C412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD59FEB31AACDA0900FB8D9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2C07FC1AC3741200E5C412;
+			remoteInfo = PeacockApp;
+		};
+		CD2C08231AC3742000E5C412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD59FEB31AACDA0900FB8D9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2C07FC1AC3741200E5C412;
+			remoteInfo = PeacockApp;
+		};
 		CD59FEC81AACDA0900FB8D9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD59FEB31AACDA0900FB8D9E /* Project object */;
@@ -52,6 +74,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		98BAB75836F39D871AA88C20 /* libPods-PeacockTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PeacockTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E168D7C7A87FB46A14DE71 /* Pods-PeacockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeacockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeacockTests/Pods-PeacockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD2C07FD1AC3741200E5C412 /* PeacockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeacockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2C08001AC3741200E5C412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2C08011AC3741200E5C412 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD2C08031AC3741200E5C412 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD2C08041AC3741200E5C412 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD2C08061AC3741200E5C412 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD2C08071AC3741200E5C412 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD2C080A1AC3741200E5C412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD2C080C1AC3741200E5C412 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD2C080F1AC3741200E5C412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CD2C08151AC3741200E5C412 /* PeacockAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacockAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2C081A1AC3741200E5C412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2C081B1AC3741200E5C412 /* PeacockAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeacockAppTests.m; sourceTree = "<group>"; };
 		CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPeacock.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD59FEBE1AACDA0900FB8D9E /* Peacock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Peacock.h; sourceTree = "<group>"; };
 		CD59FEC01AACDA0900FB8D9E /* Peacock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Peacock.m; sourceTree = "<group>"; };
@@ -86,9 +123,24 @@
 		CDA8A5C61AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AttributedStringTitle.m"; sourceTree = "<group>"; };
 		CDA8A5C71AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+setStatusBarColor.h"; sourceTree = "<group>"; };
 		CDA8A5C81AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+setStatusBarColor.m"; sourceTree = "<group>"; };
+		EE75C63CDA70D9EE66E6F917 /* Pods-PeacockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeacockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeacockTests/Pods-PeacockTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CD2C07FA1AC3741200E5C412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2C08121AC3741200E5C412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD59FEB81AACDA0900FB8D9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,18 +153,81 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD59FEC71AACDA0900FB8D9E /* libPeacock.a in Frameworks */,
+				88573D8A805FA53681D3CEFD /* libPods-PeacockTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DA6252F298EC86FDEADEF90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98BAB75836F39D871AA88C20 /* libPods-PeacockTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF9D8D77AEE2531A48941B8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7E168D7C7A87FB46A14DE71 /* Pods-PeacockTests.debug.xcconfig */,
+				EE75C63CDA70D9EE66E6F917 /* Pods-PeacockTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD2C07FE1AC3741200E5C412 /* PeacockApp */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C08031AC3741200E5C412 /* AppDelegate.h */,
+				CD2C08041AC3741200E5C412 /* AppDelegate.m */,
+				CD2C08061AC3741200E5C412 /* ViewController.h */,
+				CD2C08071AC3741200E5C412 /* ViewController.m */,
+				CD2C08091AC3741200E5C412 /* Main.storyboard */,
+				CD2C080C1AC3741200E5C412 /* Images.xcassets */,
+				CD2C080E1AC3741200E5C412 /* LaunchScreen.xib */,
+				CD2C07FF1AC3741200E5C412 /* Supporting Files */,
+			);
+			path = PeacockApp;
+			sourceTree = "<group>";
+		};
+		CD2C07FF1AC3741200E5C412 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C08001AC3741200E5C412 /* Info.plist */,
+				CD2C08011AC3741200E5C412 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD2C08181AC3741200E5C412 /* PeacockAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C081B1AC3741200E5C412 /* PeacockAppTests.m */,
+				CD2C08191AC3741200E5C412 /* Supporting Files */,
+			);
+			path = PeacockAppTests;
+			sourceTree = "<group>";
+		};
+		CD2C08191AC3741200E5C412 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C081A1AC3741200E5C412 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CD59FEB21AACDA0900FB8D9E = {
 			isa = PBXGroup;
 			children = (
 				CD59FEBD1AACDA0900FB8D9E /* Peacock */,
 				CD59FECA1AACDA0900FB8D9E /* PeacockTests */,
+				CD2C07FE1AC3741200E5C412 /* PeacockApp */,
+				CD2C08181AC3741200E5C412 /* PeacockAppTests */,
 				CD59FEBC1AACDA0900FB8D9E /* Products */,
+				BF9D8D77AEE2531A48941B8A /* Pods */,
+				1DA6252F298EC86FDEADEF90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +236,8 @@
 			children = (
 				CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */,
 				CD59FEC61AACDA0900FB8D9E /* PeacockTests.xctest */,
+				CD2C07FD1AC3741200E5C412 /* PeacockApp.app */,
+				CD2C08151AC3741200E5C412 /* PeacockAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,6 +363,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CD2C07FC1AC3741200E5C412 /* PeacockApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2C08211AC3741200E5C412 /* Build configuration list for PBXNativeTarget "PeacockApp" */;
+			buildPhases = (
+				CD2C07F91AC3741200E5C412 /* Sources */,
+				CD2C07FA1AC3741200E5C412 /* Frameworks */,
+				CD2C07FB1AC3741200E5C412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeacockApp;
+			productName = PeacockApp;
+			productReference = CD2C07FD1AC3741200E5C412 /* PeacockApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD2C08141AC3741200E5C412 /* PeacockAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2C08221AC3741200E5C412 /* Build configuration list for PBXNativeTarget "PeacockAppTests" */;
+			buildPhases = (
+				CD2C08111AC3741200E5C412 /* Sources */,
+				CD2C08121AC3741200E5C412 /* Frameworks */,
+				CD2C08131AC3741200E5C412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2C08171AC3741200E5C412 /* PBXTargetDependency */,
+			);
+			name = PeacockAppTests;
+			productName = PeacockAppTests;
+			productReference = CD2C08151AC3741200E5C412 /* PeacockAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CD59FEBA1AACDA0900FB8D9E /* Peacock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD59FECF1AACDA0900FB8D9E /* Build configuration list for PBXNativeTarget "Peacock" */;
@@ -267,14 +419,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD59FED21AACDA0900FB8D9E /* Build configuration list for PBXNativeTarget "PeacockTests" */;
 			buildPhases = (
+				DAE5F0AC8C9775C07F1E51E8 /* Check Pods Manifest.lock */,
 				CD59FEC21AACDA0900FB8D9E /* Sources */,
 				CD59FEC31AACDA0900FB8D9E /* Frameworks */,
 				CD59FEC41AACDA0900FB8D9E /* Resources */,
+				A9A740E10D5E491BD245A2E8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				CD59FEC91AACDA0900FB8D9E /* PBXTargetDependency */,
+				CD2C08241AC3742000E5C412 /* PBXTargetDependency */,
 			);
 			name = PeacockTests;
 			productName = PeacockTests;
@@ -290,11 +445,19 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Lyst;
 				TargetAttributes = {
+					CD2C07FC1AC3741200E5C412 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					CD2C08141AC3741200E5C412 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = CD2C07FC1AC3741200E5C412;
+					};
 					CD59FEBA1AACDA0900FB8D9E = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 					CD59FEC51AACDA0900FB8D9E = {
 						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CD2C07FC1AC3741200E5C412;
 					};
 				};
 			};
@@ -304,6 +467,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CD59FEB21AACDA0900FB8D9E;
 			productRefGroup = CD59FEBC1AACDA0900FB8D9E /* Products */;
@@ -312,11 +476,30 @@
 			targets = (
 				CD59FEBA1AACDA0900FB8D9E /* Peacock */,
 				CD59FEC51AACDA0900FB8D9E /* PeacockTests */,
+				CD2C07FC1AC3741200E5C412 /* PeacockApp */,
+				CD2C08141AC3741200E5C412 /* PeacockAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CD2C07FB1AC3741200E5C412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2C080B1AC3741200E5C412 /* Main.storyboard in Resources */,
+				CD2C08101AC3741200E5C412 /* LaunchScreen.xib in Resources */,
+				CD2C080D1AC3741200E5C412 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2C08131AC3741200E5C412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD59FEC41AACDA0900FB8D9E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,7 +509,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A9A740E10D5E491BD245A2E8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeacockTests/Pods-PeacockTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE5F0AC8C9775C07F1E51E8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		CD2C07F91AC3741200E5C412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2C08081AC3741200E5C412 /* ViewController.m in Sources */,
+				CD2C08051AC3741200E5C412 /* AppDelegate.m in Sources */,
+				CD2C08021AC3741200E5C412 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2C08111AC3741200E5C412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2C081C1AC3741200E5C412 /* PeacockAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD59FEB71AACDA0900FB8D9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +595,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CD2C08171AC3741200E5C412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2C07FC1AC3741200E5C412 /* PeacockApp */;
+			targetProxy = CD2C08161AC3741200E5C412 /* PBXContainerItemProxy */;
+		};
+		CD2C08241AC3742000E5C412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2C07FC1AC3741200E5C412 /* PeacockApp */;
+			targetProxy = CD2C08231AC3742000E5C412 /* PBXContainerItemProxy */;
+		};
 		CD59FEC91AACDA0900FB8D9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CD59FEBA1AACDA0900FB8D9E /* Peacock */;
@@ -368,7 +612,94 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		CD2C08091AC3741200E5C412 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2C080A1AC3741200E5C412 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD2C080E1AC3741200E5C412 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2C080F1AC3741200E5C412 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		CD2C081D1AC3741200E5C412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PeacockApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD2C081E1AC3741200E5C412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = PeacockApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD2C081F1AC3741200E5C412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PeacockAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeacockApp.app/PeacockApp";
+			};
+			name = Debug;
+		};
+		CD2C08201AC3741200E5C412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PeacockAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeacockApp.app/PeacockApp";
+			};
+			name = Release;
+		};
 		CD59FECD1AACDA0900FB8D9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -465,6 +796,7 @@
 		};
 		CD59FED31AACDA0900FB8D9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E168D7C7A87FB46A14DE71 /* Pods-PeacockTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -477,11 +809,13 @@
 				INFOPLIST_FILE = PeacockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeacockApp.app/PeacockApp";
 			};
 			name = Debug;
 		};
 		CD59FED41AACDA0900FB8D9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE75C63CDA70D9EE66E6F917 /* Pods-PeacockTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -490,12 +824,29 @@
 				INFOPLIST_FILE = PeacockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeacockApp.app/PeacockApp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CD2C08211AC3741200E5C412 /* Build configuration list for PBXNativeTarget "PeacockApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2C081D1AC3741200E5C412 /* Debug */,
+				CD2C081E1AC3741200E5C412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD2C08221AC3741200E5C412 /* Build configuration list for PBXNativeTarget "PeacockAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2C081F1AC3741200E5C412 /* Debug */,
+				CD2C08201AC3741200E5C412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CD59FEB61AACDA0900FB8D9E /* Build configuration list for PBXProject "Peacock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
