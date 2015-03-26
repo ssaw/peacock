@@ -7,6 +7,7 @@
 #import <XCTest/XCTest.h>
 #import <KIF/KIF.h>
 #import "UILabel+FontAppearance.h"
+#import "UILabel+LYAttributedLabel.h"
 
 @interface LYPeacockLabelTests : KIFTestCase
 
@@ -96,10 +97,24 @@
     [[UILabel appearance] setAppearanceLineSpacingParagraphStyle:5.0f];
     
     //when
+    [self.SUTLabel setAttributedTextUsingString:@"a text"];
     [self.window makeKeyAndVisible];
     
     //then
     XCTAssertEqual(self.SUTLabel.appearanceLineSpacingParagraphStyle, 5.0f);
+}
+
+-(void)testThatWeCanSetStrikeoutValueOnLabel
+{
+    //given
+    [self.SUTLabel setText:@"a text"];
+    
+    //when
+    [self.SUTLabel setLYStrikeOut:YES];
+    [self.window makeKeyAndVisible];
+    
+    //then
+    XCTAssertTrue([self.SUTLabel LYStrikeOut]);
 }
 
 @end
