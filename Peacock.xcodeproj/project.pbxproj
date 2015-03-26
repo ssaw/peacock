@@ -15,8 +15,6 @@
 		CD2C080D1AC3741200E5C412 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2C080C1AC3741200E5C412 /* Images.xcassets */; };
 		CD2C08101AC3741200E5C412 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2C080E1AC3741200E5C412 /* LaunchScreen.xib */; };
 		CD2C081C1AC3741200E5C412 /* PeacockAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C081B1AC3741200E5C412 /* PeacockAppTests.m */; };
-		CD59FEBF1AACDA0900FB8D9E /* Peacock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD59FEBE1AACDA0900FB8D9E /* Peacock.h */; };
-		CD59FEC11AACDA0900FB8D9E /* Peacock.m in Sources */ = {isa = PBXBuildFile; fileRef = CD59FEC01AACDA0900FB8D9E /* Peacock.m */; };
 		CD59FEC71AACDA0900FB8D9E /* libPeacock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */; };
 		CD85FC841AAE58B2000B1318 /* LYCGFloatSizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD85FC831AAE58B2000B1318 /* LYCGFloatSizeHelper.m */; };
 		CDA1E9AE1AAE60CC00AFB06F /* LYPeacockLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1E9AD1AAE60CC00AFB06F /* LYPeacockLabelTests.m */; };
@@ -33,6 +31,7 @@
 		CDA8A5D31AAD0CEE007EAC99 /* UITextView+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5C31AAD0CEE007EAC99 /* UITextView+LYAppearance.m */; };
 		CDA8A5D41AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5C61AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m */; };
 		CDA8A5D51AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5C81AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.m */; };
+		CDC20E421AC4C862001DCFA2 /* LYPeacockButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC20E411AC4C862001DCFA2 /* LYPeacockButtonTests.m */; };
 		CDD45E631AAE66AC00DF84DF /* UILabel+FontAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5B11AAD0CEE007EAC99 /* UILabel+FontAppearance.m */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +66,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				CD59FEBF1AACDA0900FB8D9E /* Peacock.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +88,6 @@
 		CD2C081A1AC3741200E5C412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2C081B1AC3741200E5C412 /* PeacockAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeacockAppTests.m; sourceTree = "<group>"; };
 		CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPeacock.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD59FEBE1AACDA0900FB8D9E /* Peacock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Peacock.h; sourceTree = "<group>"; };
-		CD59FEC01AACDA0900FB8D9E /* Peacock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Peacock.m; sourceTree = "<group>"; };
 		CD59FEC61AACDA0900FB8D9E /* PeacockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD59FECC1AACDA0900FB8D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD85FC821AAE58B2000B1318 /* LYCGFloatSizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYCGFloatSizeHelper.h; path = Peacock/LYCGFloatSizeHelper.h; sourceTree = SOURCE_ROOT; };
@@ -123,6 +119,7 @@
 		CDA8A5C61AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AttributedStringTitle.m"; sourceTree = "<group>"; };
 		CDA8A5C71AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+setStatusBarColor.h"; sourceTree = "<group>"; };
 		CDA8A5C81AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+setStatusBarColor.m"; sourceTree = "<group>"; };
+		CDC20E411AC4C862001DCFA2 /* LYPeacockButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPeacockButtonTests.m; sourceTree = "<group>"; };
 		EE75C63CDA70D9EE66E6F917 /* Pods-PeacockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeacockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeacockTests/Pods-PeacockTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,8 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				CD85FC811AAE58A2000B1318 /* Helpers */,
-				CD59FEBE1AACDA0900FB8D9E /* Peacock.h */,
-				CD59FEC01AACDA0900FB8D9E /* Peacock.m */,
 				CDA8A5A81AAD0CEE007EAC99 /* UIButton */,
 				CDA8A5AD1AAD0CEE007EAC99 /* UILabel */,
 				CDA8A5B81AAD0CEE007EAC99 /* UINavigationBar */,
@@ -264,6 +259,7 @@
 			children = (
 				CD59FECB1AACDA0900FB8D9E /* Supporting Files */,
 				CDA1E9AD1AAE60CC00AFB06F /* LYPeacockLabelTests.m */,
+				CDC20E411AC4C862001DCFA2 /* LYPeacockButtonTests.m */,
 			);
 			path = PeacockTests;
 			sourceTree = "<group>";
@@ -572,7 +568,6 @@
 				CDA8A5CD1AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m in Sources */,
 				CDA8A5D11AAD0CEE007EAC99 /* UITableView+SeparatorUIAppearance.m in Sources */,
 				CDA8A5C91AAD0CEE007EAC99 /* UIButton+LYAppearance.m in Sources */,
-				CD59FEC11AACDA0900FB8D9E /* Peacock.m in Sources */,
 				CDA8A5D21AAD0CEE007EAC99 /* UITextField+LYAppearance.m in Sources */,
 				CDA8A5D51AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.m in Sources */,
 				CDA8A5CE1AAD0CEE007EAC99 /* UILabel+SizeToFitText.m in Sources */,
@@ -588,6 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDA1E9AE1AAE60CC00AFB06F /* LYPeacockLabelTests.m in Sources */,
+				CDC20E421AC4C862001DCFA2 /* LYPeacockButtonTests.m in Sources */,
 				CDD45E631AAE66AC00DF84DF /* UILabel+FontAppearance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -838,6 +834,7 @@
 				CD2C081E1AC3741200E5C412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD2C08221AC3741200E5C412 /* Build configuration list for PBXNativeTarget "PeacockAppTests" */ = {
 			isa = XCConfigurationList;
@@ -846,6 +843,7 @@
 				CD2C08201AC3741200E5C412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD59FEB61AACDA0900FB8D9E /* Build configuration list for PBXProject "Peacock" */ = {
 			isa = XCConfigurationList;

@@ -107,6 +107,16 @@
     [self setLYAttributeValue:font forKey:NSFontAttributeName state:state];
 }
 
+-(UIFont *)LYFontForState:(UIControlState)state
+{
+    id font = [self LYAttributeWithKey:NSFontAttributeName forState:state];
+    UIFont *buttonFont = nil;
+    if ([font isKindOfClass:[UIFont class]]) {
+        buttonFont = (UIFont *) font;
+    }
+    return buttonFont;
+}
+
 #pragma mark -
 
 -(void)setLYTextAlignment:(NSTextAlignment)textAlignment forState:(UIControlState)state

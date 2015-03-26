@@ -8,6 +8,7 @@
 @interface UIButton (LYAttributedButton)
 
 -(void)setLYFont:(UIFont *)font forState:(UIControlState)state UI_APPEARANCE_SELECTOR;
+-(UIFont *)LYFontForState:(UIControlState)state UI_APPEARANCE_SELECTOR;
 
 -(void)setLYTextColor:(UIColor *)textColor forState:(UIControlState)state UI_APPEARANCE_SELECTOR;
 
