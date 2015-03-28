@@ -1,6 +1,6 @@
 //
 //  Created by Michael May on 01/07/2014.
-//  Copyright (c) 2014 Lyst. All rights reserved.
+//  Copyright (c) 2014-2015 Lyst. All rights reserved.
 //
 
 #import "UIButton+LYAttributedButton.h"
@@ -100,11 +100,31 @@
     [self setLYAttributeValue:textColor forKey:NSForegroundColorAttributeName state:state];
 }
 
+-(UIColor *)LYTextColorForState:(UIControlState)state
+{
+    id color = [self LYAttributeWithKey:NSForegroundColorAttributeName forState:state];
+    UIColor *fontColor;
+    if ([color isKindOfClass:[UIColor class]]) {
+        fontColor = (UIColor *)color;
+    }
+    return fontColor;
+}
+
 #pragma mark -
 
 -(void)setLYFont:(UIFont *)font forState:(UIControlState)state
 {
     [self setLYAttributeValue:font forKey:NSFontAttributeName state:state];
+}
+
+-(UIFont *)LYFontForState:(UIControlState)state
+{
+    id font = [self LYAttributeWithKey:NSFontAttributeName forState:state];
+    UIFont *buttonFont = nil;
+    if ([font isKindOfClass:[UIFont class]]) {
+        buttonFont = (UIFont *) font;
+    }
+    return buttonFont;
 }
 
 #pragma mark -
