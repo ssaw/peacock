@@ -17,6 +17,7 @@
 		CD2C081C1AC3741200E5C412 /* PeacockAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C081B1AC3741200E5C412 /* PeacockAppTests.m */; };
 		CD54BAA91ACA0274008F9909 /* LYPeacockTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54BAA81ACA0274008F9909 /* LYPeacockTableTests.m */; };
 		CD59FEC71AACDA0900FB8D9E /* libPeacock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */; };
+		CD6BA0021ACA078400602D72 /* LYPeacockTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6BA0011ACA078400602D72 /* LYPeacockTextFieldTests.m */; };
 		CD85FC841AAE58B2000B1318 /* LYCGFloatSizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD85FC831AAE58B2000B1318 /* LYCGFloatSizeHelper.m */; };
 		CDA1E9AE1AAE60CC00AFB06F /* LYPeacockLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1E9AD1AAE60CC00AFB06F /* LYPeacockLabelTests.m */; };
 		CDA32C681AC71BE000A199C1 /* LYPeacockNavigationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA32C671AC71BE000A199C1 /* LYPeacockNavigationBarTests.m */; };
@@ -93,6 +94,7 @@
 		CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPeacock.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD59FEC61AACDA0900FB8D9E /* PeacockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD59FECC1AACDA0900FB8D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6BA0011ACA078400602D72 /* LYPeacockTextFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPeacockTextFieldTests.m; sourceTree = "<group>"; };
 		CD85FC821AAE58B2000B1318 /* LYCGFloatSizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYCGFloatSizeHelper.h; path = Peacock/LYCGFloatSizeHelper.h; sourceTree = SOURCE_ROOT; };
 		CD85FC831AAE58B2000B1318 /* LYCGFloatSizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYCGFloatSizeHelper.m; path = Peacock/LYCGFloatSizeHelper.m; sourceTree = SOURCE_ROOT; };
 		CDA1E9AD1AAE60CC00AFB06F /* LYPeacockLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPeacockLabelTests.m; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				CDC20E411AC4C862001DCFA2 /* LYPeacockButtonTests.m */,
 				CDA32C671AC71BE000A199C1 /* LYPeacockNavigationBarTests.m */,
 				CD54BAA81ACA0274008F9909 /* LYPeacockTableTests.m */,
+				CD6BA0011ACA078400602D72 /* LYPeacockTextFieldTests.m */,
 			);
 			path = PeacockTests;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				CDC20E421AC4C862001DCFA2 /* LYPeacockButtonTests.m in Sources */,
 				CDD45E631AAE66AC00DF84DF /* UILabel+FontAppearance.m in Sources */,
 				CDA32C681AC71BE000A199C1 /* LYPeacockNavigationBarTests.m in Sources */,
+				CD6BA0021ACA078400602D72 /* LYPeacockTextFieldTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
