@@ -18,6 +18,7 @@
 		CD59FEC71AACDA0900FB8D9E /* libPeacock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */; };
 		CD85FC841AAE58B2000B1318 /* LYCGFloatSizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD85FC831AAE58B2000B1318 /* LYCGFloatSizeHelper.m */; };
 		CDA1E9AE1AAE60CC00AFB06F /* LYPeacockLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1E9AD1AAE60CC00AFB06F /* LYPeacockLabelTests.m */; };
+		CDA32C681AC71BE000A199C1 /* LYPeacockNavigationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA32C671AC71BE000A199C1 /* LYPeacockNavigationBarTests.m */; };
 		CDA8A5C91AAD0CEE007EAC99 /* UIButton+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AA1AAD0CEE007EAC99 /* UIButton+LYAppearance.m */; };
 		CDA8A5CA1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AC1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m */; };
 		CDA8A5CB1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AF1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */; };
@@ -93,6 +94,7 @@
 		CD85FC821AAE58B2000B1318 /* LYCGFloatSizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYCGFloatSizeHelper.h; path = Peacock/LYCGFloatSizeHelper.h; sourceTree = SOURCE_ROOT; };
 		CD85FC831AAE58B2000B1318 /* LYCGFloatSizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYCGFloatSizeHelper.m; path = Peacock/LYCGFloatSizeHelper.m; sourceTree = SOURCE_ROOT; };
 		CDA1E9AD1AAE60CC00AFB06F /* LYPeacockLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPeacockLabelTests.m; sourceTree = "<group>"; };
+		CDA32C671AC71BE000A199C1 /* LYPeacockNavigationBarTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPeacockNavigationBarTests.m; sourceTree = "<group>"; };
 		CDA8A5A91AAD0CEE007EAC99 /* UIButton+LYAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LYAppearance.h"; sourceTree = "<group>"; };
 		CDA8A5AA1AAD0CEE007EAC99 /* UIButton+LYAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYAppearance.m"; sourceTree = "<group>"; };
 		CDA8A5AB1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LYAttributedButton.h"; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				CD59FECB1AACDA0900FB8D9E /* Supporting Files */,
 				CDA1E9AD1AAE60CC00AFB06F /* LYPeacockLabelTests.m */,
 				CDC20E411AC4C862001DCFA2 /* LYPeacockButtonTests.m */,
+				CDA32C671AC71BE000A199C1 /* LYPeacockNavigationBarTests.m */,
 			);
 			path = PeacockTests;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				CDA1E9AE1AAE60CC00AFB06F /* LYPeacockLabelTests.m in Sources */,
 				CDC20E421AC4C862001DCFA2 /* LYPeacockButtonTests.m in Sources */,
 				CDD45E631AAE66AC00DF84DF /* UILabel+FontAppearance.m in Sources */,
+				CDA32C681AC71BE000A199C1 /* LYPeacockNavigationBarTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
