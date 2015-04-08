@@ -46,5 +46,29 @@ NSString *helveticaUltraLight = @"HelveticaNeue-UltraLight";
     
 }
 
+-(void)testThatWeCanSetTextFieldColor
+{
+    //given
+    [[UITextField appearance] setLYAppearanceTextColor:[UIColor redColor]];
+    
+    //when
+    [self.window makeKeyAndVisible];
+    
+    //then
+    UIColor *red = [UIColor redColor];
+    XCTAssertEqualObjects(self.SUTTextField.textColor, red);
+}
+
+-(void)testThatWeCanSetTextFiledAlignment
+{
+    //given
+    [[UITextField appearance] setLYAppearanceTextAlignment:NSTextAlignmentJustified];
+    
+    //when
+    [self.window makeKeyAndVisible];
+    
+    //then
+    XCTAssertEqual(self.SUTTextField.textAlignment, NSTextAlignmentJustified);
+}
 
 @end
