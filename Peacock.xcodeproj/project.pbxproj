@@ -35,7 +35,6 @@
 		CDA8A5D21AAD0CEE007EAC99 /* UITextField+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5C01AAD0CEE007EAC99 /* UITextField+LYAppearance.m */; };
 		CDA8A5D31AAD0CEE007EAC99 /* UITextView+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5C31AAD0CEE007EAC99 /* UITextView+LYAppearance.m */; };
 		CDA8A5D41AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5C61AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m */; };
-		CDA8A5D51AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5C81AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.m */; };
 		CDC20E421AC4C862001DCFA2 /* LYPeacockButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC20E411AC4C862001DCFA2 /* LYPeacockButtonTests.m */; };
 		CDD45E631AAE66AC00DF84DF /* UILabel+FontAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5B11AAD0CEE007EAC99 /* UILabel+FontAppearance.m */; };
 /* End PBXBuildFile section */
@@ -127,8 +126,6 @@
 		CDA8A5C31AAD0CEE007EAC99 /* UITextView+LYAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+LYAppearance.m"; sourceTree = "<group>"; };
 		CDA8A5C51AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AttributedStringTitle.h"; sourceTree = "<group>"; };
 		CDA8A5C61AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AttributedStringTitle.m"; sourceTree = "<group>"; };
-		CDA8A5C71AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+setStatusBarColor.h"; sourceTree = "<group>"; };
-		CDA8A5C81AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+setStatusBarColor.m"; sourceTree = "<group>"; };
 		CDC20E411AC4C862001DCFA2 /* LYPeacockButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPeacockButtonTests.m; sourceTree = "<group>"; };
 		EE75C63CDA70D9EE66E6F917 /* Pods-PeacockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeacockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeacockTests/Pods-PeacockTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -365,8 +362,6 @@
 			children = (
 				CDA8A5C51AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.h */,
 				CDA8A5C61AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m */,
-				CDA8A5C71AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.h */,
-				CDA8A5C81AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -584,7 +579,6 @@
 				CDA8A5D11AAD0CEE007EAC99 /* UITableView+SeparatorUIAppearance.m in Sources */,
 				CDA8A5C91AAD0CEE007EAC99 /* UIButton+LYAppearance.m in Sources */,
 				CDA8A5D21AAD0CEE007EAC99 /* UITextField+LYAppearance.m in Sources */,
-				CDA8A5D51AAD0CEE007EAC99 /* UIViewController+setStatusBarColor.m in Sources */,
 				CDA8A5CE1AAD0CEE007EAC99 /* UILabel+SizeToFitText.m in Sources */,
 				CDA8A5D31AAD0CEE007EAC99 /* UITextView+LYAppearance.m in Sources */,
 				CDA8A5D41AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m in Sources */,

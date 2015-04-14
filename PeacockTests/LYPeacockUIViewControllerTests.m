@@ -24,7 +24,7 @@
 
 @implementation LYPeacockUIViewControllerTests
 
-- (void)setUp {
+-(void)setUp {
     [super setUp];
     _SUTController = [[UIViewController alloc] init];
     _window = [[UIWindow alloc]initWithFrame:CGRectMake(0.0, 0.0, 320.0, 468.0)];
@@ -35,7 +35,7 @@
 }
 
 
-- (void)testThatWeCanSetTitleForUIViewController
+-(void)testThatWeCanSetTitleForUIViewController
 {
     //given
     [[UILabel appearance] setLYFont:[UIFont fontWithName:self.helveticaUltraLight size:20.0f]];
