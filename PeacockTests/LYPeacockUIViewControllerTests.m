@@ -8,7 +8,6 @@
 #import <KIF/KIF.h>
 
 #import "UIViewController+AttributedStringTitle.h"
-#import "UIViewController+setStatusBarColor.h"
 
 #import "UILabel+FontAppearance.h"
 #import "UILabel+LYAttributedLabel.h"
