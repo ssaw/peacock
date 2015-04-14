@@ -55,4 +55,27 @@
     }
 }
 
+#pragma mark - testing
+
+-(UILabel *)setAttributedTitleForTesting
+{
+    NSString *title = [self title];
+    UILabel *attributedTitle;
+    
+    if(title) {
+        attributedTitle = [self setAttributedTitleForTesting:title];
+    }
+    
+    return attributedTitle;
+}
+
+-(UILabel *)setAttributedTitleForTesting:(NSString*)titleText
+{
+    UILabel *titleView = [self createTitleViewLabel];
+    
+    [self setAttributedTitle:titleText usingLabel:titleView];
+    
+    return titleView;
+}
+
 @end
