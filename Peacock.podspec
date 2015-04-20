@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "Peacock"
   s.version      = "0.0.1"
-  s.summary      = "A short description of Peacock."
+  s.summary      = "Peacock is a group of categories to empower the use of UIAppearance protocol."
 
   s.description  = <<-DESC
                    A longer description of Peacock in Markdown format.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "http://EXAMPLE/Peacock"
+  s.homepage     = "http://lyst.com/Peacock"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Raimon Lapuente" => "r.lapuente@gmail.com" }
+  s.author             = { "MakingLyst" => "makingLyst@lyst.com" }
   # Or just: s.author    = "Raimon Lapuente"
   # s.authors            = { "Raimon Lapuente" => "r.lapuente@gmail.com" }
   # s.social_media_url   = "http://twitter.com/Raimon Lapuente"
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/Peacock.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/ssaw/peacock.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,8 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Peacock/*.{h,m}"
+  s.exclude_files = "PeacockApp","Peacock.xcodeproj","Peacock.xcworkspace","PeacockAppTests","PeacockTests","Pods"
 
   # s.public_header_files = "Classes/**/*.h"
 
