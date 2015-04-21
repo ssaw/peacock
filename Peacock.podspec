@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Peacock/*.{h,m}"
-  s.exclude_files = "PeacockApp","Peacock.xcodeproj","Peacock.xcworkspace","PeacockAppTests","PeacockTests","Pods"
+  s.exclude_files = "PeacockApp/*","Peacock.xcodeproj/*","Peacock.xcworkspace/*","PeacockAppTests/*","PeacockTests/*","Pods/*"
 
   # s.public_header_files = "Classes/**/*.h"
 
