@@ -1,3 +1,3 @@
 platform :ios, '7.0'
 
-pod 'PeacockPrivate', :path => ' ~/Documents/Dev/Lyst/Peacock/'
+pod 'Peacock', :path => '~/Documents/Dev/Lyst/Peacock/Peacock.podspec'

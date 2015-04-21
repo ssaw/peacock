@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5977E587DD8A372B97D90298 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F2739EDF5A0FA21315633 /* libPods.a */; };
 		CDC83AA71AE5ADF80060EBF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AA61AE5ADF80060EBF9 /* main.m */; };
 		CDC83AAA1AE5ADF80060EBF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AA91AE5ADF80060EBF9 /* AppDelegate.m */; };
 		CDC83AAD1AE5ADF80060EBF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AAC1AE5ADF80060EBF9 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		CDC83AB21AE5ADF80060EBF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC83AB11AE5ADF80060EBF9 /* Images.xcassets */; };
 		CDC83AB51AE5ADF80060EBF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC83AB31AE5ADF80060EBF9 /* LaunchScreen.xib */; };
 		CDC83AC11AE5ADF80060EBF9 /* ExamplePeacockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AC01AE5ADF80060EBF9 /* ExamplePeacockTests.m */; };
+		CDD99BF11AE70F5A000B5599 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD99BF01AE70F5A000B5599 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D1F2739EDF5A0FA21315633 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA47E58971AB3ED22953097 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CDC83AA11AE5ADF80060EBF9 /* ExamplePeacock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamplePeacock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC83AA51AE5ADF80060EBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC83AA61AE5ADF80060EBF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		CDC83ABA1AE5ADF80060EBF9 /* ExamplePeacockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExamplePeacockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC83ABF1AE5ADF80060EBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC83AC01AE5ADF80060EBF9 /* ExamplePeacockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExamplePeacockTests.m; sourceTree = "<group>"; };
+		CDD99BF01AE70F5A000B5599 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD47DF21CE213CAC4B6C8CC9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD99BF11AE70F5A000B5599 /* CoreGraphics.framework in Frameworks */,
+				5977E587DD8A372B97D90298 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27DBAACCB8B7558019A46BC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDD99BF01AE70F5A000B5599 /* CoreGraphics.framework */,
+				0D1F2739EDF5A0FA21315633 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A220C0C998AF7618F5451C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD47DF21CE213CAC4B6C8CC9 /* Pods.debug.xcconfig */,
+				5DA47E58971AB3ED22953097 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CDC83A981AE5ADF80060EBF9 = {
 			isa = PBXGroup;
 			children = (
 				CDC83AA31AE5ADF80060EBF9 /* ExamplePeacock */,
 				CDC83ABD1AE5ADF80060EBF9 /* ExamplePeacockTests */,
 				CDC83AA21AE5ADF80060EBF9 /* Products */,
+				3A220C0C998AF7618F5451C0 /* Pods */,
+				27DBAACCB8B7558019A46BC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDC83AC41AE5ADF90060EBF9 /* Build configuration list for PBXNativeTarget "ExamplePeacock" */;
 			buildPhases = (
+				209542A3EC94C85144A34ADE /* Check Pods Manifest.lock */,
 				CDC83A9D1AE5ADF80060EBF9 /* Sources */,
 				CDC83A9E1AE5ADF80060EBF9 /* Frameworks */,
 				CDC83A9F1AE5ADF80060EBF9 /* Resources */,
+				DAD789E725BB06DBC9980BD0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +243,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		209542A3EC94C85144A34ADE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD789E725BB06DBC9980BD0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDC83A9D1AE5ADF80060EBF9 /* Sources */ = {
@@ -347,6 +410,7 @@
 		};
 		CDC83AC51AE5ADF90060EBF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD47DF21CE213CAC4B6C8CC9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ExamplePeacock/Info.plist;
@@ -357,6 +421,7 @@
 		};
 		CDC83AC61AE5ADF90060EBF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA47E58971AB3ED22953097 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ExamplePeacock/Info.plist;

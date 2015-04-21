@@ -1,0 +1,14 @@
+PODS:
+  - Peacock (0.0.1)
+
+DEPENDENCIES:
+  - Peacock (from `~/Documents/Dev/Lyst/Peacock/Peacock.podspec`)
+
+EXTERNAL SOURCES:
+  Peacock:
+    :path: ~/Documents/Dev/Lyst/Peacock/Peacock.podspec
+
+SPEC CHECKSUMS:
+  Peacock: bdf7ef2772431c11b7c3ab7b0102da88bc2ff77f
+
+COCOAPODS: 0.36.0
