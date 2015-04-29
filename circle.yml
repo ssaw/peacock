@@ -11,3 +11,4 @@ test:
       -sdk iphonesimulator
       -workspace Peacock.xcworkspace
       -scheme "Peacock"
+      build build-tests run-tests
