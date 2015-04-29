@@ -14,19 +14,8 @@
 		CDC83AB01AE5ADF80060EBF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC83AAE1AE5ADF80060EBF9 /* Main.storyboard */; };
 		CDC83AB21AE5ADF80060EBF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC83AB11AE5ADF80060EBF9 /* Images.xcassets */; };
 		CDC83AB51AE5ADF80060EBF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC83AB31AE5ADF80060EBF9 /* LaunchScreen.xib */; };
-		CDC83AC11AE5ADF80060EBF9 /* ExamplePeacockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AC01AE5ADF80060EBF9 /* ExamplePeacockTests.m */; };
 		CDD99BF11AE70F5A000B5599 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD99BF01AE70F5A000B5599 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CDC83ABB1AE5ADF80060EBF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDC83A991AE5ADF80060EBF9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CDC83AA01AE5ADF80060EBF9;
-			remoteInfo = ExamplePeacock;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0D1F2739EDF5A0FA21315633 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,9 +30,6 @@
 		CDC83AAF1AE5ADF80060EBF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDC83AB11AE5ADF80060EBF9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CDC83AB41AE5ADF80060EBF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CDC83ABA1AE5ADF80060EBF9 /* ExamplePeacockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExamplePeacockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDC83ABF1AE5ADF80060EBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDC83AC01AE5ADF80060EBF9 /* ExamplePeacockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExamplePeacockTests.m; sourceTree = "<group>"; };
 		CDD99BF01AE70F5A000B5599 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DD47DF21CE213CAC4B6C8CC9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,13 +41,6 @@
 			files = (
 				CDD99BF11AE70F5A000B5599 /* CoreGraphics.framework in Frameworks */,
 				5977E587DD8A372B97D90298 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDC83AB71AE5ADF80060EBF9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				CDC83AA31AE5ADF80060EBF9 /* ExamplePeacock */,
-				CDC83ABD1AE5ADF80060EBF9 /* ExamplePeacockTests */,
 				CDC83AA21AE5ADF80060EBF9 /* Products */,
 				3A220C0C998AF7618F5451C0 /* Pods */,
 				27DBAACCB8B7558019A46BC0 /* Frameworks */,
@@ -101,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				CDC83AA11AE5ADF80060EBF9 /* ExamplePeacock.app */,
-				CDC83ABA1AE5ADF80060EBF9 /* ExamplePeacockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,23 +107,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CDC83ABD1AE5ADF80060EBF9 /* ExamplePeacockTests */ = {
-			isa = PBXGroup;
-			children = (
-				CDC83AC01AE5ADF80060EBF9 /* ExamplePeacockTests.m */,
-				CDC83ABE1AE5ADF80060EBF9 /* Supporting Files */,
-			);
-			path = ExamplePeacockTests;
-			sourceTree = "<group>";
-		};
-		CDC83ABE1AE5ADF80060EBF9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CDC83ABF1AE5ADF80060EBF9 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,24 +129,6 @@
 			productReference = CDC83AA11AE5ADF80060EBF9 /* ExamplePeacock.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CDC83AB91AE5ADF80060EBF9 /* ExamplePeacockTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CDC83AC71AE5ADF90060EBF9 /* Build configuration list for PBXNativeTarget "ExamplePeacockTests" */;
-			buildPhases = (
-				CDC83AB61AE5ADF80060EBF9 /* Sources */,
-				CDC83AB71AE5ADF80060EBF9 /* Frameworks */,
-				CDC83AB81AE5ADF80060EBF9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CDC83ABC1AE5ADF80060EBF9 /* PBXTargetDependency */,
-			);
-			name = ExamplePeacockTests;
-			productName = ExamplePeacockTests;
-			productReference = CDC83ABA1AE5ADF80060EBF9 /* ExamplePeacockTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,10 +140,6 @@
 				TargetAttributes = {
 					CDC83AA01AE5ADF80060EBF9 = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					CDC83AB91AE5ADF80060EBF9 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = CDC83AA01AE5ADF80060EBF9;
 					};
 				};
 			};
@@ -219,7 +157,6 @@
 			projectRoot = "";
 			targets = (
 				CDC83AA01AE5ADF80060EBF9 /* ExamplePeacock */,
-				CDC83AB91AE5ADF80060EBF9 /* ExamplePeacockTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,13 +169,6 @@
 				CDC83AB01AE5ADF80060EBF9 /* Main.storyboard in Resources */,
 				CDC83AB51AE5ADF80060EBF9 /* LaunchScreen.xib in Resources */,
 				CDC83AB21AE5ADF80060EBF9 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDC83AB81AE5ADF80060EBF9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,23 +218,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDC83AB61AE5ADF80060EBF9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDC83AC11AE5ADF80060EBF9 /* ExamplePeacockTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CDC83ABC1AE5ADF80060EBF9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CDC83AA01AE5ADF80060EBF9 /* ExamplePeacock */;
-			targetProxy = CDC83ABB1AE5ADF80060EBF9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CDC83AAE1AE5ADF80060EBF9 /* Main.storyboard */ = {
@@ -430,40 +344,6 @@
 			};
 			name = Release;
 		};
-		CDC83AC81AE5ADF90060EBF9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExamplePeacockTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExamplePeacock.app/ExamplePeacock";
-			};
-			name = Debug;
-		};
-		CDC83AC91AE5ADF90060EBF9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExamplePeacockTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExamplePeacock.app/ExamplePeacock";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -481,15 +361,6 @@
 			buildConfigurations = (
 				CDC83AC51AE5ADF90060EBF9 /* Debug */,
 				CDC83AC61AE5ADF90060EBF9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CDC83AC71AE5ADF90060EBF9 /* Build configuration list for PBXNativeTarget "ExamplePeacockTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CDC83AC81AE5ADF90060EBF9 /* Debug */,
-				CDC83AC91AE5ADF90060EBF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
