@@ -1,0 +1,3 @@
+platform :ios, '7.0'
+
+pod 'Peacock', :git => 'https://github.com/ssaw/peacock.git'
