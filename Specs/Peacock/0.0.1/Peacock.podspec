@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
+  s.license      = "MIT (example)"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -78,8 +78,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
- # s.source       = { :git => "https://github.com/ssaw/peacock.git", :tag => "0.0.1" }
-  s.source	  = { :path => "~/Documents/Dev/Lyst/Peacock/" }
+  s.source       = { :git => "https://github.com/ssaw/peacock.git", :tag => "0.0.1" }
+
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Peacock/**/*"
+  s.source_files  = "Peacock/*.{h,m}"
   s.exclude_files = "PeacockApp/*","Peacock.xcodeproj/*","Peacock.xcworkspace/*","PeacockAppTests/*","PeacockTests/*","Pods/*"
 
   # s.public_header_files = "Classes/**/*.h"

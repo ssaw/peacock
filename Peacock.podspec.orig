@@ -89,7 +89,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
+<<<<<<< HEAD
+  s.source_files  = "Peacock/*.{h,m}","Peacock/UIButton/*.{h,m}","Peacock/UILabel/*.{h,m}"
+=======
   s.source_files  = "Peacock/**/*"
+>>>>>>> master
   s.exclude_files = "PeacockApp/*","Peacock.xcodeproj/*","Peacock.xcworkspace/*","PeacockAppTests/*","PeacockTests/*","Pods/*"
 
   # s.public_header_files = "Classes/**/*.h"
