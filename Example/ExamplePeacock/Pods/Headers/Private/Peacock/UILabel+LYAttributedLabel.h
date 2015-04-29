@@ -1,1 +1,1 @@
-../../../../../../Peacock/UILabel/UILabel+LYAttributedLabel.h
+../../../Peacock/Peacock/UILabel/UILabel+LYAttributedLabel.h

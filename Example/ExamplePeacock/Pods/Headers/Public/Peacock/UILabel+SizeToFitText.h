@@ -1,1 +1,1 @@
-../../../../../../Peacock/UILabel/UILabel+SizeToFitText.h
+../../../Peacock/Peacock/UILabel/UILabel+SizeToFitText.h

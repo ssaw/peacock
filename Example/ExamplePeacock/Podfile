@@ -1,3 +1,3 @@
 platform :ios, '7.0'
 
-pod 'Peacock', :path => '~/Documents/Dev/Lyst/Peacock/Peacock.podspec'
+pod 'Peacock', :git => 'https://github.com/ssaw/peacock.git'

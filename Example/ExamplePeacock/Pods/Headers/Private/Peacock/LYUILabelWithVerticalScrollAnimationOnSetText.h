@@ -1,1 +1,1 @@
-../../../../../../Peacock/UILabel/LYUILabelWithVerticalScrollAnimationOnSetText.h
+../../../Peacock/Peacock/UILabel/LYUILabelWithVerticalScrollAnimationOnSetText.h

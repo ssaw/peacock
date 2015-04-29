@@ -7,248 +7,258 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		016C3F4A77131F7D45216102 /* UILabel+LYAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 34DC16457ABF304012692C98 /* UILabel+LYAttributedLabel.h */; };
-		1D0DD76F390EC8FBA5BC7A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE406BB73EE8E7CFB751574 /* Foundation.framework */; };
-		3BA4FCA9735B2A665733B332 /* UILabel+FontAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C6BB2CC644EFA3911E9ECF /* UILabel+FontAppearance.h */; };
-		4550D679AF30D35874BD1A2B /* UILabel+SizeToFitText.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF2DD1D59182B6BEF2B5CA /* UILabel+SizeToFitText.m */; };
-		55AA9ECC1E0FB60925C24D92 /* UILabel+FontAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = A7955FB8F219760D79AFAE6F /* UILabel+FontAppearance.m */; };
-		5F275B05912406B85DF4070C /* UIButton+LYAttributedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E85A35869273325452569DDA /* UIButton+LYAttributedButton.h */; };
-		65490B41CDA53335C889A482 /* UIButton+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 001BA98E0F0694EAE8D56196 /* UIButton+LYAppearance.m */; };
-		7276079006831468D1F7A09D /* LYUILabelWithVerticalScrollAnimationOnSetText.h in Headers */ = {isa = PBXBuildFile; fileRef = A96EF94D33BEA40172E73381 /* LYUILabelWithVerticalScrollAnimationOnSetText.h */; };
-		816344D2CCECAC5C160EBA8B /* UILabel+VerticalAlignText.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B35FC5E8F361B22C1EC491 /* UILabel+VerticalAlignText.h */; };
-		90AE972805D700A925EDCF1D /* LYCGFloatSizeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 994C3309D8DA98D988B40CDB /* LYCGFloatSizeHelper.h */; };
-		9A986D0C4552E986249D1A0D /* UILabel+LYAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0007338A3E12B24440E5A5BF /* UILabel+LYAttributedLabel.m */; };
-		A34196B0BBFACE2CBCF7D57B /* Pods-Peacock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AA59D4B0D4E341BDC7A467 /* Pods-Peacock-dummy.m */; };
-		AAF75A4FD094F2C53E62ABD7 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B73185DD91B409DAD54D8B53 /* Pods-dummy.m */; };
-		AB168CF0D13967C81C616AA5 /* UIButton+LYAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DD9758A62C2B48E47E27E38 /* UIButton+LYAppearance.h */; };
-		B31A0B78D964AD39FA11E464 /* UIButton+LYAttributedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EDA342D72A6010662B3CA /* UIButton+LYAttributedButton.m */; };
-		B4B3C663902418927BC2A7B4 /* LYCGFloatSizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFDAAD97BD6A8CAD40DA358 /* LYCGFloatSizeHelper.m */; };
-		B9336B069B64A3348437C623 /* UILabel+VerticalAlignText.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FD6B8B379C26D953F6E4C9 /* UILabel+VerticalAlignText.m */; };
-		CBE7C34819119DF2C480FE1F /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A4FD46B16EFD6A4A3AB685 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */; };
-		CE11A03DDD0EC2D5D48BFC80 /* UILabel+SizeToFitText.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FDC86ACCC6E273A07FB787 /* UILabel+SizeToFitText.h */; };
-		D3BF67A1CBEF58215BB2F84B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE406BB73EE8E7CFB751574 /* Foundation.framework */; };
+		0BA84AC280F62EF52221FC31 /* LYCGFloatSizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F0074D7BBEB5D38D2828E66C /* LYCGFloatSizeHelper.m */; };
+		37B00A8E9EE8026B6A5DDDBE /* Pods-Peacock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83270F54A2C9A9D5BCFC30A3 /* Pods-Peacock-dummy.m */; };
+		397B151829249F6F429E9237 /* UIButton+LYAttributedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA9A463626F8FC3AD60B5F /* UIButton+LYAttributedButton.m */; };
+		41FB9E1DF2FCDB2F35CEB273 /* UITextField+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = E239350124A683525A371272 /* UITextField+LYAppearance.m */; };
+		5B8408C2DF7E50C2434B64FB /* UILabel+FontAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AF52E33FE631C4931FA88F /* UILabel+FontAppearance.m */; };
+		61A18AB0B7863788A4E365AD /* LYCGFloatSizeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DCA5FC13A4342C2CFEEE12A /* LYCGFloatSizeHelper.h */; };
+		628A24F980FA3A489530E59A /* UINavigationBar+LYTranlucenceUIAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 5253B262316644CBA0854638 /* UINavigationBar+LYTranlucenceUIAppearance.h */; };
+		6CC4A936D419B9271A5CE2AD /* UILabel+SizeToFitText.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEA401FFEB6C45E3E6A2C39 /* UILabel+SizeToFitText.h */; };
+		6EAF8D1C7E5863BC256B70B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828D369A8B8CFF5CF75F59EB /* Foundation.framework */; };
+		726D13B3FB02C24A51612636 /* UILabel+FontAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FBA2C911751F9E7B319A58 /* UILabel+FontAppearance.h */; };
+		95D641803A2B91A2640D59EF /* UITextField+LYAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD840681C6D1FF7B952F399 /* UITextField+LYAppearance.h */; };
+		986149BF8186186CD95FAB75 /* UITableView+SeparatorUIAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = AE70DFCC4BE22758BA1408E8 /* UITableView+SeparatorUIAppearance.h */; };
+		9DBA15DBFC71AC903F2D7536 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F520CA6F113C7C971D16298B /* Pods-dummy.m */; };
+		9FBAABCB32E27B885D64CE31 /* UILabel+LYAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 18220C75FC4BD60A7D9B7A4E /* UILabel+LYAttributedLabel.h */; };
+		A865B7CEF9267E1E34199038 /* UITableView+SeparatorUIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ED8941BE00E780F6B2C43 /* UITableView+SeparatorUIAppearance.m */; };
+		A9E92BB3EA402FECC9ABB2E6 /* UITextView+LYAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C602F2253C4FA47B92375F6 /* UITextView+LYAppearance.h */; };
+		AD364DB721A2D14AFD3B3F04 /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F8618641F7B82D7256DF02 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */; };
+		B3AECB433DA22FE4BA430BF6 /* UILabel+VerticalAlignText.h in Headers */ = {isa = PBXBuildFile; fileRef = 92AB0EEA7991708B8F9AD3AA /* UILabel+VerticalAlignText.h */; };
+		BB9B17895B367EE3DB2B4BA3 /* UIButton+LYAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C015A4A3DD43D93806979CC /* UIButton+LYAppearance.h */; };
+		BE8D7E4F55F7310956B6D350 /* UILabel+SizeToFitText.m in Sources */ = {isa = PBXBuildFile; fileRef = 3650A1B6FE059F82A26D3082 /* UILabel+SizeToFitText.m */; };
+		C5BAB9A52BC038EDCC2D57C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828D369A8B8CFF5CF75F59EB /* Foundation.framework */; };
+		CE29495CBE3465908B8BD257 /* UINavigationBar+LYTranlucenceUIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C98E2ABB4FE785D33560A9 /* UINavigationBar+LYTranlucenceUIAppearance.m */; };
+		D7DF97987C5C97CD9234EBAC /* UIViewController+AttributedStringTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 87530A98644B5B43B0E1A74D /* UIViewController+AttributedStringTitle.h */; };
+		E1511A6EF3BE936F1897A8CC /* UILabel+LYAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B53D452D61876ED2899B58 /* UILabel+LYAttributedLabel.m */; };
+		E7C99E79A24AA83694D4555B /* UIButton+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = EF39FCE16BF0D993CA647A70 /* UIButton+LYAppearance.m */; };
+		EE11CDB5F57B48F201DBE344 /* UIViewController+AttributedStringTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F5A081B458F4BCC739ADF2 /* UIViewController+AttributedStringTitle.m */; };
+		F49273441BCF250C5106FA34 /* UITextView+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 667340E64322D7C1922AC4D2 /* UITextView+LYAppearance.m */; };
+		F6FD7FA443D25A6578C19D60 /* UILabel+VerticalAlignText.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABD3D945C67B0B48AC49D7E /* UILabel+VerticalAlignText.m */; };
+		FA17854F6CEE44E3001F59FF /* LYUILabelWithVerticalScrollAnimationOnSetText.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A6492FB07353DCEA2A304F /* LYUILabelWithVerticalScrollAnimationOnSetText.h */; };
+		FC1F7D6A080570748C1233C4 /* UIButton+LYAttributedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D9C72C0A3DD83A9C4E1D3DE /* UIButton+LYAttributedButton.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5BDFCBAB0D0DF40FB482289A /* PBXContainerItemProxy */ = {
+		87FCC864A5208A2FB2BFA242 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2392B5DA3C38F610E4306491 /* Project object */;
+			containerPortal = 34FDEF43B7033369324AAE1E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 25312FEFC7441BFD3BA7288F;
+			remoteGlobalIDString = 550F091DCC0F987FFA8D49A2;
 			remoteInfo = "Pods-Peacock";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0007338A3E12B24440E5A5BF /* UILabel+LYAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LYAttributedLabel.m"; sourceTree = "<group>"; };
-		001BA98E0F0694EAE8D56196 /* UIButton+LYAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYAppearance.m"; sourceTree = "<group>"; };
-		05A4FD46B16EFD6A4A3AB685 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYUILabelWithVerticalScrollAnimationOnSetText.m; sourceTree = "<group>"; };
-		05FDC86ACCC6E273A07FB787 /* UILabel+SizeToFitText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+SizeToFitText.h"; sourceTree = "<group>"; };
-		0C8B62553D911C8715836E37 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		13C6BB2CC644EFA3911E9ECF /* UILabel+FontAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+FontAppearance.h"; sourceTree = "<group>"; };
-		14208950D8DA269E53923DB1 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		26B35FC5E8F361B22C1EC491 /* UILabel+VerticalAlignText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+VerticalAlignText.h"; sourceTree = "<group>"; };
-		29B7130D113D416A48C471E6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		2BCF2DD1D59182B6BEF2B5CA /* UILabel+SizeToFitText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SizeToFitText.m"; sourceTree = "<group>"; };
-		34DC16457ABF304012692C98 /* UILabel+LYAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+LYAttributedLabel.h"; sourceTree = "<group>"; };
-		443BAB63A79FCFB6CAB7B8B6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		5D825530DAC9E95373A11045 /* Pods-Peacock-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peacock-Private.xcconfig"; sourceTree = "<group>"; };
-		6125022972DC6ECAF228E32C /* Pods-Peacock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Peacock-prefix.pch"; sourceTree = "<group>"; };
-		69C2364CF3C3F9496348AE0A /* libPods-Peacock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Peacock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		70AA59D4B0D4E341BDC7A467 /* Pods-Peacock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Peacock-dummy.m"; sourceTree = "<group>"; };
-		7B2EDA342D72A6010662B3CA /* UIButton+LYAttributedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYAttributedButton.m"; sourceTree = "<group>"; };
-		7CFDAAD97BD6A8CAD40DA358 /* LYCGFloatSizeHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LYCGFloatSizeHelper.m; sourceTree = "<group>"; };
-		89CC36C0BE2B57A19625D521 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		8FE406BB73EE8E7CFB751574 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		994C3309D8DA98D988B40CDB /* LYCGFloatSizeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYCGFloatSizeHelper.h; sourceTree = "<group>"; };
-		9DD9758A62C2B48E47E27E38 /* UIButton+LYAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+LYAppearance.h"; sourceTree = "<group>"; };
-		A18D2175BE2CFCC8A786D100 /* Pods-Peacock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peacock.xcconfig"; sourceTree = "<group>"; };
-		A7955FB8F219760D79AFAE6F /* UILabel+FontAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FontAppearance.m"; sourceTree = "<group>"; };
-		A96EF94D33BEA40172E73381 /* LYUILabelWithVerticalScrollAnimationOnSetText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LYUILabelWithVerticalScrollAnimationOnSetText.h; sourceTree = "<group>"; };
-		ABD8FE78540B9BE7A1538DC6 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		B363A5CFC406FD2A52030793 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		B73185DD91B409DAD54D8B53 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		B8FD6B8B379C26D953F6E4C9 /* UILabel+VerticalAlignText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+VerticalAlignText.m"; sourceTree = "<group>"; };
-		E32765622825D6DAE94ACF86 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E85A35869273325452569DDA /* UIButton+LYAttributedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+LYAttributedButton.h"; sourceTree = "<group>"; };
+		147559F29365F4741561DCEE /* Pods-Peacock-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peacock-Private.xcconfig"; sourceTree = "<group>"; };
+		18220C75FC4BD60A7D9B7A4E /* UILabel+LYAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+LYAttributedLabel.h"; path = "Peacock/UILabel/UILabel+LYAttributedLabel.h"; sourceTree = "<group>"; };
+		1DAA9A463626F8FC3AD60B5F /* UIButton+LYAttributedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+LYAttributedButton.m"; path = "Peacock/UIButton/UIButton+LYAttributedButton.m"; sourceTree = "<group>"; };
+		25505FA37DEDEE55AC2FDE35 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3650A1B6FE059F82A26D3082 /* UILabel+SizeToFitText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+SizeToFitText.m"; path = "Peacock/UILabel/UILabel+SizeToFitText.m"; sourceTree = "<group>"; };
+		5253B262316644CBA0854638 /* UINavigationBar+LYTranlucenceUIAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+LYTranlucenceUIAppearance.h"; path = "Peacock/UINavigationBar/UINavigationBar+LYTranlucenceUIAppearance.h"; sourceTree = "<group>"; };
+		5C015A4A3DD43D93806979CC /* UIButton+LYAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+LYAppearance.h"; path = "Peacock/UIButton/UIButton+LYAppearance.h"; sourceTree = "<group>"; };
+		5CD89D1E77908CAE0E012E8D /* Pods-Peacock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peacock.xcconfig"; sourceTree = "<group>"; };
+		667340E64322D7C1922AC4D2 /* UITextView+LYAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+LYAppearance.m"; path = "Peacock/UITextView/UITextView+LYAppearance.m"; sourceTree = "<group>"; };
+		6ABD3D945C67B0B48AC49D7E /* UILabel+VerticalAlignText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+VerticalAlignText.m"; path = "Peacock/UILabel/UILabel+VerticalAlignText.m"; sourceTree = "<group>"; };
+		6C602F2253C4FA47B92375F6 /* UITextView+LYAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+LYAppearance.h"; path = "Peacock/UITextView/UITextView+LYAppearance.h"; sourceTree = "<group>"; };
+		6DCA5FC13A4342C2CFEEE12A /* LYCGFloatSizeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYCGFloatSizeHelper.h; path = Peacock/LYCGFloatSizeHelper.h; sourceTree = "<group>"; };
+		70B53D452D61876ED2899B58 /* UILabel+LYAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+LYAttributedLabel.m"; path = "Peacock/UILabel/UILabel+LYAttributedLabel.m"; sourceTree = "<group>"; };
+		7ED24B8E95C70F4C72D2344A /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8095D24A85B7E3887B7D8097 /* Pods-Peacock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Peacock-prefix.pch"; sourceTree = "<group>"; };
+		828D369A8B8CFF5CF75F59EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		83270F54A2C9A9D5BCFC30A3 /* Pods-Peacock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Peacock-dummy.m"; sourceTree = "<group>"; };
+		8458D7C8484AF9C39E910A75 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		87530A98644B5B43B0E1A74D /* UIViewController+AttributedStringTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AttributedStringTitle.h"; path = "Peacock/UIViewController/UIViewController+AttributedStringTitle.h"; sourceTree = "<group>"; };
+		8D9C72C0A3DD83A9C4E1D3DE /* UIButton+LYAttributedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+LYAttributedButton.h"; path = "Peacock/UIButton/UIButton+LYAttributedButton.h"; sourceTree = "<group>"; };
+		92AB0EEA7991708B8F9AD3AA /* UILabel+VerticalAlignText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+VerticalAlignText.h"; path = "Peacock/UILabel/UILabel+VerticalAlignText.h"; sourceTree = "<group>"; };
+		98F44788C3E5F9E74B486D9B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		99A6492FB07353DCEA2A304F /* LYUILabelWithVerticalScrollAnimationOnSetText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYUILabelWithVerticalScrollAnimationOnSetText.h; path = Peacock/UILabel/LYUILabelWithVerticalScrollAnimationOnSetText.h; sourceTree = "<group>"; };
+		9BAD505EE42BAB4F453F87DF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		AC1E83CC08AFAF297CC952D1 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		ACD840681C6D1FF7B952F399 /* UITextField+LYAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+LYAppearance.h"; path = "Peacock/UITextField/UITextField+LYAppearance.h"; sourceTree = "<group>"; };
+		AE70DFCC4BE22758BA1408E8 /* UITableView+SeparatorUIAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+SeparatorUIAppearance.h"; path = "Peacock/UITableView/UITableView+SeparatorUIAppearance.h"; sourceTree = "<group>"; };
+		B3AF52E33FE631C4931FA88F /* UILabel+FontAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+FontAppearance.m"; path = "Peacock/UILabel/UILabel+FontAppearance.m"; sourceTree = "<group>"; };
+		B3F5A081B458F4BCC739ADF2 /* UIViewController+AttributedStringTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AttributedStringTitle.m"; path = "Peacock/UIViewController/UIViewController+AttributedStringTitle.m"; sourceTree = "<group>"; };
+		C6A002CE0F3CB1399192111F /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		C7FBA2C911751F9E7B319A58 /* UILabel+FontAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+FontAppearance.h"; path = "Peacock/UILabel/UILabel+FontAppearance.h"; sourceTree = "<group>"; };
+		CEEA401FFEB6C45E3E6A2C39 /* UILabel+SizeToFitText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+SizeToFitText.h"; path = "Peacock/UILabel/UILabel+SizeToFitText.h"; sourceTree = "<group>"; };
+		D2C98E2ABB4FE785D33560A9 /* UINavigationBar+LYTranlucenceUIAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+LYTranlucenceUIAppearance.m"; path = "Peacock/UINavigationBar/UINavigationBar+LYTranlucenceUIAppearance.m"; sourceTree = "<group>"; };
+		E239350124A683525A371272 /* UITextField+LYAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+LYAppearance.m"; path = "Peacock/UITextField/UITextField+LYAppearance.m"; sourceTree = "<group>"; };
+		E2F8618641F7B82D7256DF02 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYUILabelWithVerticalScrollAnimationOnSetText.m; path = Peacock/UILabel/LYUILabelWithVerticalScrollAnimationOnSetText.m; sourceTree = "<group>"; };
+		EF39FCE16BF0D993CA647A70 /* UIButton+LYAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+LYAppearance.m"; path = "Peacock/UIButton/UIButton+LYAppearance.m"; sourceTree = "<group>"; };
+		EF6ED8941BE00E780F6B2C43 /* UITableView+SeparatorUIAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+SeparatorUIAppearance.m"; path = "Peacock/UITableView/UITableView+SeparatorUIAppearance.m"; sourceTree = "<group>"; };
+		F0074D7BBEB5D38D2828E66C /* LYCGFloatSizeHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYCGFloatSizeHelper.m; path = Peacock/LYCGFloatSizeHelper.m; sourceTree = "<group>"; };
+		F520CA6F113C7C971D16298B /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		F87C5D1722FCCE13A3BD5C1E /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		FAC17DB1BB755B8269505874 /* libPods-Peacock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Peacock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		114D510C64F9162C4FD1EE99 /* Frameworks */ = {
+		0D1D903CC459460EA8A1ABC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D0DD76F390EC8FBA5BC7A7E /* Foundation.framework in Frameworks */,
+				C5BAB9A52BC038EDCC2D57C5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B17F41802786175197202877 /* Frameworks */ = {
+		36604C6D0F138A5FC7C6F6A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3BF67A1CBEF58215BB2F84B /* Foundation.framework in Frameworks */,
+				6EAF8D1C7E5863BC256B70B8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3157F89D3782A3F3DF5538FC /* Support Files */ = {
+		1E78F0957F092F9738D196A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A18D2175BE2CFCC8A786D100 /* Pods-Peacock.xcconfig */,
-				5D825530DAC9E95373A11045 /* Pods-Peacock-Private.xcconfig */,
-				70AA59D4B0D4E341BDC7A467 /* Pods-Peacock-dummy.m */,
-				6125022972DC6ECAF228E32C /* Pods-Peacock-prefix.pch */,
+				25505FA37DEDEE55AC2FDE35 /* libPods.a */,
+				FAC17DB1BB755B8269505874 /* libPods-Peacock.a */,
 			);
-			name = "Support Files";
-			path = "Example/ExamplePeacock/Pods/Target Support Files/Pods-Peacock";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		5F9683AE97A6680C7468BFF1 /* Development Pods */ = {
+		4641B3654718F432CDB985C1 = {
 			isa = PBXGroup;
 			children = (
-				ECEF1BFCD987C83340E3EAFB /* Peacock */,
+				8458D7C8484AF9C39E910A75 /* Podfile */,
+				EB5301EC3BD2D1667A533076 /* Frameworks */,
+				A0905CECD83F26B29304C3FE /* Pods */,
+				1E78F0957F092F9738D196A5 /* Products */,
+				53699E670EB00C8738109492 /* Targets Support Files */,
 			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		63F8A2632E1691B30DCD4C75 /* Targets Support Files */ = {
+		4A955CD98B8067AFA43B49FC /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A4FA73C904B625E55D2540BB /* Pods */,
+				828D369A8B8CFF5CF75F59EB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		53699E670EB00C8738109492 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91468061D718D1BB41E2DC6C /* Pods */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6B4B575FCD0E601AEABA6CF7 /* Peacock */ = {
+		851A81D1FB0B9F17B12CE745 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				994C3309D8DA98D988B40CDB /* LYCGFloatSizeHelper.h */,
-				7CFDAAD97BD6A8CAD40DA358 /* LYCGFloatSizeHelper.m */,
-				E0BD85C86B5F5C5B78723FEE /* UIButton */,
-				8DB56851986E103152B25389 /* UILabel */,
+				5CD89D1E77908CAE0E012E8D /* Pods-Peacock.xcconfig */,
+				147559F29365F4741561DCEE /* Pods-Peacock-Private.xcconfig */,
+				83270F54A2C9A9D5BCFC30A3 /* Pods-Peacock-dummy.m */,
+				8095D24A85B7E3887B7D8097 /* Pods-Peacock-prefix.pch */,
 			);
-			path = Peacock;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Peacock";
 			sourceTree = "<group>";
 		};
-		8DB56851986E103152B25389 /* UILabel */ = {
+		91468061D718D1BB41E2DC6C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A96EF94D33BEA40172E73381 /* LYUILabelWithVerticalScrollAnimationOnSetText.h */,
-				05A4FD46B16EFD6A4A3AB685 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */,
-				13C6BB2CC644EFA3911E9ECF /* UILabel+FontAppearance.h */,
-				A7955FB8F219760D79AFAE6F /* UILabel+FontAppearance.m */,
-				34DC16457ABF304012692C98 /* UILabel+LYAttributedLabel.h */,
-				0007338A3E12B24440E5A5BF /* UILabel+LYAttributedLabel.m */,
-				05FDC86ACCC6E273A07FB787 /* UILabel+SizeToFitText.h */,
-				2BCF2DD1D59182B6BEF2B5CA /* UILabel+SizeToFitText.m */,
-				26B35FC5E8F361B22C1EC491 /* UILabel+VerticalAlignText.h */,
-				B8FD6B8B379C26D953F6E4C9 /* UILabel+VerticalAlignText.m */,
-			);
-			path = UILabel;
-			sourceTree = "<group>";
-		};
-		A4FA73C904B625E55D2540BB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				14208950D8DA269E53923DB1 /* Pods-acknowledgements.markdown */,
-				ABD8FE78540B9BE7A1538DC6 /* Pods-acknowledgements.plist */,
-				B73185DD91B409DAD54D8B53 /* Pods-dummy.m */,
-				B363A5CFC406FD2A52030793 /* Pods-environment.h */,
-				89CC36C0BE2B57A19625D521 /* Pods-resources.sh */,
-				29B7130D113D416A48C471E6 /* Pods.debug.xcconfig */,
-				443BAB63A79FCFB6CAB7B8B6 /* Pods.release.xcconfig */,
+				7ED24B8E95C70F4C72D2344A /* Pods-acknowledgements.markdown */,
+				C6A002CE0F3CB1399192111F /* Pods-acknowledgements.plist */,
+				F520CA6F113C7C971D16298B /* Pods-dummy.m */,
+				AC1E83CC08AFAF297CC952D1 /* Pods-environment.h */,
+				F87C5D1722FCCE13A3BD5C1E /* Pods-resources.sh */,
+				98F44788C3E5F9E74B486D9B /* Pods.debug.xcconfig */,
+				9BAD505EE42BAB4F453F87DF /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		B396397F8CC020FA562B4754 /* Products */ = {
+		A0905CECD83F26B29304C3FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E32765622825D6DAE94ACF86 /* libPods.a */,
-				69C2364CF3C3F9496348AE0A /* libPods-Peacock.a */,
+				ECAD48FFD60396315084CD7D /* Peacock */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		C40A1450CC68A561CB2B92BF /* iOS */ = {
+		EB5301EC3BD2D1667A533076 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8FE406BB73EE8E7CFB751574 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E0BD85C86B5F5C5B78723FEE /* UIButton */ = {
-			isa = PBXGroup;
-			children = (
-				9DD9758A62C2B48E47E27E38 /* UIButton+LYAppearance.h */,
-				001BA98E0F0694EAE8D56196 /* UIButton+LYAppearance.m */,
-				E85A35869273325452569DDA /* UIButton+LYAttributedButton.h */,
-				7B2EDA342D72A6010662B3CA /* UIButton+LYAttributedButton.m */,
-			);
-			path = UIButton;
-			sourceTree = "<group>";
-		};
-		E5A3FDEAAE42DC6A0FC45F93 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C40A1450CC68A561CB2B92BF /* iOS */,
+				4A955CD98B8067AFA43B49FC /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ECEF1BFCD987C83340E3EAFB /* Peacock */ = {
+		ECAD48FFD60396315084CD7D /* Peacock */ = {
 			isa = PBXGroup;
 			children = (
-				6B4B575FCD0E601AEABA6CF7 /* Peacock */,
-				3157F89D3782A3F3DF5538FC /* Support Files */,
+				6DCA5FC13A4342C2CFEEE12A /* LYCGFloatSizeHelper.h */,
+				F0074D7BBEB5D38D2828E66C /* LYCGFloatSizeHelper.m */,
+				99A6492FB07353DCEA2A304F /* LYUILabelWithVerticalScrollAnimationOnSetText.h */,
+				E2F8618641F7B82D7256DF02 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */,
+				5C015A4A3DD43D93806979CC /* UIButton+LYAppearance.h */,
+				EF39FCE16BF0D993CA647A70 /* UIButton+LYAppearance.m */,
+				8D9C72C0A3DD83A9C4E1D3DE /* UIButton+LYAttributedButton.h */,
+				1DAA9A463626F8FC3AD60B5F /* UIButton+LYAttributedButton.m */,
+				C7FBA2C911751F9E7B319A58 /* UILabel+FontAppearance.h */,
+				B3AF52E33FE631C4931FA88F /* UILabel+FontAppearance.m */,
+				18220C75FC4BD60A7D9B7A4E /* UILabel+LYAttributedLabel.h */,
+				70B53D452D61876ED2899B58 /* UILabel+LYAttributedLabel.m */,
+				CEEA401FFEB6C45E3E6A2C39 /* UILabel+SizeToFitText.h */,
+				3650A1B6FE059F82A26D3082 /* UILabel+SizeToFitText.m */,
+				92AB0EEA7991708B8F9AD3AA /* UILabel+VerticalAlignText.h */,
+				6ABD3D945C67B0B48AC49D7E /* UILabel+VerticalAlignText.m */,
+				5253B262316644CBA0854638 /* UINavigationBar+LYTranlucenceUIAppearance.h */,
+				D2C98E2ABB4FE785D33560A9 /* UINavigationBar+LYTranlucenceUIAppearance.m */,
+				AE70DFCC4BE22758BA1408E8 /* UITableView+SeparatorUIAppearance.h */,
+				EF6ED8941BE00E780F6B2C43 /* UITableView+SeparatorUIAppearance.m */,
+				ACD840681C6D1FF7B952F399 /* UITextField+LYAppearance.h */,
+				E239350124A683525A371272 /* UITextField+LYAppearance.m */,
+				6C602F2253C4FA47B92375F6 /* UITextView+LYAppearance.h */,
+				667340E64322D7C1922AC4D2 /* UITextView+LYAppearance.m */,
+				87530A98644B5B43B0E1A74D /* UIViewController+AttributedStringTitle.h */,
+				B3F5A081B458F4BCC739ADF2 /* UIViewController+AttributedStringTitle.m */,
+				851A81D1FB0B9F17B12CE745 /* Support Files */,
 			);
-			name = Peacock;
-			path = /Users/Raimon/Documents/Dev/Lyst/Peacock;
-			sourceTree = "<absolute>";
-		};
-		F85679EC862C237899616C4B = {
-			isa = PBXGroup;
-			children = (
-				0C8B62553D911C8715836E37 /* Podfile */,
-				5F9683AE97A6680C7468BFF1 /* Development Pods */,
-				E5A3FDEAAE42DC6A0FC45F93 /* Frameworks */,
-				B396397F8CC020FA562B4754 /* Products */,
-				63F8A2632E1691B30DCD4C75 /* Targets Support Files */,
-			);
+			path = Peacock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C39E53CE518B208849EE8A1B /* Headers */ = {
+		175EB029C5866435F0D818C2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90AE972805D700A925EDCF1D /* LYCGFloatSizeHelper.h in Headers */,
-				7276079006831468D1F7A09D /* LYUILabelWithVerticalScrollAnimationOnSetText.h in Headers */,
-				AB168CF0D13967C81C616AA5 /* UIButton+LYAppearance.h in Headers */,
-				5F275B05912406B85DF4070C /* UIButton+LYAttributedButton.h in Headers */,
-				3BA4FCA9735B2A665733B332 /* UILabel+FontAppearance.h in Headers */,
-				016C3F4A77131F7D45216102 /* UILabel+LYAttributedLabel.h in Headers */,
-				CE11A03DDD0EC2D5D48BFC80 /* UILabel+SizeToFitText.h in Headers */,
-				816344D2CCECAC5C160EBA8B /* UILabel+VerticalAlignText.h in Headers */,
+				61A18AB0B7863788A4E365AD /* LYCGFloatSizeHelper.h in Headers */,
+				FA17854F6CEE44E3001F59FF /* LYUILabelWithVerticalScrollAnimationOnSetText.h in Headers */,
+				BB9B17895B367EE3DB2B4BA3 /* UIButton+LYAppearance.h in Headers */,
+				FC1F7D6A080570748C1233C4 /* UIButton+LYAttributedButton.h in Headers */,
+				726D13B3FB02C24A51612636 /* UILabel+FontAppearance.h in Headers */,
+				9FBAABCB32E27B885D64CE31 /* UILabel+LYAttributedLabel.h in Headers */,
+				6CC4A936D419B9271A5CE2AD /* UILabel+SizeToFitText.h in Headers */,
+				B3AECB433DA22FE4BA430BF6 /* UILabel+VerticalAlignText.h in Headers */,
+				628A24F980FA3A489530E59A /* UINavigationBar+LYTranlucenceUIAppearance.h in Headers */,
+				986149BF8186186CD95FAB75 /* UITableView+SeparatorUIAppearance.h in Headers */,
+				95D641803A2B91A2640D59EF /* UITextField+LYAppearance.h in Headers */,
+				A9E92BB3EA402FECC9ABB2E6 /* UITextView+LYAppearance.h in Headers */,
+				D7DF97987C5C97CD9234EBAC /* UIViewController+AttributedStringTitle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		25312FEFC7441BFD3BA7288F /* Pods-Peacock */ = {
+		550F091DCC0F987FFA8D49A2 /* Pods-Peacock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB59F1E041B6B8A43D41724D /* Build configuration list for PBXNativeTarget "Pods-Peacock" */;
+			buildConfigurationList = 483C464FAC77C6E2FEFF684E /* Build configuration list for PBXNativeTarget "Pods-Peacock" */;
 			buildPhases = (
-				93E5B9A9816BBC7D34FCE122 /* Sources */,
-				114D510C64F9162C4FD1EE99 /* Frameworks */,
-				C39E53CE518B208849EE8A1B /* Headers */,
+				9121430CC67E0335C9B5D8E2 /* Sources */,
+				36604C6D0F138A5FC7C6F6A1 /* Frameworks */,
+				175EB029C5866435F0D818C2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -256,106 +266,95 @@
 			);
 			name = "Pods-Peacock";
 			productName = "Pods-Peacock";
-			productReference = 69C2364CF3C3F9496348AE0A /* libPods-Peacock.a */;
+			productReference = FAC17DB1BB755B8269505874 /* libPods-Peacock.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		FD496955C68E4E39DEDC5A09 /* Pods */ = {
+		C53EE21C938E477316FED834 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70A79D517CFD2FE2C8E9142B /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 06A5B96A66C64F887CBB23C2 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				D12F5E976527157C036A6051 /* Sources */,
-				B17F41802786175197202877 /* Frameworks */,
+				FC97D63A3DC48D00F8FB2691 /* Sources */,
+				0D1D903CC459460EA8A1ABC7 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8C7096D908529E3F2A1ADD12 /* PBXTargetDependency */,
+				2B4D8D8A7B3CE6B5A338DD6B /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = E32765622825D6DAE94ACF86 /* libPods.a */;
+			productReference = 25505FA37DEDEE55AC2FDE35 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2392B5DA3C38F610E4306491 /* Project object */ = {
+		34FDEF43B7033369324AAE1E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 2191C0084FA3A3F67DEB1D2F /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4F5E51769774F36614B73A69 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = F85679EC862C237899616C4B;
-			productRefGroup = B396397F8CC020FA562B4754 /* Products */;
+			mainGroup = 4641B3654718F432CDB985C1;
+			productRefGroup = 1E78F0957F092F9738D196A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD496955C68E4E39DEDC5A09 /* Pods */,
-				25312FEFC7441BFD3BA7288F /* Pods-Peacock */,
+				C53EE21C938E477316FED834 /* Pods */,
+				550F091DCC0F987FFA8D49A2 /* Pods-Peacock */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		93E5B9A9816BBC7D34FCE122 /* Sources */ = {
+		9121430CC67E0335C9B5D8E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B3C663902418927BC2A7B4 /* LYCGFloatSizeHelper.m in Sources */,
-				CBE7C34819119DF2C480FE1F /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */,
-				A34196B0BBFACE2CBCF7D57B /* Pods-Peacock-dummy.m in Sources */,
-				65490B41CDA53335C889A482 /* UIButton+LYAppearance.m in Sources */,
-				B31A0B78D964AD39FA11E464 /* UIButton+LYAttributedButton.m in Sources */,
-				55AA9ECC1E0FB60925C24D92 /* UILabel+FontAppearance.m in Sources */,
-				9A986D0C4552E986249D1A0D /* UILabel+LYAttributedLabel.m in Sources */,
-				4550D679AF30D35874BD1A2B /* UILabel+SizeToFitText.m in Sources */,
-				B9336B069B64A3348437C623 /* UILabel+VerticalAlignText.m in Sources */,
+				0BA84AC280F62EF52221FC31 /* LYCGFloatSizeHelper.m in Sources */,
+				AD364DB721A2D14AFD3B3F04 /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */,
+				37B00A8E9EE8026B6A5DDDBE /* Pods-Peacock-dummy.m in Sources */,
+				E7C99E79A24AA83694D4555B /* UIButton+LYAppearance.m in Sources */,
+				397B151829249F6F429E9237 /* UIButton+LYAttributedButton.m in Sources */,
+				5B8408C2DF7E50C2434B64FB /* UILabel+FontAppearance.m in Sources */,
+				E1511A6EF3BE936F1897A8CC /* UILabel+LYAttributedLabel.m in Sources */,
+				BE8D7E4F55F7310956B6D350 /* UILabel+SizeToFitText.m in Sources */,
+				F6FD7FA443D25A6578C19D60 /* UILabel+VerticalAlignText.m in Sources */,
+				CE29495CBE3465908B8BD257 /* UINavigationBar+LYTranlucenceUIAppearance.m in Sources */,
+				A865B7CEF9267E1E34199038 /* UITableView+SeparatorUIAppearance.m in Sources */,
+				41FB9E1DF2FCDB2F35CEB273 /* UITextField+LYAppearance.m in Sources */,
+				F49273441BCF250C5106FA34 /* UITextView+LYAppearance.m in Sources */,
+				EE11CDB5F57B48F201DBE344 /* UIViewController+AttributedStringTitle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D12F5E976527157C036A6051 /* Sources */ = {
+		FC97D63A3DC48D00F8FB2691 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF75A4FD094F2C53E62ABD7 /* Pods-dummy.m in Sources */,
+				9DBA15DBFC71AC903F2D7536 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8C7096D908529E3F2A1ADD12 /* PBXTargetDependency */ = {
+		2B4D8D8A7B3CE6B5A338DD6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Peacock";
-			target = 25312FEFC7441BFD3BA7288F /* Pods-Peacock */;
-			targetProxy = 5BDFCBAB0D0DF40FB482289A /* PBXContainerItemProxy */;
+			target = 550F091DCC0F987FFA8D49A2 /* Pods-Peacock */;
+			targetProxy = 87FCC864A5208A2FB2BFA242 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3D31C089106E6CECAF576A24 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29B7130D113D416A48C471E6 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		40A9FCDC49F339679C2FFD6D /* Debug */ = {
+		0D78CB3457C45031E246D9E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -394,7 +393,71 @@
 			};
 			name = Debug;
 		};
-		6C158325E764E84D24EBFB96 /* Release */ = {
+		3E94B804B8D5B075C8CBCA65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F44788C3E5F9E74B486D9B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4893F58A9DDCC7139040971E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 147559F29365F4741561DCEE /* Pods-Peacock-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Peacock/Pods-Peacock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5241E0153947BD0010A2B541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BAD505EE42BAB4F453F87DF /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		80B06F912C1842264E74320E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 147559F29365F4741561DCEE /* Pods-Peacock-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Peacock/Pods-Peacock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B18B2DC9684FA17F7116FDE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -428,85 +491,37 @@
 			};
 			name = Release;
 		};
-		9CF747077839B5257234DDBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D825530DAC9E95373A11045 /* Pods-Peacock-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Peacock/Pods-Peacock-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		DEF0928C69BF45E7543AE9AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D825530DAC9E95373A11045 /* Pods-Peacock-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Peacock/Pods-Peacock-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		FC3A12002128686C8D311776 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 443BAB63A79FCFB6CAB7B8B6 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2191C0084FA3A3F67DEB1D2F /* Build configuration list for PBXProject "Pods" */ = {
+		06A5B96A66C64F887CBB23C2 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				40A9FCDC49F339679C2FFD6D /* Debug */,
-				6C158325E764E84D24EBFB96 /* Release */,
+				3E94B804B8D5B075C8CBCA65 /* Debug */,
+				5241E0153947BD0010A2B541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70A79D517CFD2FE2C8E9142B /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		483C464FAC77C6E2FEFF684E /* Build configuration list for PBXNativeTarget "Pods-Peacock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D31C089106E6CECAF576A24 /* Debug */,
-				FC3A12002128686C8D311776 /* Release */,
+				80B06F912C1842264E74320E /* Debug */,
+				4893F58A9DDCC7139040971E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB59F1E041B6B8A43D41724D /* Build configuration list for PBXNativeTarget "Pods-Peacock" */ = {
+		4F5E51769774F36614B73A69 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEF0928C69BF45E7543AE9AD /* Debug */,
-				9CF747077839B5257234DDBE /* Release */,
+				0D78CB3457C45031E246D9E0 /* Debug */,
+				B18B2DC9684FA17F7116FDE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2392B5DA3C38F610E4306491 /* Project object */;
+	rootObject = 34FDEF43B7033369324AAE1E /* Project object */;
 }

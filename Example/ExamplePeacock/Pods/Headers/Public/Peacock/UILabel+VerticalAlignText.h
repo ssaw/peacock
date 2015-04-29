@@ -1,1 +1,1 @@
-../../../../../../Peacock/UILabel/UILabel+VerticalAlignText.h
+../../../Peacock/Peacock/UILabel/UILabel+VerticalAlignText.h
