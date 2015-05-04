@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5977E587DD8A372B97D90298 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F2739EDF5A0FA21315633 /* libPods.a */; };
+		CDB743151AF78DF60024B8AC /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB743141AF78DF60024B8AC /* Theme.m */; };
+		CDB743171AF78F7A0024B8AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB743161AF78F7A0024B8AC /* Foundation.framework */; };
 		CDC83AA71AE5ADF80060EBF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AA61AE5ADF80060EBF9 /* main.m */; };
 		CDC83AAA1AE5ADF80060EBF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AA91AE5ADF80060EBF9 /* AppDelegate.m */; };
 		CDC83AAD1AE5ADF80060EBF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AAC1AE5ADF80060EBF9 /* ViewController.m */; };
@@ -20,6 +22,9 @@
 /* Begin PBXFileReference section */
 		0D1F2739EDF5A0FA21315633 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA47E58971AB3ED22953097 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CDB743131AF78DF60024B8AC /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		CDB743141AF78DF60024B8AC /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		CDB743161AF78F7A0024B8AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDC83AA11AE5ADF80060EBF9 /* ExamplePeacock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamplePeacock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC83AA51AE5ADF80060EBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC83AA61AE5ADF80060EBF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB743171AF78F7A0024B8AC /* Foundation.framework in Frameworks */,
 				CDD99BF11AE70F5A000B5599 /* CoreGraphics.framework in Frameworks */,
 				5977E587DD8A372B97D90298 /* libPods.a in Frameworks */,
 			);
@@ -50,6 +56,7 @@
 		27DBAACCB8B7558019A46BC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDB743161AF78F7A0024B8AC /* Foundation.framework */,
 				CDD99BF01AE70F5A000B5599 /* CoreGraphics.framework */,
 				0D1F2739EDF5A0FA21315633 /* libPods.a */,
 			);
@@ -88,6 +95,8 @@
 			children = (
 				CDC83AA81AE5ADF80060EBF9 /* AppDelegate.h */,
 				CDC83AA91AE5ADF80060EBF9 /* AppDelegate.m */,
+				CDB743131AF78DF60024B8AC /* Theme.h */,
+				CDB743141AF78DF60024B8AC /* Theme.m */,
 				CDC83AAB1AE5ADF80060EBF9 /* ViewController.h */,
 				CDC83AAC1AE5ADF80060EBF9 /* ViewController.m */,
 				CDC83AAE1AE5ADF80060EBF9 /* Main.storyboard */,
@@ -213,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC83AAD1AE5ADF80060EBF9 /* ViewController.m in Sources */,
+				CDB743151AF78DF60024B8AC /* Theme.m in Sources */,
 				CDC83AAA1AE5ADF80060EBF9 /* AppDelegate.m in Sources */,
 				CDC83AA71AE5ADF80060EBF9 /* main.m in Sources */,
 			);
