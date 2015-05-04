@@ -126,6 +126,7 @@
 		CDA8A5C31AAD0CEE007EAC99 /* UITextView+LYAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+LYAppearance.m"; sourceTree = "<group>"; };
 		CDA8A5C51AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AttributedStringTitle.h"; sourceTree = "<group>"; };
 		CDA8A5C61AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AttributedStringTitle.m"; sourceTree = "<group>"; };
+		CDB743181AF790C60024B8AC /* Peacock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Peacock.h; sourceTree = "<group>"; };
 		CDC20E411AC4C862001DCFA2 /* LYPeacockButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPeacockButtonTests.m; sourceTree = "<group>"; };
 		EE75C63CDA70D9EE66E6F917 /* Pods-PeacockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeacockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeacockTests/Pods-PeacockTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,6 +258,7 @@
 				CDA8A5BE1AAD0CEE007EAC99 /* UITextField */,
 				CDA8A5C11AAD0CEE007EAC99 /* UITextView */,
 				CDA8A5C41AAD0CEE007EAC99 /* UIViewController */,
+				CDB743181AF790C60024B8AC /* Peacock.h */,
 			);
 			path = Peacock;
 			sourceTree = "<group>";
