@@ -4,7 +4,8 @@
 //
 
 #import "AppDelegate.h"
-#import "UILabel+LYAttributedLabel.h"
+
+#import "Theme.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[UILabel appearance] setLYTextColor:[UIColor redColor]];
+    [Theme applyTheme];
     
     return YES;
 }

@@ -35,7 +35,7 @@
                                           forState:UIControlStateNormal];
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
-    [[UINavigationBar appearance] setLYTranslucent:0];
+//    [[UINavigationBar appearance] setLYTranslucent:0];
 }
 
 +(void)tableStyle
@@ -43,7 +43,10 @@
     [[UITableView appearance] setBackgroundColor:[UIColor whiteColor]];
     
     UIColor *tableSeparatorColor = [UIColor grayColor];
-    [[UITableView appearance] setAppearanceSeparatorColor:tableSeparatorColor];
+//    [[UITableView appearance] setAppearanceSeparatorColor:tableSeparatorColor];
+    
+    [[UITableViewHeaderFooterView appearance] setTintColor:[UIColor blackColor]];
+    [[UILabel appearanceWhenContainedIn:[UITableViewHeaderFooterView class], nil] setTextColor:[UIColor blueColor]];
 }
 
 +(void)titleStyle
