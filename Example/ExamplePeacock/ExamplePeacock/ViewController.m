@@ -4,6 +4,15 @@
 //
 
 #import "ViewController.h"
+#import "Peacock.h"
+
+@implementation TextLabel
+//Placeholder for UIAppearance
+@end
+
+@implementation TitleLabel
+//Placeholder for UIAppearance
+@end
 
 @interface ViewController ()
 
@@ -15,9 +24,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 100.0f, 100.0f, 50.0f)];
-    [testLabel setText:@"Example text"];
+    TextLabel *testLabel = [[TextLabel alloc] initWithFrame:CGRectMake(100.0f, 300.0f, 150.0f, 50.0f)];
+    [testLabel setAttributedTextUsingString:@"Example for normal text"];
     [self.view addSubview:testLabel];
+    
+    TitleLabel *titleLabel = [[TitleLabel alloc] initWithFrame:CGRectMake(100.0f, 100.0f, 200.0f, 70.0f)];
+    
+    [titleLabel setAttributedTextUsingString:@"This is a Title!"];
+    [self.view addSubview:titleLabel];
 }
 
 - (void)didReceiveMemoryWarning {

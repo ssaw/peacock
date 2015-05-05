@@ -7,6 +7,11 @@
 #import <UIKit/UIKit.h>
 
 #import "Theme.h"
+#import "Peacock.h"
+
+#import "BlueTextCell.h"
+#import "GreenTextCell.h"
+#import "ViewController.h"
 
 @implementation Theme
 
@@ -17,6 +22,8 @@
     [[self class] tableStyle];
     
     [[self class] titleStyle];
+    
+    [[self class] textStyle];
     
     [[self class] cellStyle];
     
@@ -30,12 +37,14 @@
                                           NSBackgroundColorAttributeName : [UIColor clearColor]};
     
     [[UINavigationBar appearance] setTitleTextAttributes:titleTextAttributes];
-    
-    [[UIBarItem appearance] setTitleTextAttributes:titleTextAttributes
+    [[UIBarButtonItem appearance] setTitleTextAttributes:titleTextAttributes
                                           forState:UIControlStateNormal];
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
-//    [[UINavigationBar appearance] setLYTranslucent:0];
+    [[UINavigationBar appearance] setLYTranslucent:0];
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 +(void)tableStyle
@@ -43,7 +52,7 @@
     [[UITableView appearance] setBackgroundColor:[UIColor whiteColor]];
     
     UIColor *tableSeparatorColor = [UIColor grayColor];
-//    [[UITableView appearance] setAppearanceSeparatorColor:tableSeparatorColor];
+    [[UITableView appearance] setAppearanceSeparatorColor:tableSeparatorColor];
     
     [[UITableViewHeaderFooterView appearance] setTintColor:[UIColor blackColor]];
     [[UILabel appearanceWhenContainedIn:[UITableViewHeaderFooterView class], nil] setTextColor:[UIColor blueColor]];
@@ -51,12 +60,24 @@
 
 +(void)titleStyle
 {
-    
+    [[TitleLabel appearance] setLYTextColor:[UIColor grayColor]];
+    [[TitleLabel appearance] setLYStrikeOut:YES];
+    UIFont *font = [[self class] titleFontWithSize:17.0f];
+    [[TitleLabel appearance] setLYFont:font];
+}
+
++(void)textStyle
+{
+    [[TextLabel appearance] setLYTextColor:[UIColor blackColor]];
+    UIFont *font = [[self class] textFontWithSize:12.0f];
+    [[TextLabel appearance] setLYFont:font];
 }
 
 +(void)cellStyle
 {
+    [[UILabel appearanceWhenContainedIn:[BlueTextCell class], nil] setLYTextColor:[UIColor blueColor]];
     
+    [[UILabel appearanceWhenContainedIn:[GreenTextCell class], nil] setLYTextColor:[UIColor greenColor]];
 }
 
 +(void)buttonStyle

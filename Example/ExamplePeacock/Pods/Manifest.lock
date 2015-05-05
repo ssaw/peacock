@@ -10,10 +10,10 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Peacock:
-    :commit: 5e4121ed2408e6c8d4c6b4d07f3360a0015b3cb8
+    :commit: e2d8b653178eae73fcd62b6caf91f58e4cd34ad1
     :git: https://github.com/ssaw/peacock.git
 
 SPEC CHECKSUMS:
-  Peacock: 2fad71f1c855fb04b9b057d18b682567e51c76df
+  Peacock: d1d315286cfcbe2e93bfec19d27679ef89789aed
 
 COCOAPODS: 0.36.0

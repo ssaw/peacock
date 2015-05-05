@@ -4,7 +4,7 @@
   "summary": "Peacock is a group of categories to empower the use of UIAppearance protocol.",
   "description": "                   A longer description of Peacock in Markdown format.\n\n                   * Think: Why did you write this? What is the focus? What does it do?\n                   * CocoaPods will be using this to generate tags, and improve search results.\n                   * Try to keep it short, snappy and to the point.\n                   * Finally, don't worry about the indent, CocoaPods strips it!\n",
   "homepage": "http://lyst.com/Peacock",
-  "license": "MIT (example)",
+  "license": "MIT",
   "authors": {
     "MakingLyst": "makingLyst@lyst.com"
   },
@@ -12,8 +12,7 @@
     "ios": "7.0"
   },
   "source": {
-    "git": "https://github.com/ssaw/peacock.git",
-    "tag": "0.0.1"
+    "path": "~/Documents/Dev/Lyst/Peacock/"
   },
   "source_files": "Peacock/**/*",
   "exclude_files": [
