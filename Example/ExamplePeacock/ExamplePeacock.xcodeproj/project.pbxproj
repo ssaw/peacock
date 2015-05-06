@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5977E587DD8A372B97D90298 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F2739EDF5A0FA21315633 /* libPods.a */; };
+		CD70D3F21AFAC5980008F64B /* ButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD70D3F11AFAC5980008F64B /* ButtonsViewController.m */; };
 		CDB743151AF78DF60024B8AC /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB743141AF78DF60024B8AC /* Theme.m */; };
 		CDB743171AF78F7A0024B8AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB743161AF78F7A0024B8AC /* Foundation.framework */; };
 		CDC496321AF9799A0022D4EB /* BlueTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC496311AF9799A0022D4EB /* BlueTextCell.m */; };
@@ -24,6 +25,8 @@
 /* Begin PBXFileReference section */
 		0D1F2739EDF5A0FA21315633 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA47E58971AB3ED22953097 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CD70D3F01AFAC5980008F64B /* ButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonsViewController.h; sourceTree = "<group>"; };
+		CD70D3F11AFAC5980008F64B /* ButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsViewController.m; sourceTree = "<group>"; };
 		CDB743131AF78DF60024B8AC /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		CDB743141AF78DF60024B8AC /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		CDB743161AF78F7A0024B8AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				CDC83AAB1AE5ADF80060EBF9 /* ViewController.h */,
 				CDC83AAC1AE5ADF80060EBF9 /* ViewController.m */,
 				CDC83AAE1AE5ADF80060EBF9 /* Main.storyboard */,
+				CD70D3F01AFAC5980008F64B /* ButtonsViewController.h */,
+				CD70D3F11AFAC5980008F64B /* ButtonsViewController.m */,
 				CDC83AB11AE5ADF80060EBF9 /* Images.xcassets */,
 				CDC4962F1AF9797C0022D4EB /* Cells */,
 				CDC83AB31AE5ADF80060EBF9 /* LaunchScreen.xib */,
@@ -241,6 +246,7 @@
 			files = (
 				CDC83AAD1AE5ADF80060EBF9 /* ViewController.m in Sources */,
 				CDB743151AF78DF60024B8AC /* Theme.m in Sources */,
+				CD70D3F21AFAC5980008F64B /* ButtonsViewController.m in Sources */,
 				CDC496351AF979A80022D4EB /* GreenTextCell.m in Sources */,
 				CDC496321AF9799A0022D4EB /* BlueTextCell.m in Sources */,
 				CDC83AAA1AE5ADF80060EBF9 /* AppDelegate.m in Sources */,

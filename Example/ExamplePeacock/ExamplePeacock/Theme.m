@@ -12,6 +12,10 @@
 #import "BlueTextCell.h"
 #import "GreenTextCell.h"
 #import "ViewController.h"
+#import "ButtonsViewController.h"
+
+//this needs to go on Peacock import
+#import "UIButton+LYAttributedButton.h"
 
 @implementation Theme
 
@@ -82,7 +86,11 @@
 
 +(void)buttonStyle
 {
-    
+    UIColor *red = [UIColor redColor];
+    UIColor *green = [UIColor greenColor];
+
+    [[UIButton appearanceWhenContainedIn:[RedButtonView class], nil] setLYTextColor:red forState:UIControlStateNormal];
+    [[UIButton appearanceWhenContainedIn:[RedButtonView class], nil] setLYTextColor:green forState:UIControlStateHighlighted];
 }
 
 +(UIFont *)titleFontWithSize:(NSUInteger)size
