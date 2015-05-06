@@ -5,6 +5,8 @@
 
 #import "UIButton+LYAppearance.h"
 
+#import "UIButton+LYAttributedButton.h"
+
 #import "UILabel+LYAttributedLabel.h"
 
 #import "LYUILabelWithVerticalScrollAnimationOnSetText.h"
