@@ -5,8 +5,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TextLabel : UILabel
+//Placeholder for UIAppearance
+@end
 
+@interface TitleLabel : UILabel
+//Placeholder for UIAppearance
+@end
+
+@interface ViewController : UIViewController
 
 @end
 

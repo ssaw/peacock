@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5977E587DD8A372B97D90298 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F2739EDF5A0FA21315633 /* libPods.a */; };
+		CD70D3F21AFAC5980008F64B /* ButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD70D3F11AFAC5980008F64B /* ButtonsViewController.m */; };
 		CDB743151AF78DF60024B8AC /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB743141AF78DF60024B8AC /* Theme.m */; };
 		CDB743171AF78F7A0024B8AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB743161AF78F7A0024B8AC /* Foundation.framework */; };
+		CDC496321AF9799A0022D4EB /* BlueTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC496311AF9799A0022D4EB /* BlueTextCell.m */; };
+		CDC496351AF979A80022D4EB /* GreenTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC496341AF979A80022D4EB /* GreenTextCell.m */; };
 		CDC83AA71AE5ADF80060EBF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AA61AE5ADF80060EBF9 /* main.m */; };
 		CDC83AAA1AE5ADF80060EBF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AA91AE5ADF80060EBF9 /* AppDelegate.m */; };
 		CDC83AAD1AE5ADF80060EBF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC83AAC1AE5ADF80060EBF9 /* ViewController.m */; };
@@ -22,9 +25,15 @@
 /* Begin PBXFileReference section */
 		0D1F2739EDF5A0FA21315633 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA47E58971AB3ED22953097 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CD70D3F01AFAC5980008F64B /* ButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonsViewController.h; sourceTree = "<group>"; };
+		CD70D3F11AFAC5980008F64B /* ButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsViewController.m; sourceTree = "<group>"; };
 		CDB743131AF78DF60024B8AC /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		CDB743141AF78DF60024B8AC /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		CDB743161AF78F7A0024B8AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDC496301AF9799A0022D4EB /* BlueTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlueTextCell.h; path = Cells/BlueTextCell.h; sourceTree = "<group>"; };
+		CDC496311AF9799A0022D4EB /* BlueTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlueTextCell.m; path = Cells/BlueTextCell.m; sourceTree = "<group>"; };
+		CDC496331AF979A80022D4EB /* GreenTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GreenTextCell.h; path = Cells/GreenTextCell.h; sourceTree = "<group>"; };
+		CDC496341AF979A80022D4EB /* GreenTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GreenTextCell.m; path = Cells/GreenTextCell.m; sourceTree = "<group>"; };
 		CDC83AA11AE5ADF80060EBF9 /* ExamplePeacock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamplePeacock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC83AA51AE5ADF80060EBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC83AA61AE5ADF80060EBF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +81,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CDC4962F1AF9797C0022D4EB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CDC496301AF9799A0022D4EB /* BlueTextCell.h */,
+				CDC496311AF9799A0022D4EB /* BlueTextCell.m */,
+				CDC496331AF979A80022D4EB /* GreenTextCell.h */,
+				CDC496341AF979A80022D4EB /* GreenTextCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		CDC83A981AE5ADF80060EBF9 = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +120,10 @@
 				CDC83AAB1AE5ADF80060EBF9 /* ViewController.h */,
 				CDC83AAC1AE5ADF80060EBF9 /* ViewController.m */,
 				CDC83AAE1AE5ADF80060EBF9 /* Main.storyboard */,
+				CD70D3F01AFAC5980008F64B /* ButtonsViewController.h */,
+				CD70D3F11AFAC5980008F64B /* ButtonsViewController.m */,
 				CDC83AB11AE5ADF80060EBF9 /* Images.xcassets */,
+				CDC4962F1AF9797C0022D4EB /* Cells */,
 				CDC83AB31AE5ADF80060EBF9 /* LaunchScreen.xib */,
 				CDC83AA41AE5ADF80060EBF9 /* Supporting Files */,
 			);
@@ -223,6 +246,9 @@
 			files = (
 				CDC83AAD1AE5ADF80060EBF9 /* ViewController.m in Sources */,
 				CDB743151AF78DF60024B8AC /* Theme.m in Sources */,
+				CD70D3F21AFAC5980008F64B /* ButtonsViewController.m in Sources */,
+				CDC496351AF979A80022D4EB /* GreenTextCell.m in Sources */,
+				CDC496321AF9799A0022D4EB /* BlueTextCell.m in Sources */,
 				CDC83AAA1AE5ADF80060EBF9 /* AppDelegate.m in Sources */,
 				CDC83AA71AE5ADF80060EBF9 /* main.m in Sources */,
 			);

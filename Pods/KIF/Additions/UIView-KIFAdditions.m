@@ -53,14 +53,17 @@ NS_INLINE BOOL StringsMatchExceptLineBreaks(NSString *expected, NSString *actual
         return YES;
     }
     
-    if ([expected rangeOfString:@"\n"].location == NSNotFound) {
+    if ([expected rangeOfString:@"\n"].location == NSNotFound &&
+        [actual rangeOfString:@"\n"].location == NSNotFound) {
         return NO;
     }
     
     for (NSUInteger i = 0; i < expected.length; i ++) {
         unichar expectedChar = [expected characterAtIndex:i];
         unichar actualChar = [actual characterAtIndex:i];
-        if (expectedChar != actualChar && !(expectedChar == '\n' && actualChar == ' ')) {
+        if (expectedChar != actualChar &&
+           !(expectedChar == '\n' && actualChar == ' ') &&
+           !(expectedChar == ' '  && actualChar == '\n')) {
             return NO;
         }
     }
@@ -121,7 +124,12 @@ NS_INLINE BOOL StringsMatchExceptLineBreaks(NSString *expected, NSString *actual
 
 - (UIAccessibilityElement *)accessibilityElementMatchingBlock:(BOOL(^)(UIAccessibilityElement *))matchBlock;
 {
-    if (self.hidden) {
+    return [self accessibilityElementMatchingBlock:matchBlock notHidden:YES];
+}
+
+- (UIAccessibilityElement *)accessibilityElementMatchingBlock:(BOOL(^)(UIAccessibilityElement *))matchBlock notHidden:(BOOL)notHidden;
+{
+    if (notHidden && self.hidden) {
         return nil;
     }
     
@@ -167,7 +175,7 @@ NS_INLINE BOOL StringsMatchExceptLineBreaks(NSString *expected, NSString *actual
     while (elementStack.count) {
         UIAccessibilityElement *element = [elementStack lastObject];
         [elementStack removeLastObject];
-
+        
         BOOL elementMatches = matchBlock(element);
 
         if (elementMatches) {
@@ -193,45 +201,89 @@ NS_INLINE BOOL StringsMatchExceptLineBreaks(NSString *expected, NSString *actual
             UIAccessibilityElement *subelement = [element accessibilityElementAtIndex:accessibilityElementIndex];
             
             if (subelement) {
+                // Skip table view cell accessibility elements, they're handled below
+                if ([subelement isKindOfClass:NSClassFromString(@"UITableViewCellAccessibilityElement")]) {
+                    continue;
+                }
+                
                 [elementStack addObject:subelement];
             }
         }
     }
     
-    if (!matchingButOccludedElement && [self isKindOfClass:[UICollectionView class]]) {
-        UICollectionView *collectionView = (UICollectionView *)self;
-        
-        NSArray *indexPathsForVisibleItems = [collectionView indexPathsForVisibleItems];
-        
-        for (NSUInteger section = 0, numberOfSections = [collectionView numberOfSections]; section < numberOfSections; section++) {
-            for (NSUInteger item = 0, numberOfItems = [collectionView numberOfItemsInSection:section]; item < numberOfItems; item++) {
-                // Skip visible items because they are already handled
-                NSIndexPath *indexPath = [NSIndexPath indexPathForItem:item inSection:section];
-                if ([indexPathsForVisibleItems containsObject:indexPath]) {
-                    continue;
-                }
-                
-                @autoreleasepool {
-                    // Get the cell directly from the dataSource because UICollectionView will only vend visible cells
-                    UICollectionViewCell *cell = [collectionView.dataSource collectionView:collectionView cellForItemAtIndexPath:indexPath];
-                    
-                    UIAccessibilityElement *element = [cell accessibilityElementMatchingBlock:matchBlock];
-                    
-                    // Remove the cell from the collection view so that it doesn't stick around
-                    [cell removeFromSuperview];
-                    
-                    // Skip this cell if it isn't the one we're looking for
-                    if (!element) {
+    if (!matchingButOccludedElement) {
+        if ([self isKindOfClass:[UITableView class]]) {
+            UITableView *tableView = (UITableView *)self;
+            
+            NSArray *indexPathsForVisibleRows = [tableView indexPathsForVisibleRows];
+            
+            for (NSUInteger section = 0, numberOfSections = [tableView numberOfSections]; section < numberOfSections; section++) {
+                for (NSUInteger row = 0, numberOfRows = [tableView numberOfRowsInSection:section]; row < numberOfRows; row++) {
+                    // Skip visible rows because they are already handled
+                    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:section];
+                    if ([indexPathsForVisibleRows containsObject:indexPath]) {
                         continue;
                     }
+                    
+                    @autoreleasepool {
+                        // Get the cell directly from the dataSource because UITableView will only vend visible cells
+                        UITableViewCell *cell = [tableView.dataSource tableView:tableView cellForRowAtIndexPath:indexPath];
+                        
+                        UIAccessibilityElement *element = [cell accessibilityElementMatchingBlock:matchBlock notHidden:NO];
+                        
+                        // Remove the cell from the table view so that it doesn't stick around
+                        [cell removeFromSuperview];
+                        
+                        // Skip this cell if it isn't the one we're looking for
+                        if (!element) {
+                            continue;
+                        }
+                    }
+                    
+                    // Scroll to the cell and wait for the animation to complete
+                    [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionNone animated:YES];
+                    CFRunLoopRunInMode(UIApplicationCurrentRunMode, 0.5, false);
+                    
+                    // Now try finding the element again
+                    return [self accessibilityElementMatchingBlock:matchBlock];
                 }
-                
-                // Scroll to the cell and wait for the animation to complete
-                [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
-                CFRunLoopRunInMode(UIApplicationCurrentRunMode, 0.5, false);
-                
-                // Now try finding the element again
-                return [self accessibilityElementMatchingBlock:matchBlock];
+            }
+        } else if ([self isKindOfClass:[UICollectionView class]]) {
+            UICollectionView *collectionView = (UICollectionView *)self;
+            
+            NSArray *indexPathsForVisibleItems = [collectionView indexPathsForVisibleItems];
+            
+            for (NSUInteger section = 0, numberOfSections = [collectionView numberOfSections]; section < numberOfSections; section++) {
+                for (NSUInteger item = 0, numberOfItems = [collectionView numberOfItemsInSection:section]; item < numberOfItems; item++) {
+                    // Skip visible items because they are already handled
+                    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:item inSection:section];
+                    if ([indexPathsForVisibleItems containsObject:indexPath]) {
+                        continue;
+                    }
+                    
+                    @autoreleasepool {
+                        // Get the cell directly from the dataSource because UICollectionView will only vend visible cells
+                        UICollectionViewCell *cell = [collectionView.dataSource collectionView:collectionView cellForItemAtIndexPath:indexPath];
+                        
+                        UIAccessibilityElement *element = [cell accessibilityElementMatchingBlock:matchBlock notHidden:NO];
+                        
+                        // Remove the cell from the collection view so that it doesn't stick around
+                        [cell removeFromSuperview];
+                        
+                        // Skip this cell if it isn't the one we're looking for
+                        // Sometimes we get cells with no size here which can cause an endless loop, so we ignore those
+                        if (!element || CGSizeEqualToSize(cell.frame.size, CGSizeZero)) {
+                            continue;
+                        }
+                    }
+                    
+                    // Scroll to the cell and wait for the animation to complete
+                    [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+                    CFRunLoopRunInMode(UIApplicationCurrentRunMode, 0.5, false);
+                    
+                    // Now try finding the element again
+                    return [self accessibilityElementMatchingBlock:matchBlock];
+                }
             }
         }
     }
@@ -484,6 +536,8 @@ NS_INLINE BOOL StringsMatchExceptLineBreaks(NSString *expected, NSString *actual
             }
             UIEvent *eventDown = [self eventWithTouches:[NSArray arrayWithArray:touches]];
             [[UIApplication sharedApplication] sendEvent:eventDown];
+            
+            CFRunLoopRunInMode(UIApplicationCurrentRunMode, DRAG_TOUCH_DELAY, false);
         }
         else
         {
@@ -828,6 +882,179 @@ NS_INLINE BOOL StringsMatchExceptLineBreaks(NSString *expected, NSString *actual
     while(checkedView && stop == NO) {
         block(checkedView, &stop);
         checkedView = checkedView.superview;
+    }
+}
+
+- (void)printViewHierarchy {
+    [self printViewHierarchyWithIndentation:0];
+}
+
++(void)printViewHierarchy {
+    NSArray* windows = [UIApplication sharedApplication].windows;
+    if(windows.count == 1) {
+        [windows[0] printViewHierarchy];
+    } else {
+        //more than one window, also print some information about each window
+        for (UIWindow* window in windows) {
+            printf("Window level %f", window.windowLevel);
+            if(window.isKeyWindow) printf(" (key window)");
+            printf("\n");
+            [window printViewHierarchy];
+            printf("\n");
+        }
+    }
+}
+
+- (void)printAccessibilityTraits:(UIAccessibilityTraits)traits {
+    
+    printf("traits: ");
+    bool didPrintOne = false;
+    if(traits == UIAccessibilityTraitNone) {
+        printf("none");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitButton) {
+        if(didPrintOne) printf(", ");
+        printf("button");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitLink) {
+        if(didPrintOne) printf(", ");
+        printf("link");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitHeader) {
+        if(didPrintOne) printf(", ");
+        printf("header");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitSearchField) {
+        if(didPrintOne) printf(", ");
+        printf("search field");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitImage) {
+        if(didPrintOne) printf(", ");
+        printf("image");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitSelected) {
+        if(didPrintOne) printf(", ");
+        printf("selected");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitPlaysSound) {
+        if(didPrintOne) printf(", ");
+        printf("plays sound");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitKeyboardKey) {
+        if(didPrintOne) printf(", ");
+        printf("keyboard key");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitStaticText) {
+        if(didPrintOne) printf(", ");
+        printf("static text");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitSummaryElement) {
+        if(didPrintOne) printf(", ");
+        printf("summary element");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitNotEnabled) {
+        if(didPrintOne) printf(", ");
+        printf("not enabled");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitUpdatesFrequently) {
+        if(didPrintOne) printf(", ");
+        printf("updates frequently");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitStartsMediaSession) {
+        if(didPrintOne) printf(", ");
+        printf("starts media session");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitAdjustable) {
+        if(didPrintOne) printf(", ");
+        printf("adjustable");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitAllowsDirectInteraction) {
+        if(didPrintOne) printf(", ");
+        printf("allows direct interaction");
+        didPrintOne = true;
+    }
+    if(traits & UIAccessibilityTraitCausesPageTurn) {
+        if(didPrintOne) printf(", ");
+        printf("causes page turn");
+        didPrintOne = true;
+    }
+    if(!didPrintOne) {
+        printf("unknown flags (0x%llx)", traits);
+    }
+}
+
+
+- (void)printViewHierarchyWithIndentation:(int)indent {
+    NSString* name = NSStringFromClass([self class]);
+    NSString* label = self.accessibilityLabel;
+    NSString* identifier = self.accessibilityIdentifier;
+    for(int i = 0; i < indent; ++i) {
+        printf("|\t");
+    }
+    printf("%s", name.UTF8String);
+    if(label != nil) {
+        printf(", label: %s", label.UTF8String);
+    } else if(identifier != nil) {
+        printf(", identifier: %s", identifier.UTF8String);
+    }
+    if(self.hidden) {
+        printf(" (invisible)");
+    }
+    
+    if([self isKindOfClass:[UIImageView class]]) {
+        if(((UIImageView*)self).highlighted) {
+            printf(" (highlighted)");
+        } else {
+            printf(" (not highlighted)");
+        }
+    }
+    
+    if([self isKindOfClass:[UIControl class]]) {
+        UIControl* ctrl = (UIControl*)self;
+        ctrl.enabled ? printf(" (enabled)") : printf(" (not enabled)");
+        ctrl.selected ? printf(" (selected)") : printf(" (not selected)");
+        ctrl.highlighted ? printf(" (highlighted)") : printf(" (not highlighted)");
+    }
+    printf("\n");
+    
+    //
+    NSInteger numOfAccElements = self.accessibilityElementCount;
+    if(numOfAccElements != NSNotFound) {
+        for (NSInteger i = 0; i < numOfAccElements; ++i) {
+            for(int i = 0; i < indent+1; ++i) {
+                printf("|\t");
+            }
+            UIAccessibilityElement *e = [(UIAccessibilityElement*)self accessibilityElementAtIndex:i];
+            printf("%s, label: %s", NSStringFromClass([e class]).UTF8String, e.accessibilityLabel.UTF8String);
+            if(e.accessibilityValue && e.accessibilityValue.length > 0) {
+                printf(", value: %s", e.accessibilityValue.UTF8String);
+            }
+            if(e.accessibilityHint && e.accessibilityHint.length > 0) {
+                printf(", hint: %s", e.accessibilityHint.UTF8String);
+            }
+            printf(", ");
+            [self printAccessibilityTraits:e.accessibilityTraits];
+            printf("\n");
+        }
+    }
+    
+    for (UIView *subview in self.subviews) {
+        [subview printViewHierarchyWithIndentation:indent+1];
     }
 }
 
