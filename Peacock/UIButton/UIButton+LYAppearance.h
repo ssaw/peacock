@@ -7,6 +7,6 @@
 
 @interface UIButton (LYAppearance)
 
-@property (nonatomic, strong) UIColor *appearanceTintColor;
+@property (nonatomic, strong) UIColor *appearanceTintColor UI_APPEARANCE_SELECTOR;
 
 @end
