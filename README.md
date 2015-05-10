@@ -6,7 +6,7 @@ To install the pod, add following line to your Podfile:
     pod "Peacock"
     
 ## Usage
-There's a [short video](https://vimeo.com/115883292)  and [blog post](//todo.url.of.blog.post.of.lyst) on how-to's and best practices for UIAppearance and Peacock.
+There's a [short video](https://vimeo.com/115883292)  and [blog post](//todo.url.of.blog.post.of.lystq) on how-to's and best practices for UIAppearance and Peacock.
 
 ###Creating a theme file
 We highly recomend creating a class to hold all your UI-styling code in a CSS-like fashion. And calling it as soon as possible when your app launches.
