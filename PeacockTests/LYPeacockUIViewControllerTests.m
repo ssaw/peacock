@@ -37,7 +37,7 @@
 -(void)testThatWeCanSetTitleForUIViewController
 {
     //given
-    [[UILabel appearance] setLYFont:[UIFont fontWithName:self.helveticaUltraLight size:20.0f]];
+    [[UILabel appearance] setAppearanceFont:[UIFont fontWithName:self.helveticaUltraLight size:20.0f]];
 
     //when
     [self.window makeKeyAndVisible];

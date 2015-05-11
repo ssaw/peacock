@@ -25,11 +25,8 @@
 		CDA32C681AC71BE000A199C1 /* LYPeacockNavigationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA32C671AC71BE000A199C1 /* LYPeacockNavigationBarTests.m */; };
 		CDA8A5C91AAD0CEE007EAC99 /* UIButton+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AA1AAD0CEE007EAC99 /* UIButton+LYAppearance.m */; };
 		CDA8A5CA1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AC1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m */; };
-		CDA8A5CB1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AF1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */; };
 		CDA8A5CC1AAD0CEE007EAC99 /* UILabel+FontAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5B11AAD0CEE007EAC99 /* UILabel+FontAppearance.m */; };
 		CDA8A5CD1AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5B31AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m */; };
-		CDA8A5CE1AAD0CEE007EAC99 /* UILabel+SizeToFitText.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5B51AAD0CEE007EAC99 /* UILabel+SizeToFitText.m */; };
-		CDA8A5CF1AAD0CEE007EAC99 /* UILabel+VerticalAlignText.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5B71AAD0CEE007EAC99 /* UILabel+VerticalAlignText.m */; };
 		CDA8A5D01AAD0CEE007EAC99 /* UINavigationBar+LYTranlucenceUIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5BA1AAD0CEE007EAC99 /* UINavigationBar+LYTranlucenceUIAppearance.m */; };
 		CDA8A5D11AAD0CEE007EAC99 /* UITableView+SeparatorUIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5BD1AAD0CEE007EAC99 /* UITableView+SeparatorUIAppearance.m */; };
 		CDA8A5D21AAD0CEE007EAC99 /* UITextField+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5C01AAD0CEE007EAC99 /* UITextField+LYAppearance.m */; };
@@ -106,16 +103,10 @@
 		CDA8A5AA1AAD0CEE007EAC99 /* UIButton+LYAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYAppearance.m"; sourceTree = "<group>"; };
 		CDA8A5AB1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LYAttributedButton.h"; sourceTree = "<group>"; };
 		CDA8A5AC1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYAttributedButton.m"; sourceTree = "<group>"; };
-		CDA8A5AE1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYUILabelWithVerticalScrollAnimationOnSetText.h; sourceTree = "<group>"; };
-		CDA8A5AF1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYUILabelWithVerticalScrollAnimationOnSetText.m; sourceTree = "<group>"; };
 		CDA8A5B01AAD0CEE007EAC99 /* UILabel+FontAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FontAppearance.h"; sourceTree = "<group>"; };
 		CDA8A5B11AAD0CEE007EAC99 /* UILabel+FontAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FontAppearance.m"; sourceTree = "<group>"; };
 		CDA8A5B21AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LYAttributedLabel.h"; sourceTree = "<group>"; };
 		CDA8A5B31AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LYAttributedLabel.m"; sourceTree = "<group>"; };
-		CDA8A5B41AAD0CEE007EAC99 /* UILabel+SizeToFitText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SizeToFitText.h"; sourceTree = "<group>"; };
-		CDA8A5B51AAD0CEE007EAC99 /* UILabel+SizeToFitText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SizeToFitText.m"; sourceTree = "<group>"; };
-		CDA8A5B61AAD0CEE007EAC99 /* UILabel+VerticalAlignText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+VerticalAlignText.h"; sourceTree = "<group>"; };
-		CDA8A5B71AAD0CEE007EAC99 /* UILabel+VerticalAlignText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+VerticalAlignText.m"; sourceTree = "<group>"; };
 		CDA8A5B91AAD0CEE007EAC99 /* UINavigationBar+LYTranlucenceUIAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+LYTranlucenceUIAppearance.h"; sourceTree = "<group>"; };
 		CDA8A5BA1AAD0CEE007EAC99 /* UINavigationBar+LYTranlucenceUIAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+LYTranlucenceUIAppearance.m"; sourceTree = "<group>"; };
 		CDA8A5BC1AAD0CEE007EAC99 /* UITableView+SeparatorUIAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SeparatorUIAppearance.h"; sourceTree = "<group>"; };
@@ -309,16 +300,10 @@
 		CDA8A5AD1AAD0CEE007EAC99 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				CDA8A5AE1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.h */,
-				CDA8A5AF1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */,
 				CDA8A5B01AAD0CEE007EAC99 /* UILabel+FontAppearance.h */,
 				CDA8A5B11AAD0CEE007EAC99 /* UILabel+FontAppearance.m */,
 				CDA8A5B21AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.h */,
 				CDA8A5B31AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m */,
-				CDA8A5B41AAD0CEE007EAC99 /* UILabel+SizeToFitText.h */,
-				CDA8A5B51AAD0CEE007EAC99 /* UILabel+SizeToFitText.m */,
-				CDA8A5B61AAD0CEE007EAC99 /* UILabel+VerticalAlignText.h */,
-				CDA8A5B71AAD0CEE007EAC99 /* UILabel+VerticalAlignText.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -573,15 +558,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA8A5CB1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */,
-				CDA8A5CF1AAD0CEE007EAC99 /* UILabel+VerticalAlignText.m in Sources */,
 				CDA8A5CA1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m in Sources */,
 				CDA8A5D01AAD0CEE007EAC99 /* UINavigationBar+LYTranlucenceUIAppearance.m in Sources */,
 				CDA8A5CD1AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m in Sources */,
 				CDA8A5D11AAD0CEE007EAC99 /* UITableView+SeparatorUIAppearance.m in Sources */,
 				CDA8A5C91AAD0CEE007EAC99 /* UIButton+LYAppearance.m in Sources */,
 				CDA8A5D21AAD0CEE007EAC99 /* UITextField+LYAppearance.m in Sources */,
-				CDA8A5CE1AAD0CEE007EAC99 /* UILabel+SizeToFitText.m in Sources */,
 				CDA8A5D31AAD0CEE007EAC99 /* UITextView+LYAppearance.m in Sources */,
 				CDA8A5D41AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m in Sources */,
 				CD85FC841AAE58B2000B1318 /* LYCGFloatSizeHelper.m in Sources */,
