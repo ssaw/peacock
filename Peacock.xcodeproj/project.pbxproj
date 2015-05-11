@@ -11,9 +11,7 @@
 		CD2C08021AC3741200E5C412 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C08011AC3741200E5C412 /* main.m */; };
 		CD2C08051AC3741200E5C412 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C08041AC3741200E5C412 /* AppDelegate.m */; };
 		CD2C08081AC3741200E5C412 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C08071AC3741200E5C412 /* ViewController.m */; };
-		CD2C080B1AC3741200E5C412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C08091AC3741200E5C412 /* Main.storyboard */; };
 		CD2C080D1AC3741200E5C412 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2C080C1AC3741200E5C412 /* Images.xcassets */; };
-		CD2C08101AC3741200E5C412 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2C080E1AC3741200E5C412 /* LaunchScreen.xib */; };
 		CD54BAA91ACA0274008F9909 /* LYPeacockTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54BAA81ACA0274008F9909 /* LYPeacockTableTests.m */; };
 		CD59FEC71AACDA0900FB8D9E /* libPeacock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */; };
 		CD6BA0021ACA078400602D72 /* LYPeacockTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6BA0011ACA078400602D72 /* LYPeacockTextFieldTests.m */; };
@@ -74,9 +72,7 @@
 		CD2C08041AC3741200E5C412 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD2C08061AC3741200E5C412 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CD2C08071AC3741200E5C412 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CD2C080A1AC3741200E5C412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD2C080C1AC3741200E5C412 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CD2C080F1AC3741200E5C412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CD54BAA81ACA0274008F9909 /* LYPeacockTableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPeacockTableTests.m; sourceTree = "<group>"; };
 		CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPeacock.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD59FEC61AACDA0900FB8D9E /* PeacockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,9 +158,7 @@
 				CD2C08041AC3741200E5C412 /* AppDelegate.m */,
 				CD2C08061AC3741200E5C412 /* ViewController.h */,
 				CD2C08071AC3741200E5C412 /* ViewController.m */,
-				CD2C08091AC3741200E5C412 /* Main.storyboard */,
 				CD2C080C1AC3741200E5C412 /* Images.xcassets */,
-				CD2C080E1AC3741200E5C412 /* LaunchScreen.xib */,
 				CD2C07FF1AC3741200E5C412 /* Supporting Files */,
 			);
 			path = PeacockApp;
@@ -420,8 +414,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2C080B1AC3741200E5C412 /* Main.storyboard in Resources */,
-				CD2C08101AC3741200E5C412 /* LaunchScreen.xib in Resources */,
 				CD2C080D1AC3741200E5C412 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,25 +517,6 @@
 			targetProxy = CD59FEC81AACDA0900FB8D9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CD2C08091AC3741200E5C412 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD2C080A1AC3741200E5C412 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CD2C080E1AC3741200E5C412 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD2C080F1AC3741200E5C412 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CD2C081D1AC3741200E5C412 /* Debug */ = {
