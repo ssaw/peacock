@@ -2,8 +2,10 @@
 ## Installation
 To install the pod, add following line to your Podfile:
 
+```objectivec
     pod "Peacock"
-    
+```
+
 ## Usage
 Peacock extends the existing properties that you can set with the UIAppearance protocol. In a way that you can effectively configure more than what UIView subclasses will allow you.
 
@@ -13,12 +15,16 @@ We configure our subclasses and at the same time take out the styling code from 
 
 Basic usage:
 
+```objectivec
 	[[UILabel appearance] setBackgroundColor:[UIColor whiteColor]];
+```
 
 Most of the custom created properties start with Lyst prefix LY.
 
+```objectivec
     [[LYTitleLabel appearanceWhenContainedIn:[LYProductView class], nil] setLYFont:TitleFont];
-    
+```
+
 There's a [short video](https://vimeo.com/115883292)  and [blog post](//todo.url.of.blog.post.of.lystq) on how-to's and best practices for UIAppearance and Peacock.
 
 ### Creating a theme file
@@ -26,8 +32,10 @@ We highly recommend creating a class to hold all your UI-styling code in a CSS-l
 
 Import the global header file Peacock.h on any of your implementation files.
 
+```objectivec
 	#import "Peacock.h"
-	
+```
+
 ### Configuring your Views
 Peacock extends the available configurations of the appearance protocol. It's implementation should help configure all your views frome a single location keeping your views and controllers clean of UI-styling code.
 
@@ -39,14 +47,17 @@ The following is a list of the current classes that we have extended and their a
 ### Buttons
 Available methods and properties to set buttons:
 
+```objectivec
 	-(void)setLYFont:(UIFont *)font forState:(UIControlState)state;
 	-(void)setLYTextColor:(UIColor *)textColor forState:(UIControlState)state;
 	-(void)setLYTextAlignment:(NSTextAlignment)textAlignment forState:(UIControlState)state;
 	@property (nonatomic, strong) UIColor *appearanceTintColor
+```
 
 ### Labels
-Available properties for Labels:
-
+Available properties for Labels
+:
+```objectivec
 	@property (nonatomic, copy) UIFont *appearanceFont;
 	@property (nonatomic, copy) UIColor *appearanceTextColor;
 	@property (nonatomic, copy) UIColor *appearanceBackgroundColor;
@@ -58,31 +69,40 @@ Available properties for Labels:
 	@property (nonatomic, assign) NSTextAlignment LYTextAlignment;
 	@property (nonatomic, assign) CGFloat LYLineSpacing;
 	@property (nonatomic, assign) BOOL LYStrikeOut;
+```
 
 ### NavigationBAr
 Available properties for NavigationBar:
 
+```objectivec
 	@property(nonatomic,assign,getter=isLYTranslucent) NSInteger LYTranslucent;
-	
+```
+
 ### TableView
 Available properties for TableViews:
 
+```objectivec
 	@property (nonatomic, strong) UIColor *appearanceSeparatorColor;
-	
+```
+
 ### TextField
 Available properties for TextField:
 
+```objectivec
 	@property (nonatomic, strong) UIFont* LYAppearanceFont;
 	@property (nonatomic, strong) UIColor* LYAppearanceTextColor;
 	@property (nonatomic, assign) NSTextAlignment LYAppearanceTextAlignment;
+```
 
 ### TextView
 Available Properties for TextView:
 
+```objectivec
 	@property (nonatomic, strong) UIFont* LYAppearanceFont;
 	@property (nonatomic, strong) UIColor* LYAppearanceTextColor;
 	@property (nonatomic, assign) NSTextAlignment LYAppearanceTextAlignment;
-	
+```
+
 ## Author
 Lyst [Engineering team](http://developers.lyst.com/).
 
