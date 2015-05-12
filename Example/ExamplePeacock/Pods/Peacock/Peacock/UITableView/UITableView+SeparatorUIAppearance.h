@@ -7,6 +7,6 @@
 
 @interface UITableView (SeparatorUIAppearance)
 
-@property (nonatomic, strong) UIColor *appearanceSeparatorColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong, readwrite) UIColor *appearanceSeparatorColor UI_APPEARANCE_SELECTOR;
 
 @end

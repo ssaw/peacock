@@ -3,7 +3,7 @@
 //  Copyright (c) 2014 Lyst. All rights reserved.
 //
 //  Inspired by Kyle Fuller's work in this area but stripped back and written
-// for just what we need
+//  for just what we need
 
 #import "LYCGFloatSizeHelper.h"
 #import "math.h"

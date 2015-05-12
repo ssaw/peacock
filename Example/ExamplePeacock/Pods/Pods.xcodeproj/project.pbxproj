@@ -1,531 +1,1424 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		036205D501DD1F67AF80125B /* UILabel+LYAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 006D1B4E8F2EB33B414158FA /* UILabel+LYAttributedLabel.h */; };
-		22F5EAB0587C284745AF5AE0 /* LYCGFloatSizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8FB7EA6FAFDF47CA0AE43 /* LYCGFloatSizeHelper.m */; };
-		26B08A978F2397C25F7FC746 /* UITextView+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = E98298FE572E8F30DB22EE64 /* UITextView+LYAppearance.m */; };
-		2731DF813464394441C20BFD /* UILabel+FontAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = FB33F6CAAB7A83D94E944D8D /* UILabel+FontAppearance.m */; };
-		2A1532CBAB0F3807E48F7367 /* Peacock.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F167D24996D2FF9D56A2EC /* Peacock.h */; };
-		2D2CBC8584031E683F0E0884 /* LYUILabelWithVerticalScrollAnimationOnSetText.h in Headers */ = {isa = PBXBuildFile; fileRef = BB498E2D23D92C6D0703EE62 /* LYUILabelWithVerticalScrollAnimationOnSetText.h */; };
-		2FC6C2B6D94082CA97FD2087 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F79559863B0E7A654129B9 /* Foundation.framework */; };
-		39A36080DA9B8A14E6900FEE /* UINavigationBar+LYTranlucenceUIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F770431FB2D1FA16F58899 /* UINavigationBar+LYTranlucenceUIAppearance.m */; };
-		3D911C49D81B702FEE3EC1E3 /* UILabel+VerticalAlignText.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EBDE60E14248A07E2E9C0 /* UILabel+VerticalAlignText.m */; };
-		4150E33255E572B85309877D /* UIButton+LYAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = A0265DA72407D0B48F2217FA /* UIButton+LYAppearance.h */; };
-		44825E93D850E90DB687DBF6 /* UINavigationBar+LYTranlucenceUIAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = F17B5437C08A21723AB495CD /* UINavigationBar+LYTranlucenceUIAppearance.h */; };
-		54339FA9D6489C6696AA83FA /* UIViewController+AttributedStringTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5CC330D50387621FEB89BB /* UIViewController+AttributedStringTitle.m */; };
-		69C2731B682CACC62B817477 /* Pods-Peacock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01721275D51BE22E11441371 /* Pods-Peacock-dummy.m */; };
-		7C28AFA9769478CC57309172 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E6EB98988F577F4D354013 /* Pods-dummy.m */; };
-		7CDB9578FE6764772F99E297 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F79559863B0E7A654129B9 /* Foundation.framework */; };
-		8B06ED9717E532A00D21E8D8 /* UILabel+FontAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = D71FE53236BC9BB20502D6DA /* UILabel+FontAppearance.h */; };
-		900C6A0882AC5ED2497C47C1 /* UIButton+LYAttributedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7459CC62E805D6F4C474 /* UIButton+LYAttributedButton.m */; };
-		91A91C3BFB050069D5FF2D38 /* LYCGFloatSizeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E985E5904716F031308700 /* LYCGFloatSizeHelper.h */; };
-		975986E2C9A02A7ADC6DD253 /* UILabel+SizeToFitText.h in Headers */ = {isa = PBXBuildFile; fileRef = C1B6A9A80AE81B7717FE0CB4 /* UILabel+SizeToFitText.h */; };
-		9D6F2F91EEF18510CC80634C /* UILabel+SizeToFitText.m in Sources */ = {isa = PBXBuildFile; fileRef = 132552C782173FC43F95F0CD /* UILabel+SizeToFitText.m */; };
-		9FEB61BBCA39D0324016ED89 /* UITextView+LYAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD3B74F7C11BDAF1868C581 /* UITextView+LYAppearance.h */; };
-		A0F8AA19F2AD06B98470BCEC /* UITextField+LYAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 219B18607736476874F34125 /* UITextField+LYAppearance.h */; };
-		A1014A0741C1D806F1476CA4 /* UITableView+SeparatorUIAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CEF6EE78078A7560500CA46 /* UITableView+SeparatorUIAppearance.h */; };
-		A659F9A271AE743D0448AA06 /* UILabel+LYAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D8BB5C3CB1680EC37B204B /* UILabel+LYAttributedLabel.m */; };
-		C22660F7F6120B97C984BFC5 /* UIButton+LYAttributedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1618B791285580D9E1EC72 /* UIButton+LYAttributedButton.h */; };
-		CBC938D6B2401B8376E90261 /* UITableView+SeparatorUIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 10911EE59B650E4D863A8F33 /* UITableView+SeparatorUIAppearance.m */; };
-		CC54F05FC08F434BD0FB4106 /* UILabel+VerticalAlignText.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D1CF186A86294978EE9FA86 /* UILabel+VerticalAlignText.h */; };
-		DE00B2F9AD198C9365FCFDBF /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0048189575CDA0B11EC0D9 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */; };
-		E159F4CA4220F80EBC0B738B /* UIButton+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B366CD2D99657B45F3CBF66 /* UIButton+LYAppearance.m */; };
-		E16914D91DBF8228DAAF0A9F /* UITextField+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B48D1B5EFC13DDE7A755202 /* UITextField+LYAppearance.m */; };
-		E54A9B82225FF7C30ABC54D1 /* UIViewController+AttributedStringTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B01DA2D4858A7FEC9057ADD /* UIViewController+AttributedStringTitle.h */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		65A0D9606AC57E6D06037CD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CCB39510A7D2FF511E514B3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 644C8AC029FBB593958EE287;
-			remoteInfo = "Pods-Peacock";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		006D1B4E8F2EB33B414158FA /* UILabel+LYAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+LYAttributedLabel.h"; path = "Peacock/UILabel/UILabel+LYAttributedLabel.h"; sourceTree = "<group>"; };
-		01721275D51BE22E11441371 /* Pods-Peacock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Peacock-dummy.m"; sourceTree = "<group>"; };
-		04F79559863B0E7A654129B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		10911EE59B650E4D863A8F33 /* UITableView+SeparatorUIAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+SeparatorUIAppearance.m"; path = "Peacock/UITableView/UITableView+SeparatorUIAppearance.m"; sourceTree = "<group>"; };
-		11D8BB5C3CB1680EC37B204B /* UILabel+LYAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+LYAttributedLabel.m"; path = "Peacock/UILabel/UILabel+LYAttributedLabel.m"; sourceTree = "<group>"; };
-		132552C782173FC43F95F0CD /* UILabel+SizeToFitText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+SizeToFitText.m"; path = "Peacock/UILabel/UILabel+SizeToFitText.m"; sourceTree = "<group>"; };
-		14EC7459CC62E805D6F4C474 /* UIButton+LYAttributedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+LYAttributedButton.m"; path = "Peacock/UIButton/UIButton+LYAttributedButton.m"; sourceTree = "<group>"; };
-		16123D6ABE10396F3AC0EBFD /* Pods-Peacock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Peacock-prefix.pch"; sourceTree = "<group>"; };
-		176E1323C00606448152E9B4 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		219B18607736476874F34125 /* UITextField+LYAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+LYAppearance.h"; path = "Peacock/UITextField/UITextField+LYAppearance.h"; sourceTree = "<group>"; };
-		269A198934C7F6E4D1C4F75F /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		2B01DA2D4858A7FEC9057ADD /* UIViewController+AttributedStringTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AttributedStringTitle.h"; path = "Peacock/UIViewController/UIViewController+AttributedStringTitle.h"; sourceTree = "<group>"; };
-		2B366CD2D99657B45F3CBF66 /* UIButton+LYAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+LYAppearance.m"; path = "Peacock/UIButton/UIButton+LYAppearance.m"; sourceTree = "<group>"; };
-		33E6EB98988F577F4D354013 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		39F770431FB2D1FA16F58899 /* UINavigationBar+LYTranlucenceUIAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+LYTranlucenceUIAppearance.m"; path = "Peacock/UINavigationBar/UINavigationBar+LYTranlucenceUIAppearance.m"; sourceTree = "<group>"; };
-		3C0048189575CDA0B11EC0D9 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYUILabelWithVerticalScrollAnimationOnSetText.m; path = Peacock/UILabel/LYUILabelWithVerticalScrollAnimationOnSetText.m; sourceTree = "<group>"; };
-		3CEF6EE78078A7560500CA46 /* UITableView+SeparatorUIAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+SeparatorUIAppearance.h"; path = "Peacock/UITableView/UITableView+SeparatorUIAppearance.h"; sourceTree = "<group>"; };
-		41BBCB9A7F1AA44C2446FAED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4B48D1B5EFC13DDE7A755202 /* UITextField+LYAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+LYAppearance.m"; path = "Peacock/UITextField/UITextField+LYAppearance.m"; sourceTree = "<group>"; };
-		655EBDE60E14248A07E2E9C0 /* UILabel+VerticalAlignText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+VerticalAlignText.m"; path = "Peacock/UILabel/UILabel+VerticalAlignText.m"; sourceTree = "<group>"; };
-		7D1CF186A86294978EE9FA86 /* UILabel+VerticalAlignText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+VerticalAlignText.h"; path = "Peacock/UILabel/UILabel+VerticalAlignText.h"; sourceTree = "<group>"; };
-		858DF1B1CC1AADF401C375F9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		89C2FF2292403E79BF571728 /* Pods-Peacock-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peacock-Private.xcconfig"; sourceTree = "<group>"; };
-		8A1618B791285580D9E1EC72 /* UIButton+LYAttributedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+LYAttributedButton.h"; path = "Peacock/UIButton/UIButton+LYAttributedButton.h"; sourceTree = "<group>"; };
-		8F5CC330D50387621FEB89BB /* UIViewController+AttributedStringTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AttributedStringTitle.m"; path = "Peacock/UIViewController/UIViewController+AttributedStringTitle.m"; sourceTree = "<group>"; };
-		9AD8FB7EA6FAFDF47CA0AE43 /* LYCGFloatSizeHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYCGFloatSizeHelper.m; path = Peacock/LYCGFloatSizeHelper.m; sourceTree = "<group>"; };
-		A0265DA72407D0B48F2217FA /* UIButton+LYAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+LYAppearance.h"; path = "Peacock/UIButton/UIButton+LYAppearance.h"; sourceTree = "<group>"; };
-		A1B78CCAE8B504808CD50472 /* Pods-Peacock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peacock.xcconfig"; sourceTree = "<group>"; };
-		AA70762E6BA790242FED241F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		B4F167D24996D2FF9D56A2EC /* Peacock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Peacock.h; path = Peacock/Peacock.h; sourceTree = "<group>"; };
-		B7567535570E01EDAADF9793 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB498E2D23D92C6D0703EE62 /* LYUILabelWithVerticalScrollAnimationOnSetText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYUILabelWithVerticalScrollAnimationOnSetText.h; path = Peacock/UILabel/LYUILabelWithVerticalScrollAnimationOnSetText.h; sourceTree = "<group>"; };
-		BBD3B74F7C11BDAF1868C581 /* UITextView+LYAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+LYAppearance.h"; path = "Peacock/UITextView/UITextView+LYAppearance.h"; sourceTree = "<group>"; };
-		C1B6A9A80AE81B7717FE0CB4 /* UILabel+SizeToFitText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+SizeToFitText.h"; path = "Peacock/UILabel/UILabel+SizeToFitText.h"; sourceTree = "<group>"; };
-		D71FE53236BC9BB20502D6DA /* UILabel+FontAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+FontAppearance.h"; path = "Peacock/UILabel/UILabel+FontAppearance.h"; sourceTree = "<group>"; };
-		E6E985E5904716F031308700 /* LYCGFloatSizeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LYCGFloatSizeHelper.h; path = Peacock/LYCGFloatSizeHelper.h; sourceTree = "<group>"; };
-		E98298FE572E8F30DB22EE64 /* UITextView+LYAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+LYAppearance.m"; path = "Peacock/UITextView/UITextView+LYAppearance.m"; sourceTree = "<group>"; };
-		EC4F4D67FC412251B780FB90 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F17B5437C08A21723AB495CD /* UINavigationBar+LYTranlucenceUIAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+LYTranlucenceUIAppearance.h"; path = "Peacock/UINavigationBar/UINavigationBar+LYTranlucenceUIAppearance.h"; sourceTree = "<group>"; };
-		F78739F435E7C60DC7410138 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		FB33F6CAAB7A83D94E944D8D /* UILabel+FontAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+FontAppearance.m"; path = "Peacock/UILabel/UILabel+FontAppearance.m"; sourceTree = "<group>"; };
-		FF955EE665EBAD8118E7769A /* libPods-Peacock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Peacock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		204C28D3476D3978DC676778 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CDB9578FE6764772F99E297 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		252E2C0CB5CE2C50E8987B8B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2FC6C2B6D94082CA97FD2087 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		4AEE338F316B4023D79E16D6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FC87576FFA0F582CD9C55B57 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5CD2426245B4EEC30F9D68E8 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				903F07F39379ED1B4FFE4887 /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		903F07F39379ED1B4FFE4887 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				41BBCB9A7F1AA44C2446FAED /* Pods-acknowledgements.markdown */,
-				176E1323C00606448152E9B4 /* Pods-acknowledgements.plist */,
-				33E6EB98988F577F4D354013 /* Pods-dummy.m */,
-				F78739F435E7C60DC7410138 /* Pods-environment.h */,
-				269A198934C7F6E4D1C4F75F /* Pods-resources.sh */,
-				858DF1B1CC1AADF401C375F9 /* Pods.debug.xcconfig */,
-				AA70762E6BA790242FED241F /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		A7E1EBD985686112C8C03573 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A1B78CCAE8B504808CD50472 /* Pods-Peacock.xcconfig */,
-				89C2FF2292403E79BF571728 /* Pods-Peacock-Private.xcconfig */,
-				01721275D51BE22E11441371 /* Pods-Peacock-dummy.m */,
-				16123D6ABE10396F3AC0EBFD /* Pods-Peacock-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Peacock";
-			sourceTree = "<group>";
-		};
-		CA4F87C255C0DCF562C82550 /* Peacock */ = {
-			isa = PBXGroup;
-			children = (
-				E6E985E5904716F031308700 /* LYCGFloatSizeHelper.h */,
-				9AD8FB7EA6FAFDF47CA0AE43 /* LYCGFloatSizeHelper.m */,
-				BB498E2D23D92C6D0703EE62 /* LYUILabelWithVerticalScrollAnimationOnSetText.h */,
-				3C0048189575CDA0B11EC0D9 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */,
-				B4F167D24996D2FF9D56A2EC /* Peacock.h */,
-				A0265DA72407D0B48F2217FA /* UIButton+LYAppearance.h */,
-				2B366CD2D99657B45F3CBF66 /* UIButton+LYAppearance.m */,
-				8A1618B791285580D9E1EC72 /* UIButton+LYAttributedButton.h */,
-				14EC7459CC62E805D6F4C474 /* UIButton+LYAttributedButton.m */,
-				D71FE53236BC9BB20502D6DA /* UILabel+FontAppearance.h */,
-				FB33F6CAAB7A83D94E944D8D /* UILabel+FontAppearance.m */,
-				006D1B4E8F2EB33B414158FA /* UILabel+LYAttributedLabel.h */,
-				11D8BB5C3CB1680EC37B204B /* UILabel+LYAttributedLabel.m */,
-				C1B6A9A80AE81B7717FE0CB4 /* UILabel+SizeToFitText.h */,
-				132552C782173FC43F95F0CD /* UILabel+SizeToFitText.m */,
-				7D1CF186A86294978EE9FA86 /* UILabel+VerticalAlignText.h */,
-				655EBDE60E14248A07E2E9C0 /* UILabel+VerticalAlignText.m */,
-				F17B5437C08A21723AB495CD /* UINavigationBar+LYTranlucenceUIAppearance.h */,
-				39F770431FB2D1FA16F58899 /* UINavigationBar+LYTranlucenceUIAppearance.m */,
-				3CEF6EE78078A7560500CA46 /* UITableView+SeparatorUIAppearance.h */,
-				10911EE59B650E4D863A8F33 /* UITableView+SeparatorUIAppearance.m */,
-				219B18607736476874F34125 /* UITextField+LYAppearance.h */,
-				4B48D1B5EFC13DDE7A755202 /* UITextField+LYAppearance.m */,
-				BBD3B74F7C11BDAF1868C581 /* UITextView+LYAppearance.h */,
-				E98298FE572E8F30DB22EE64 /* UITextView+LYAppearance.m */,
-				2B01DA2D4858A7FEC9057ADD /* UIViewController+AttributedStringTitle.h */,
-				8F5CC330D50387621FEB89BB /* UIViewController+AttributedStringTitle.m */,
-				A7E1EBD985686112C8C03573 /* Support Files */,
-			);
-			path = Peacock;
-			sourceTree = "<group>";
-		};
-		D2DF0D0DF1D0CD2C7A0AFAC2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CA4F87C255C0DCF562C82550 /* Peacock */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		DB01343702969A87D304657B = {
-			isa = PBXGroup;
-			children = (
-				EC4F4D67FC412251B780FB90 /* Podfile */,
-				4AEE338F316B4023D79E16D6 /* Frameworks */,
-				D2DF0D0DF1D0CD2C7A0AFAC2 /* Pods */,
-				F45EFE60318420C365A15509 /* Products */,
-				5CD2426245B4EEC30F9D68E8 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		F45EFE60318420C365A15509 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B7567535570E01EDAADF9793 /* libPods.a */,
-				FF955EE665EBAD8118E7769A /* libPods-Peacock.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FC87576FFA0F582CD9C55B57 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				04F79559863B0E7A654129B9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		9D65BF4C0DBAA7BC2FCA0BE0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91A91C3BFB050069D5FF2D38 /* LYCGFloatSizeHelper.h in Headers */,
-				2D2CBC8584031E683F0E0884 /* LYUILabelWithVerticalScrollAnimationOnSetText.h in Headers */,
-				2A1532CBAB0F3807E48F7367 /* Peacock.h in Headers */,
-				4150E33255E572B85309877D /* UIButton+LYAppearance.h in Headers */,
-				C22660F7F6120B97C984BFC5 /* UIButton+LYAttributedButton.h in Headers */,
-				8B06ED9717E532A00D21E8D8 /* UILabel+FontAppearance.h in Headers */,
-				036205D501DD1F67AF80125B /* UILabel+LYAttributedLabel.h in Headers */,
-				975986E2C9A02A7ADC6DD253 /* UILabel+SizeToFitText.h in Headers */,
-				CC54F05FC08F434BD0FB4106 /* UILabel+VerticalAlignText.h in Headers */,
-				44825E93D850E90DB687DBF6 /* UINavigationBar+LYTranlucenceUIAppearance.h in Headers */,
-				A1014A0741C1D806F1476CA4 /* UITableView+SeparatorUIAppearance.h in Headers */,
-				A0F8AA19F2AD06B98470BCEC /* UITextField+LYAppearance.h in Headers */,
-				9FEB61BBCA39D0324016ED89 /* UITextView+LYAppearance.h in Headers */,
-				E54A9B82225FF7C30ABC54D1 /* UIViewController+AttributedStringTitle.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		55E1B83D14590DA55F3095BF /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B3C0B2A9B34149E922A2B2CB /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				E90CB3ED978501AB74819001 /* Sources */,
-				204C28D3476D3978DC676778 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				02859264516E2EE405171532 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = B7567535570E01EDAADF9793 /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		644C8AC029FBB593958EE287 /* Pods-Peacock */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DD000E247B1C5ED8FFF2251 /* Build configuration list for PBXNativeTarget "Pods-Peacock" */;
-			buildPhases = (
-				6B09BB7BBAA3B82C1D9A091A /* Sources */,
-				252E2C0CB5CE2C50E8987B8B /* Frameworks */,
-				9D65BF4C0DBAA7BC2FCA0BE0 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Peacock";
-			productName = "Pods-Peacock";
-			productReference = FF955EE665EBAD8118E7769A /* libPods-Peacock.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		4CCB39510A7D2FF511E514B3 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-			};
-			buildConfigurationList = 6945E50BBFA901287C274DA5 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = DB01343702969A87D304657B;
-			productRefGroup = F45EFE60318420C365A15509 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				55E1B83D14590DA55F3095BF /* Pods */,
-				644C8AC029FBB593958EE287 /* Pods-Peacock */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		6B09BB7BBAA3B82C1D9A091A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22F5EAB0587C284745AF5AE0 /* LYCGFloatSizeHelper.m in Sources */,
-				DE00B2F9AD198C9365FCFDBF /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */,
-				69C2731B682CACC62B817477 /* Pods-Peacock-dummy.m in Sources */,
-				E159F4CA4220F80EBC0B738B /* UIButton+LYAppearance.m in Sources */,
-				900C6A0882AC5ED2497C47C1 /* UIButton+LYAttributedButton.m in Sources */,
-				2731DF813464394441C20BFD /* UILabel+FontAppearance.m in Sources */,
-				A659F9A271AE743D0448AA06 /* UILabel+LYAttributedLabel.m in Sources */,
-				9D6F2F91EEF18510CC80634C /* UILabel+SizeToFitText.m in Sources */,
-				3D911C49D81B702FEE3EC1E3 /* UILabel+VerticalAlignText.m in Sources */,
-				39A36080DA9B8A14E6900FEE /* UINavigationBar+LYTranlucenceUIAppearance.m in Sources */,
-				CBC938D6B2401B8376E90261 /* UITableView+SeparatorUIAppearance.m in Sources */,
-				E16914D91DBF8228DAAF0A9F /* UITextField+LYAppearance.m in Sources */,
-				26B08A978F2397C25F7FC746 /* UITextView+LYAppearance.m in Sources */,
-				54339FA9D6489C6696AA83FA /* UIViewController+AttributedStringTitle.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E90CB3ED978501AB74819001 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7C28AFA9769478CC57309172 /* Pods-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		02859264516E2EE405171532 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Peacock";
-			target = 644C8AC029FBB593958EE287 /* Pods-Peacock */;
-			targetProxy = 65A0D9606AC57E6D06037CD7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		0702F73B64BE40550FEB51ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2CF72799AD2761E3BEB07F8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C2FF2292403E79BF571728 /* Pods-Peacock-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Peacock/Pods-Peacock-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		31E654BF91508E36F3617515 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C2FF2292403E79BF571728 /* Pods-Peacock-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Peacock/Pods-Peacock-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		BB87648BB028B5A5648BECD4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 858DF1B1CC1AADF401C375F9 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		BF774A25C7AC84F003950780 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA70762E6BA790242FED241F /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D212C16C824C216F9D3E015B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		4DD000E247B1C5ED8FFF2251 /* Build configuration list for PBXNativeTarget "Pods-Peacock" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2CF72799AD2761E3BEB07F8A /* Debug */,
-				31E654BF91508E36F3617515 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6945E50BBFA901287C274DA5 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D212C16C824C216F9D3E015B /* Debug */,
-				0702F73B64BE40550FEB51ED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B3C0B2A9B34149E922A2B2CB /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BB87648BB028B5A5648BECD4 /* Debug */,
-				BF774A25C7AC84F003950780 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 4CCB39510A7D2FF511E514B3 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>01C6B39EA38F8C93DC8E0DFA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0BFB4B1C3828A02B28168B3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>98305362B3EF7D90FDFB4B7B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0F2D99E1C3086AC67F077F68</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-Peacock</string>
+			<key>target</key>
+			<string>E371FCDA6A24C17D83CBEEE9</string>
+			<key>targetProxy</key>
+			<string>9C8F3E35F88C4E5988E51DC9</string>
+		</dict>
+		<key>127370445D71C76C53AE0C06</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8F3BA97A6245237DB1570B6E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>12D27924A0D0B0076FB8D053</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01C6B39EA38F8C93DC8E0DFA</string>
+				<string>5D54B8B1FA8C9DBE12F313AC</string>
+				<string>59A2E76A9D465ADC658F4374</string>
+				<string>1DAD54690A79A67BC1A8E9BC</string>
+				<string>4D9E955DB239BFD15A9A7D9F</string>
+				<string>C051E79FCC596D19AD95D7A3</string>
+				<string>C08C7F67BA38008518021004</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>path</key>
+			<string>Target Support Files/Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>133957CFF41ADF386572987B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>989E557BECAC184D43C8C86D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>6D6C909C88F5C1E1FC45ED20</string>
+				<string>4B630A09FC80BAC56E147817</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>0F2D99E1C3086AC67F077F68</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>productName</key>
+			<string>Pods</string>
+			<key>productReference</key>
+			<string>9B002D9C20CFC094BB85F978</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>13F49C3BE8A2EFCE3AE0CF2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UITextView+LYAppearance.m</string>
+			<key>path</key>
+			<string>Peacock/UITextView/UITextView+LYAppearance.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1DAD54690A79A67BC1A8E9BC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2ABFF8D7531E42934A959885</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>529D1D7A8E8802898D317BF3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Peacock/Pods-Peacock-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2AC6876F12903FE58AC9A7BD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63BF51D7E89629F324989087</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2B097E1AA08F23A89CC7D9D5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5ED93BA408A34008CC2A4651</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2C253E3A5558184904F52F97</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UILabel+LYAttributedLabel.h</string>
+			<key>path</key>
+			<string>Peacock/UILabel/UILabel+LYAttributedLabel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C290C40DAD8B18E4BBB569B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BFFA24CC7137E5BF06A71C23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2C8578881BFD94C41AECA7B8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>3461EA44FD03FDFE67DEE0EF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2C8578881BFD94C41AECA7B8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35F00743749B97BD15EDD34E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIButton+LYAppearance.m</string>
+			<key>path</key>
+			<string>Peacock/UIButton/UIButton+LYAppearance.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>38054063FDBA88E745C9551B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>38F31D26943FA14C23AA0B27</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>393BA47659415180A1DB2CE8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UITextField+LYAppearance.m</string>
+			<key>path</key>
+			<string>Peacock/UITextField/UITextField+LYAppearance.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C953EE28C7F0056645FB457</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>12D27924A0D0B0076FB8D053</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D3B7C9DF12178B1CA544492</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C051E79FCC596D19AD95D7A3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>4B630A09FC80BAC56E147817</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DB98CB48F4084CF606277925</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D8C8D24E55F85C6D59C9C31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>393BA47659415180A1DB2CE8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D9E955DB239BFD15A9A7D9F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5263278BC789F6A59BFD0476</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99519F58F9E9FCEC31E622FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>529D1D7A8E8802898D317BF3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Peacock-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>532C72EF804514E97092F198</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B7B197FB8724CC6F54C42B87</string>
+				<string>529D1D7A8E8802898D317BF3</string>
+				<string>98305362B3EF7D90FDFB4B7B</string>
+				<string>FE0026429BB928E69A6EB668</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Pods-Peacock</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>564D5B8D2C11AA424374E1FC</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2ABFF8D7531E42934A959885</string>
+				<string>91CD202F84EEA9358623EAC4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>59A2E76A9D465ADC658F4374</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>59CE250EC20FF2E6A4FB372A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>35F00743749B97BD15EDD34E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5CF3419FE75DC014558CA9CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>LYCGFloatSizeHelper.h</string>
+			<key>path</key>
+			<string>Peacock/LYCGFloatSizeHelper.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5D54B8B1FA8C9DBE12F313AC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5DD0FAEDCBFD125A53E36FD7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>38054063FDBA88E745C9551B</string>
+				<string>F6BCB43F5552AE78222524A6</string>
+				<string>FF9831781269235A0A86AB99</string>
+				<string>E5841F78DC945AB30B8A312D</string>
+				<string>3C953EE28C7F0056645FB457</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5E908A83B334880D65C8756E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C08C7F67BA38008518021004</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>5ED93BA408A34008CC2A4651</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UITableView+SeparatorUIAppearance.h</string>
+			<key>path</key>
+			<string>Peacock/UITableView/UITableView+SeparatorUIAppearance.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5F1B85ECF6DDC65FA1A86D35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2C8578881BFD94C41AECA7B8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63BF51D7E89629F324989087</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIViewController+AttributedStringTitle.h</string>
+			<key>path</key>
+			<string>Peacock/UIViewController/UIViewController+AttributedStringTitle.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65E7A3C3940136B9C6E388FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6A6CB9EE900699EA36318D01</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6A6CB9EE900699EA36318D01</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIButton+LYAttributedButton.h</string>
+			<key>path</key>
+			<string>Peacock/UIButton/UIButton+LYAttributedButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6AC113360C9619916BA2C0E3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UITextField+LYAppearance.h</string>
+			<key>path</key>
+			<string>Peacock/UITextField/UITextField+LYAppearance.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6B8468875785965337B7F7C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>59A2E76A9D465ADC658F4374</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6BDBEB4019545EE12EEBBDD3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>13F49C3BE8A2EFCE3AE0CF2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6D6C909C88F5C1E1FC45ED20</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6B8468875785965337B7F7C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6DA01D3769A4AC29B9C635B6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E607C40D96ADF9F58BE8D3F8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6E8BFE5BC781205A8CCA5ADB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C2B6419719F5E88D6EE8AABA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>73A1BB612B96EF9EC3A2FEC4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F428FF79BA12B8008A33F5CF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>758B38AD1A59A2A8980588C7</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>F3166163BC5E7A0251649990</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>5DD0FAEDCBFD125A53E36FD7</string>
+			<key>productRefGroup</key>
+			<string>E5841F78DC945AB30B8A312D</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>133957CFF41ADF386572987B</string>
+				<string>E371FCDA6A24C17D83CBEEE9</string>
+			</array>
+		</dict>
+		<key>762B56B18FA650276FBC72D1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Peacock.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>8B05CECBB1A4254B3AAB093E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6AC113360C9619916BA2C0E3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8F3BA97A6245237DB1570B6E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UITextView+LYAppearance.h</string>
+			<key>path</key>
+			<string>Peacock/UITextView/UITextView+LYAppearance.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8F60321265FFFADB1D41B2CC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UITableView+SeparatorUIAppearance.m</string>
+			<key>path</key>
+			<string>Peacock/UITableView/UITableView+SeparatorUIAppearance.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9026CFFB58418848FDA19D28</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B59960BDA34E5CE58495F5AF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>90D30728ABEF5C457E76FE7E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5CF3419FE75DC014558CA9CF</string>
+				<string>99519F58F9E9FCEC31E622FC</string>
+				<string>BFFA24CC7137E5BF06A71C23</string>
+				<string>BE715B9FA4C63EE8D4C2A130</string>
+				<string>35F00743749B97BD15EDD34E</string>
+				<string>6A6CB9EE900699EA36318D01</string>
+				<string>E607C40D96ADF9F58BE8D3F8</string>
+				<string>981867B402049292D9091422</string>
+				<string>E8F6B122BF1EE6D4587CB9DC</string>
+				<string>2C253E3A5558184904F52F97</string>
+				<string>D2EA24C298D4C72FDF0E69ED</string>
+				<string>F428FF79BA12B8008A33F5CF</string>
+				<string>B59960BDA34E5CE58495F5AF</string>
+				<string>5ED93BA408A34008CC2A4651</string>
+				<string>8F60321265FFFADB1D41B2CC</string>
+				<string>6AC113360C9619916BA2C0E3</string>
+				<string>393BA47659415180A1DB2CE8</string>
+				<string>8F3BA97A6245237DB1570B6E</string>
+				<string>13F49C3BE8A2EFCE3AE0CF2F</string>
+				<string>63BF51D7E89629F324989087</string>
+				<string>C2B6419719F5E88D6EE8AABA</string>
+				<string>532C72EF804514E97092F198</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Peacock</string>
+			<key>path</key>
+			<string>Peacock</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>91CD202F84EEA9358623EAC4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>529D1D7A8E8802898D317BF3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Peacock/Pods-Peacock-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9417F23F894F188AD557E365</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8F60321265FFFADB1D41B2CC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>94D63F71F4E2F43438F4B6C1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FAD420E2C2B0729463EB63CF</string>
+				<string>2C290C40DAD8B18E4BBB569B</string>
+				<string>A25BE2FC855E313B84218BFE</string>
+				<string>65E7A3C3940136B9C6E388FF</string>
+				<string>F6988F8F6FD32C30C6C76E62</string>
+				<string>99A6CDF0354B62DBCCE52B1F</string>
+				<string>73A1BB612B96EF9EC3A2FEC4</string>
+				<string>2B097E1AA08F23A89CC7D9D5</string>
+				<string>8B05CECBB1A4254B3AAB093E</string>
+				<string>127370445D71C76C53AE0C06</string>
+				<string>2AC6876F12903FE58AC9A7BD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>981867B402049292D9091422</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UILabel+FontAppearance.h</string>
+			<key>path</key>
+			<string>Peacock/UILabel/UILabel+FontAppearance.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>98305362B3EF7D90FDFB4B7B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-Peacock-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>989E557BECAC184D43C8C86D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3D3B7C9DF12178B1CA544492</string>
+				<string>5E908A83B334880D65C8756E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>99519F58F9E9FCEC31E622FC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>LYCGFloatSizeHelper.m</string>
+			<key>path</key>
+			<string>Peacock/LYCGFloatSizeHelper.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99A6CDF0354B62DBCCE52B1F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2C253E3A5558184904F52F97</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9B002D9C20CFC094BB85F978</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9C8F3E35F88C4E5988E51DC9</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>758B38AD1A59A2A8980588C7</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E371FCDA6A24C17D83CBEEE9</string>
+			<key>remoteInfo</key>
+			<string>Pods-Peacock</string>
+		</dict>
+		<key>A25BE2FC855E313B84218BFE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BE715B9FA4C63EE8D4C2A130</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B59960BDA34E5CE58495F5AF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UINavigationBar+LYTranlucenceUIAppearance.m</string>
+			<key>path</key>
+			<string>Peacock/UINavigationBar/UINavigationBar+LYTranlucenceUIAppearance.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B7B197FB8724CC6F54C42B87</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Peacock.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BE715B9FA4C63EE8D4C2A130</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIButton+LYAppearance.h</string>
+			<key>path</key>
+			<string>Peacock/UIButton/UIButton+LYAppearance.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BEA28CA731BDFD11B3696BE2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3461EA44FD03FDFE67DEE0EF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BFFA24CC7137E5BF06A71C23</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Peacock.h</string>
+			<key>path</key>
+			<string>Peacock/Peacock.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C051E79FCC596D19AD95D7A3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C08C7F67BA38008518021004</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C2316A5611623EA59510CBDD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5263278BC789F6A59BFD0476</string>
+				<string>0BFB4B1C3828A02B28168B3F</string>
+				<string>59CE250EC20FF2E6A4FB372A</string>
+				<string>6DA01D3769A4AC29B9C635B6</string>
+				<string>EC1DCCF58D6BDFC82F0B2B5E</string>
+				<string>EADB85495F847D651496CFEE</string>
+				<string>9026CFFB58418848FDA19D28</string>
+				<string>9417F23F894F188AD557E365</string>
+				<string>4D8C8D24E55F85C6D59C9C31</string>
+				<string>6BDBEB4019545EE12EEBBDD3</string>
+				<string>6E8BFE5BC781205A8CCA5ADB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C2B6419719F5E88D6EE8AABA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIViewController+AttributedStringTitle.m</string>
+			<key>path</key>
+			<string>Peacock/UIViewController/UIViewController+AttributedStringTitle.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D2EA24C298D4C72FDF0E69ED</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UILabel+LYAttributedLabel.m</string>
+			<key>path</key>
+			<string>Peacock/UILabel/UILabel+LYAttributedLabel.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DB98CB48F4084CF606277925</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2C8578881BFD94C41AECA7B8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E371FCDA6A24C17D83CBEEE9</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>564D5B8D2C11AA424374E1FC</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C2316A5611623EA59510CBDD</string>
+				<string>BEA28CA731BDFD11B3696BE2</string>
+				<string>94D63F71F4E2F43438F4B6C1</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Peacock</string>
+			<key>productName</key>
+			<string>Pods-Peacock</string>
+			<key>productReference</key>
+			<string>762B56B18FA650276FBC72D1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>E5841F78DC945AB30B8A312D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9B002D9C20CFC094BB85F978</string>
+				<string>762B56B18FA650276FBC72D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E607C40D96ADF9F58BE8D3F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIButton+LYAttributedButton.m</string>
+			<key>path</key>
+			<string>Peacock/UIButton/UIButton+LYAttributedButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8F6B122BF1EE6D4587CB9DC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UILabel+FontAppearance.m</string>
+			<key>path</key>
+			<string>Peacock/UILabel/UILabel+FontAppearance.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EADB85495F847D651496CFEE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D2EA24C298D4C72FDF0E69ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC1DCCF58D6BDFC82F0B2B5E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E8F6B122BF1EE6D4587CB9DC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3166163BC5E7A0251649990</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F7CE811FE2CF217DDC1F774E</string>
+				<string>38F31D26943FA14C23AA0B27</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F428FF79BA12B8008A33F5CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UINavigationBar+LYTranlucenceUIAppearance.h</string>
+			<key>path</key>
+			<string>Peacock/UINavigationBar/UINavigationBar+LYTranlucenceUIAppearance.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6988F8F6FD32C30C6C76E62</key>
+		<dict>
+			<key>fileRef</key>
+			<string>981867B402049292D9091422</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F6BCB43F5552AE78222524A6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5F1B85ECF6DDC65FA1A86D35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7CE811FE2CF217DDC1F774E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FAD420E2C2B0729463EB63CF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5CF3419FE75DC014558CA9CF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FE0026429BB928E69A6EB668</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Peacock-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF9831781269235A0A86AB99</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>90D30728ABEF5C457E76FE7E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>758B38AD1A59A2A8980588C7</string>
+</dict>
+</plist>

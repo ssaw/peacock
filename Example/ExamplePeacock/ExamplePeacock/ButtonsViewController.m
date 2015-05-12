@@ -4,7 +4,7 @@
 //
 
 #import "ButtonsViewController.h"
-#import "UIButton+LYAttributedButton.h"
+#import "Peacock.h"
 
 @implementation RedButtonView
 //UIAppearance Placeholder

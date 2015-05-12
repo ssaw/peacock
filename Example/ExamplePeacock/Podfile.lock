@@ -1,5 +1,5 @@
 PODS:
-  - Peacock (0.0.1)
+  - Peacock (0.1.1)
 
 DEPENDENCIES:
   - Peacock (from `https://github.com/ssaw/peacock.git`)
@@ -10,10 +10,10 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Peacock:
-    :commit: e2d8b653178eae73fcd62b6caf91f58e4cd34ad1
+    :commit: 38115090d593613987e80e7d8d59becbc28ffd64
     :git: https://github.com/ssaw/peacock.git
 
 SPEC CHECKSUMS:
-  Peacock: d1d315286cfcbe2e93bfec19d27679ef89789aed
+  Peacock: 4a80c1af991fdf5afd71f80ccc38669c5a085ef1
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.35.0
