@@ -12,6 +12,5 @@ Pod::Spec.new do |s|
   s.source            = { :git => "https://github.com/ssaw/peacock.git", :tag => s.version }
   s.source_files  = "Peacock/**/*"
   s.exclude_files = "PeacockApp/*","Peacock.xcodeproj/*","Peacock.xcworkspace/*","PeacockAppTests/*","PeacockTests/*","Pods/*"
-  s.public_header_files = "Peacock/Peacock.h"
   s.requires_arc = true
 end
