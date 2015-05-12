@@ -15,9 +15,6 @@
 #import "ButtonsViewController.h"
 #import "ExamplePeacock-Swift.h"
 
-//this needs to go on Peacock import
-#import "UIButton+LYAttributedButton.h"
-
 @implementation Theme
 
 +(void)applyTheme
@@ -67,24 +64,24 @@
 
 +(void)titleStyle
 {
-    [[TitleLabel appearance] setLYTextColor:[UIColor grayColor]];
+    [[TitleLabel appearance] setAppearanceTextColor:[UIColor grayColor]];
     [[TitleLabel appearance] setLYStrikeOut:YES];
     UIFont *font = [[self class] titleFontWithSize:17.0f];
-    [[TitleLabel appearance] setLYFont:font];
+    [[TitleLabel appearance] setAppearanceFont:font];
 }
 
 +(void)textStyle
 {
-    [[TextLabel appearance] setLYTextColor:[UIColor blackColor]];
+    [[TextLabel appearance] setAppearanceTextColor:[UIColor blackColor]];
     UIFont *font = [[self class] textFontWithSize:12.0f];
-    [[TextLabel appearance] setLYFont:font];
+    [[TextLabel appearance] setAppearanceFont:font];
 }
 
 +(void)cellStyle
 {
-    [[UILabel appearanceWhenContainedIn:[BlueTextCell class], nil] setLYTextColor:[UIColor blueColor]];
+    [[UILabel appearanceWhenContainedIn:[BlueTextCell class], nil] setAppearanceTextColor:[UIColor blueColor]];
     
-    [[UILabel appearanceWhenContainedIn:[GreenTextCell class], nil] setLYTextColor:[UIColor greenColor]];
+    [[UILabel appearanceWhenContainedIn:[GreenTextCell class], nil] setAppearanceTextColor:[UIColor greenColor]];
 }
 
 +(void)buttonStyle

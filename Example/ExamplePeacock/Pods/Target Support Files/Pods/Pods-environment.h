@@ -9,6 +9,6 @@
 // Peacock
 #define COCOAPODS_POD_AVAILABLE_Peacock
 #define COCOAPODS_VERSION_MAJOR_Peacock 0
-#define COCOAPODS_VERSION_MINOR_Peacock 0
+#define COCOAPODS_VERSION_MINOR_Peacock 1
 #define COCOAPODS_VERSION_PATCH_Peacock 1
 

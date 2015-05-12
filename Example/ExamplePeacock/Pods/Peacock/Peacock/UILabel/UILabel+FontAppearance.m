@@ -10,21 +10,21 @@
 
 #pragma mark - appearanceFont
 
-- (void)setAppearanceFont:(UIFont*)font
+- (void)setAppearanceFont:(UIFont *)font
 {
     [self setFont:font];
 }
 
--(UIFont*)appearanceFont
+-(UIFont *)appearanceFont
 {
-    return [self font];
+    return self.font;
 }
 
 #pragma mark - appearanceTextColor
 
--(UIColor*)appearanceTextColor
+-(UIColor *)appearanceTextColor
 {
-    return [self textColor];
+    return self.textColor;
 }
 
 -(void)setAppearanceTextColor:(UIColor *)appearanceTextColor
@@ -34,9 +34,9 @@
 
 #pragma mark - appearanceBackgroundColor
 
--(UIColor*)appearanceBackgroundColor
+-(UIColor *)appearanceBackgroundColor
 {
-    return [self backgroundColor];
+    return self.backgroundColor;
 }
 
 -(void)setAppearanceBackgroundColor:(UIColor *)appearanceTextColor
@@ -51,9 +51,9 @@
     [self setHighlightedTextColor:textColor];
 }
 
--(UIColor*)appearanceHighlightedTextColor
+-(UIColor *)appearanceHighlightedTextColor
 {
-    return [self highlightedTextColor];
+    return self.highlightedTextColor;
 }
 
 #pragma mark - 

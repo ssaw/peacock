@@ -17,23 +17,24 @@
     NSAttributedString *attributedText = [self attributedTitleForState:state];
     NSMutableDictionary *attributes = nil;
     
-    if([attributedText length] > 0) {
+    if(attributedText.length > 0) {
         NSDictionary *currentAttributes = [attributedText attributesAtIndex:0 effectiveRange:NULL];
         attributes = [currentAttributes mutableCopy];
     } else {
         attributes = [NSMutableDictionary dictionary];
-    }
+    } 
     
     return attributes;
 }
 
--(void)setLYAttributesDictionary:(NSDictionary*)attributes forState:(UIControlState)state
+-(void)setLYAttributesDictionary:(NSDictionary *)attributes forState:(UIControlState)state
 {
     if(attributes == nil) attributes = @{};
  
     NSAttributedString *currentAttributedText = [self attributedTitleForState:state];
-    NSString *text = [currentAttributedText string];
-    if(text == nil) text = @"";
+    NSString *text = currentAttributedText.string;
+    
+    if(text == nil) { text = @""; }
     
     NSAttributedString *newAttributedText = [[NSAttributedString alloc] initWithString:text attributes:attributes];
     [self setAttributedTitle:newAttributedText forState:state];
@@ -41,54 +42,48 @@
 
 -(void)setAttributedTitleUsingString:(NSString *)string forState:(UIControlState)state
 {
-    if(string == nil) string = @"";
+    if(string == nil) { string = @""; }
     
     NSDictionary *attributes = [self LYAttributesDictionaryForState:state];
     NSAttributedString *title = [[NSAttributedString alloc] initWithString:string attributes:attributes];
-    
     [self setAttributedTitle:title forState:state];
 }
 
 #pragma mark - particular attributes
 
--(id)LYAttributeWithKey:(NSString*)key forState:(UIControlState)state
+-(id)LYAttributeWithKey:(NSString *)key forState:(UIControlState)state
 {
-    if(key == nil) return nil;
+    if(key == nil) { return nil; }
     
     NSDictionary *attributes = [self LYAttributesDictionaryForState:state];
     return [attributes objectForKey:key];
 }
 
--(void)setLYAttributeValue:(NSObject*)attribute forKey:(NSString*)key state:(UIControlState)state
+-(void)setLYAttributeValue:(NSObject *)attribute forKey:(NSString *)key state:(UIControlState)state
 {
-    if(key == nil) return;
+    if(key == nil) { return; }
     
     NSMutableDictionary *attributes = [self LYAttributesDictionaryForState:state];
     
-    if(attribute) {
-        [attributes setObject:attribute forKey:key];
-    } else {
-        [attributes removeObjectForKey:key];
-    }
+    if(attribute) { [attributes setObject:attribute forKey:key]; }
+    else { [attributes removeObjectForKey:key]; }
     
     [self setLYAttributesDictionary:attributes forState:state];
 }
 
 #pragma mark - paragraph styling
 
--(NSMutableParagraphStyle*)LYParagraphStyleForState:(UIControlState)state
+-(NSMutableParagraphStyle *)LYParagraphStyleForState:(UIControlState)state
 {
     NSMutableParagraphStyle *paragrahStyle = [self LYAttributeWithKey:NSParagraphStyleAttributeName forState:state];
-    if([paragrahStyle isKindOfClass:[NSParagraphStyle class]]) paragrahStyle = [paragrahStyle mutableCopy];
+    if([paragrahStyle isKindOfClass:[NSParagraphStyle class]]) { paragrahStyle = [paragrahStyle mutableCopy]; }
     
-    if(paragrahStyle == nil) {
-        paragrahStyle  = [[NSMutableParagraphStyle alloc] init];
-    }
+    if(paragrahStyle == nil) { paragrahStyle  = [[NSMutableParagraphStyle alloc] init]; }
     
     return paragrahStyle;
 }
 
--(void)setLYParagraphStyle:(NSParagraphStyle*)paragraphStyle forState:(UIControlState)state
+-(void)setLYParagraphStyle:(NSParagraphStyle *)paragraphStyle forState:(UIControlState)state
 {
     [self setLYAttributeValue:paragraphStyle forKey:NSParagraphStyleAttributeName state:state];
 }
@@ -104,9 +99,9 @@
 {
     id color = [self LYAttributeWithKey:NSForegroundColorAttributeName forState:state];
     UIColor *fontColor;
-    if ([color isKindOfClass:[UIColor class]]) {
-        fontColor = (UIColor *)color;
-    }
+    
+    if ([color isKindOfClass:[UIColor class]]) { fontColor = (UIColor *)color; }
+    
     return fontColor;
 }
 
@@ -121,9 +116,9 @@
 {
     id font = [self LYAttributeWithKey:NSFontAttributeName forState:state];
     UIFont *buttonFont = nil;
-    if ([font isKindOfClass:[UIFont class]]) {
-        buttonFont = (UIFont *) font;
-    }
+    
+    if ([font isKindOfClass:[UIFont class]]) { buttonFont = (UIFont *) font; }
+    
     return buttonFont;
 }
 

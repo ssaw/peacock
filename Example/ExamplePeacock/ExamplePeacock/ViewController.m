@@ -4,7 +4,7 @@
 //
 
 #import "ViewController.h"
-#import "Peacock.h"
+#import <Peacock/Peacock.h>
 
 @implementation TextLabel
 //Placeholder for UIAppearance
