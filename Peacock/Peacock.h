@@ -7,17 +7,9 @@
 
 #import "UIButton+LYAttributedButton.h"
 
-#import "UILabel+LYAttributedLabel.h"
-
-#import "LYUILabelWithVerticalScrollAnimationOnSetText.h"
-
 #import "UILabel+FontAppearance.h"
 
 #import "UILabel+LYAttributedLabel.h"
-
-#import "UILabel+SizeToFitText.h"
-
-#import "UILabel+VerticalAlignText.h"
 
 #import "UINavigationBar+LYTranlucenceUIAppearance.h"
 
