@@ -1,6 +1,6 @@
 # LYPeacock
 
-The set of Categories that will help you clean, reduce, order and separate all you styling code. Removing it from your Views and ViewControllers to put it on a separate styling file.
+The set of Categories that will help you clean, reduce, order and separate all you styling code, removing it from your Views and ViewControllers to put it on a separate styling file.
 
 ## Installation
 To install the pod, add following line to your Podfile:
