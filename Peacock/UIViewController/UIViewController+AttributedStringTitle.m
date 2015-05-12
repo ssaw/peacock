@@ -39,22 +39,6 @@
     return titleView;
 }
 
--(void)setAttributedTitle:(NSString*)titleText
-{
-    UILabel *titleView = [self createTitleViewLabel];
-
-    [self setAttributedTitle:titleText usingLabel:titleView];
-}
-
--(void)setAttributedTitle
-{
-    NSString *title = [self title];
-    
-    if(title) {
-        [self setAttributedTitle:title];
-    }
-}
-
 #pragma mark - testing
 
 -(UILabel *)setAttributedTitleForTesting

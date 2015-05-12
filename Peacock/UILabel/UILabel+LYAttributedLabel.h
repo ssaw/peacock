@@ -7,10 +7,6 @@
 
 @interface UILabel (LYAttributedLabel)
 
-// these are deprecated see, #import "UILabel+FontAppearance.h"
-@property (nonatomic, copy) UIColor* LYTextColor UI_APPEARANCE_SELECTOR;
-@property (nonatomic, copy) UIFont* LYFont UI_APPEARANCE_SELECTOR;
-
 @property (nonatomic, assign) NSLineBreakMode LYLineBreakMode UI_APPEARANCE_SELECTOR;
 
 @property (nonatomic, assign) NSTextAlignment LYTextAlignment UI_APPEARANCE_SELECTOR;

@@ -11,10 +11,7 @@
 		CD2C08021AC3741200E5C412 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C08011AC3741200E5C412 /* main.m */; };
 		CD2C08051AC3741200E5C412 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C08041AC3741200E5C412 /* AppDelegate.m */; };
 		CD2C08081AC3741200E5C412 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C08071AC3741200E5C412 /* ViewController.m */; };
-		CD2C080B1AC3741200E5C412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C08091AC3741200E5C412 /* Main.storyboard */; };
 		CD2C080D1AC3741200E5C412 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2C080C1AC3741200E5C412 /* Images.xcassets */; };
-		CD2C08101AC3741200E5C412 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2C080E1AC3741200E5C412 /* LaunchScreen.xib */; };
-		CD2C081C1AC3741200E5C412 /* PeacockAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C081B1AC3741200E5C412 /* PeacockAppTests.m */; };
 		CD54BAA91ACA0274008F9909 /* LYPeacockTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD54BAA81ACA0274008F9909 /* LYPeacockTableTests.m */; };
 		CD59FEC71AACDA0900FB8D9E /* libPeacock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */; };
 		CD6BA0021ACA078400602D72 /* LYPeacockTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6BA0011ACA078400602D72 /* LYPeacockTextFieldTests.m */; };
@@ -25,11 +22,8 @@
 		CDA32C681AC71BE000A199C1 /* LYPeacockNavigationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA32C671AC71BE000A199C1 /* LYPeacockNavigationBarTests.m */; };
 		CDA8A5C91AAD0CEE007EAC99 /* UIButton+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AA1AAD0CEE007EAC99 /* UIButton+LYAppearance.m */; };
 		CDA8A5CA1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AC1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m */; };
-		CDA8A5CB1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5AF1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */; };
 		CDA8A5CC1AAD0CEE007EAC99 /* UILabel+FontAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5B11AAD0CEE007EAC99 /* UILabel+FontAppearance.m */; };
 		CDA8A5CD1AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5B31AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m */; };
-		CDA8A5CE1AAD0CEE007EAC99 /* UILabel+SizeToFitText.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5B51AAD0CEE007EAC99 /* UILabel+SizeToFitText.m */; };
-		CDA8A5CF1AAD0CEE007EAC99 /* UILabel+VerticalAlignText.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5B71AAD0CEE007EAC99 /* UILabel+VerticalAlignText.m */; };
 		CDA8A5D01AAD0CEE007EAC99 /* UINavigationBar+LYTranlucenceUIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5BA1AAD0CEE007EAC99 /* UINavigationBar+LYTranlucenceUIAppearance.m */; };
 		CDA8A5D11AAD0CEE007EAC99 /* UITableView+SeparatorUIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5BD1AAD0CEE007EAC99 /* UITableView+SeparatorUIAppearance.m */; };
 		CDA8A5D21AAD0CEE007EAC99 /* UITextField+LYAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA8A5C01AAD0CEE007EAC99 /* UITextField+LYAppearance.m */; };
@@ -40,13 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CD2C08161AC3741200E5C412 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD59FEB31AACDA0900FB8D9E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD2C07FC1AC3741200E5C412;
-			remoteInfo = PeacockApp;
-		};
 		CD2C08231AC3742000E5C412 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD59FEB31AACDA0900FB8D9E /* Project object */;
@@ -85,12 +72,7 @@
 		CD2C08041AC3741200E5C412 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD2C08061AC3741200E5C412 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CD2C08071AC3741200E5C412 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CD2C080A1AC3741200E5C412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD2C080C1AC3741200E5C412 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CD2C080F1AC3741200E5C412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CD2C08151AC3741200E5C412 /* PeacockAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacockAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD2C081A1AC3741200E5C412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD2C081B1AC3741200E5C412 /* PeacockAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeacockAppTests.m; sourceTree = "<group>"; };
 		CD54BAA81ACA0274008F9909 /* LYPeacockTableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPeacockTableTests.m; sourceTree = "<group>"; };
 		CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPeacock.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD59FEC61AACDA0900FB8D9E /* PeacockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,16 +88,10 @@
 		CDA8A5AA1AAD0CEE007EAC99 /* UIButton+LYAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYAppearance.m"; sourceTree = "<group>"; };
 		CDA8A5AB1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LYAttributedButton.h"; sourceTree = "<group>"; };
 		CDA8A5AC1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYAttributedButton.m"; sourceTree = "<group>"; };
-		CDA8A5AE1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYUILabelWithVerticalScrollAnimationOnSetText.h; sourceTree = "<group>"; };
-		CDA8A5AF1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYUILabelWithVerticalScrollAnimationOnSetText.m; sourceTree = "<group>"; };
 		CDA8A5B01AAD0CEE007EAC99 /* UILabel+FontAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FontAppearance.h"; sourceTree = "<group>"; };
 		CDA8A5B11AAD0CEE007EAC99 /* UILabel+FontAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FontAppearance.m"; sourceTree = "<group>"; };
 		CDA8A5B21AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LYAttributedLabel.h"; sourceTree = "<group>"; };
 		CDA8A5B31AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LYAttributedLabel.m"; sourceTree = "<group>"; };
-		CDA8A5B41AAD0CEE007EAC99 /* UILabel+SizeToFitText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SizeToFitText.h"; sourceTree = "<group>"; };
-		CDA8A5B51AAD0CEE007EAC99 /* UILabel+SizeToFitText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SizeToFitText.m"; sourceTree = "<group>"; };
-		CDA8A5B61AAD0CEE007EAC99 /* UILabel+VerticalAlignText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+VerticalAlignText.h"; sourceTree = "<group>"; };
-		CDA8A5B71AAD0CEE007EAC99 /* UILabel+VerticalAlignText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+VerticalAlignText.m"; sourceTree = "<group>"; };
 		CDA8A5B91AAD0CEE007EAC99 /* UINavigationBar+LYTranlucenceUIAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+LYTranlucenceUIAppearance.h"; sourceTree = "<group>"; };
 		CDA8A5BA1AAD0CEE007EAC99 /* UINavigationBar+LYTranlucenceUIAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+LYTranlucenceUIAppearance.m"; sourceTree = "<group>"; };
 		CDA8A5BC1AAD0CEE007EAC99 /* UITableView+SeparatorUIAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SeparatorUIAppearance.h"; sourceTree = "<group>"; };
@@ -133,13 +109,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		CD2C07FA1AC3741200E5C412 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD2C08121AC3741200E5C412 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,9 +158,7 @@
 				CD2C08041AC3741200E5C412 /* AppDelegate.m */,
 				CD2C08061AC3741200E5C412 /* ViewController.h */,
 				CD2C08071AC3741200E5C412 /* ViewController.m */,
-				CD2C08091AC3741200E5C412 /* Main.storyboard */,
 				CD2C080C1AC3741200E5C412 /* Images.xcassets */,
-				CD2C080E1AC3741200E5C412 /* LaunchScreen.xib */,
 				CD2C07FF1AC3741200E5C412 /* Supporting Files */,
 			);
 			path = PeacockApp;
@@ -206,30 +173,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CD2C08181AC3741200E5C412 /* PeacockAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				CD2C081B1AC3741200E5C412 /* PeacockAppTests.m */,
-				CD2C08191AC3741200E5C412 /* Supporting Files */,
-			);
-			path = PeacockAppTests;
-			sourceTree = "<group>";
-		};
-		CD2C08191AC3741200E5C412 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CD2C081A1AC3741200E5C412 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		CD59FEB21AACDA0900FB8D9E = {
 			isa = PBXGroup;
 			children = (
 				CD59FEBD1AACDA0900FB8D9E /* Peacock */,
 				CD59FECA1AACDA0900FB8D9E /* PeacockTests */,
 				CD2C07FE1AC3741200E5C412 /* PeacockApp */,
-				CD2C08181AC3741200E5C412 /* PeacockAppTests */,
 				CD59FEBC1AACDA0900FB8D9E /* Products */,
 				BF9D8D77AEE2531A48941B8A /* Pods */,
 				1DA6252F298EC86FDEADEF90 /* Frameworks */,
@@ -242,7 +191,6 @@
 				CD59FEBB1AACDA0900FB8D9E /* libPeacock.a */,
 				CD59FEC61AACDA0900FB8D9E /* PeacockTests.xctest */,
 				CD2C07FD1AC3741200E5C412 /* PeacockApp.app */,
-				CD2C08151AC3741200E5C412 /* PeacockAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,16 +257,10 @@
 		CDA8A5AD1AAD0CEE007EAC99 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				CDA8A5AE1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.h */,
-				CDA8A5AF1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m */,
 				CDA8A5B01AAD0CEE007EAC99 /* UILabel+FontAppearance.h */,
 				CDA8A5B11AAD0CEE007EAC99 /* UILabel+FontAppearance.m */,
 				CDA8A5B21AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.h */,
 				CDA8A5B31AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m */,
-				CDA8A5B41AAD0CEE007EAC99 /* UILabel+SizeToFitText.h */,
-				CDA8A5B51AAD0CEE007EAC99 /* UILabel+SizeToFitText.m */,
-				CDA8A5B61AAD0CEE007EAC99 /* UILabel+VerticalAlignText.h */,
-				CDA8A5B71AAD0CEE007EAC99 /* UILabel+VerticalAlignText.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -388,24 +330,6 @@
 			productReference = CD2C07FD1AC3741200E5C412 /* PeacockApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CD2C08141AC3741200E5C412 /* PeacockAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CD2C08221AC3741200E5C412 /* Build configuration list for PBXNativeTarget "PeacockAppTests" */;
-			buildPhases = (
-				CD2C08111AC3741200E5C412 /* Sources */,
-				CD2C08121AC3741200E5C412 /* Frameworks */,
-				CD2C08131AC3741200E5C412 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CD2C08171AC3741200E5C412 /* PBXTargetDependency */,
-			);
-			name = PeacockAppTests;
-			productName = PeacockAppTests;
-			productReference = CD2C08151AC3741200E5C412 /* PeacockAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		CD59FEBA1AACDA0900FB8D9E /* Peacock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD59FECF1AACDA0900FB8D9E /* Build configuration list for PBXNativeTarget "Peacock" */;
@@ -456,10 +380,6 @@
 					CD2C07FC1AC3741200E5C412 = {
 						CreatedOnToolsVersion = 6.2;
 					};
-					CD2C08141AC3741200E5C412 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = CD2C07FC1AC3741200E5C412;
-					};
 					CD59FEBA1AACDA0900FB8D9E = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -485,7 +405,6 @@
 				CD59FEBA1AACDA0900FB8D9E /* Peacock */,
 				CD59FEC51AACDA0900FB8D9E /* PeacockTests */,
 				CD2C07FC1AC3741200E5C412 /* PeacockApp */,
-				CD2C08141AC3741200E5C412 /* PeacockAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -495,16 +414,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2C080B1AC3741200E5C412 /* Main.storyboard in Resources */,
-				CD2C08101AC3741200E5C412 /* LaunchScreen.xib in Resources */,
 				CD2C080D1AC3741200E5C412 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD2C08131AC3741200E5C412 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,27 +471,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD2C08111AC3741200E5C412 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD2C081C1AC3741200E5C412 /* PeacockAppTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CD59FEB71AACDA0900FB8D9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA8A5CB1AAD0CEE007EAC99 /* LYUILabelWithVerticalScrollAnimationOnSetText.m in Sources */,
-				CDA8A5CF1AAD0CEE007EAC99 /* UILabel+VerticalAlignText.m in Sources */,
 				CDA8A5CA1AAD0CEE007EAC99 /* UIButton+LYAttributedButton.m in Sources */,
 				CDA8A5D01AAD0CEE007EAC99 /* UINavigationBar+LYTranlucenceUIAppearance.m in Sources */,
 				CDA8A5CD1AAD0CEE007EAC99 /* UILabel+LYAttributedLabel.m in Sources */,
 				CDA8A5D11AAD0CEE007EAC99 /* UITableView+SeparatorUIAppearance.m in Sources */,
 				CDA8A5C91AAD0CEE007EAC99 /* UIButton+LYAppearance.m in Sources */,
 				CDA8A5D21AAD0CEE007EAC99 /* UITextField+LYAppearance.m in Sources */,
-				CDA8A5CE1AAD0CEE007EAC99 /* UILabel+SizeToFitText.m in Sources */,
 				CDA8A5D31AAD0CEE007EAC99 /* UITextView+LYAppearance.m in Sources */,
 				CDA8A5D41AAD0CEE007EAC99 /* UIViewController+AttributedStringTitle.m in Sources */,
 				CD85FC841AAE58B2000B1318 /* LYCGFloatSizeHelper.m in Sources */,
@@ -607,11 +506,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CD2C08171AC3741200E5C412 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CD2C07FC1AC3741200E5C412 /* PeacockApp */;
-			targetProxy = CD2C08161AC3741200E5C412 /* PBXContainerItemProxy */;
-		};
 		CD2C08241AC3742000E5C412 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CD2C07FC1AC3741200E5C412 /* PeacockApp */;
@@ -623,25 +517,6 @@
 			targetProxy = CD59FEC81AACDA0900FB8D9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CD2C08091AC3741200E5C412 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD2C080A1AC3741200E5C412 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CD2C080E1AC3741200E5C412 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD2C080F1AC3741200E5C412 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CD2C081D1AC3741200E5C412 /* Debug */ = {
@@ -672,43 +547,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CD2C081F1AC3741200E5C412 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PeacockAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeacockApp.app/PeacockApp";
-			};
-			name = Debug;
-		};
-		CD2C08201AC3741200E5C412 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PeacockAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeacockApp.app/PeacockApp";
 			};
 			name = Release;
 		};
@@ -848,15 +686,6 @@
 			buildConfigurations = (
 				CD2C081D1AC3741200E5C412 /* Debug */,
 				CD2C081E1AC3741200E5C412 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD2C08221AC3741200E5C412 /* Build configuration list for PBXNativeTarget "PeacockAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CD2C081F1AC3741200E5C412 /* Debug */,
-				CD2C08201AC3741200E5C412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
