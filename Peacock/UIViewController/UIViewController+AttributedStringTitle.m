@@ -7,7 +7,7 @@
 
 @implementation UIViewController (AttributedStringTitle)
 
--(void)setAttributedTitle:(NSString*)titleText usingLabel:(UILabel*)titleView
+-(void)setAttributedTitle:(NSString *)titleText usingLabel:(UILabel *)titleView
 {
     if(titleText == nil) {
         [[self navigationItem] setTitleView:nil];
@@ -28,7 +28,7 @@
     [titleView sizeToFit];
 }
 
--(UILabel*)createTitleViewLabel
+-(UILabel *)createTitleViewLabel
 {
     UILabel *titleView = [[UILabel alloc] init];
     
@@ -43,17 +43,15 @@
 
 -(UILabel *)setAttributedTitleForTesting
 {
-    NSString *title = [self title];
+    NSString *title = self.title;
     UILabel *attributedTitle;
     
-    if(title) {
-        attributedTitle = [self setAttributedTitleForTesting:title];
-    }
+    if(title) { attributedTitle = [self setAttributedTitleForTesting:title]; }
     
     return attributedTitle;
 }
 
--(UILabel *)setAttributedTitleForTesting:(NSString*)titleText
+-(UILabel *)setAttributedTitleForTesting:(NSString *)titleText
 {
     UILabel *titleView = [self createTitleViewLabel];
     
