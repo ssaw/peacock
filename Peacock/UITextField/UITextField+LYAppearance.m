@@ -12,16 +12,16 @@
     [self setFont:font];
 }
 
--(UIFont*)LYAppearanceFont
+-(UIFont *)LYAppearanceFont
 {
-    return [self font];
+    return self.font;
 }
 
 #pragma mark - appearanceTextColor
 
--(UIColor*)LYAppearanceTextColor
+-(UIColor *)LYAppearanceTextColor
 {
-    return [self textColor];
+    return self.textColor;
 }
 
 -(void)setLYAppearanceTextColor:(UIColor *)textColor
@@ -38,7 +38,7 @@
 
 -(NSTextAlignment)LYAppearanceTextAlignment
 {
-    return [self textAlignment];
+    return self.textAlignment;
 }
 
 @end

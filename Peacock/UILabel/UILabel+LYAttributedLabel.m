@@ -10,9 +10,9 @@
 
 #pragma mark - attributes dictionary
 
--(NSMutableDictionary*)LYAttributesDictionary
+-(NSMutableDictionary *)LYAttributesDictionary
 {
-    NSAttributedString *attributedText = [self attributedText];
+    NSAttributedString *attributedText = self.attributedText;
     NSMutableDictionary *attributes = nil;
     
     if([attributedText length] > 0) {
@@ -26,12 +26,12 @@
 }
 
 
--(void)LYSetAttributesDictionary:(NSDictionary*)attributes
+-(void)LYSetAttributesDictionary:(NSDictionary *)attributes
 {
-    if(attributes == nil) attributes = @{};
+    if(attributes == nil) { attributes = @{}; }
     
-    NSString *text = [self text];
-    if(text == nil) text = @"";
+    NSString *text = self.text;
+    if(text == nil) { text = @""; }
     
     NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:text attributes:attributes];
     
@@ -40,44 +40,39 @@
 
 #pragma mark - particular attributes
 
--(id)LYAttributeWithKey:(NSString*)key
+-(id)LYAttributeWithKey:(NSString *)key
 {
-    if(key == nil) return nil;
+    if(key == nil) { return nil; }
     
     NSDictionary *attributes = [self LYAttributesDictionary];
     return [attributes objectForKey:key];
 }
 
--(void)LYSetAttributeValue:(NSObject*)attribute forKey:(NSString*)key
+-(void)LYSetAttributeValue:(NSObject *)attribute forKey:(NSString *)key
 {
-    if(key == nil) return;
+    if(key == nil) { return; }
     
     NSMutableDictionary *attributes = [self LYAttributesDictionary];
     
-    if(attribute) {
-        [attributes setObject:attribute forKey:key];
-    } else {
-        [attributes removeObjectForKey:key];
-    }
+    if(attribute) { [attributes setObject:attribute forKey:key]; }
+    else { [attributes removeObjectForKey:key]; }
     
     [self LYSetAttributesDictionary:attributes];
 }
 
 #pragma mark - paragraph styling
 
--(NSMutableParagraphStyle*)LYParagraphStyle
+-(NSMutableParagraphStyle *)LYParagraphStyle
 {
     NSMutableParagraphStyle *paragrahStyle = [self LYAttributeWithKey:NSParagraphStyleAttributeName];
     if([paragrahStyle isKindOfClass:[NSParagraphStyle class]]) paragrahStyle = [paragrahStyle mutableCopy];
     
-    if(paragrahStyle == nil) {
-        paragrahStyle  = [[NSMutableParagraphStyle alloc] init];
-    }
+    if(paragrahStyle == nil) { paragrahStyle  = [[NSMutableParagraphStyle alloc] init]; }
     
     return paragrahStyle;
 }
 
--(void)LYSetParagraphStyle:(NSParagraphStyle*)paragraphStyle
+-(void)LYSetParagraphStyle:(NSParagraphStyle *)paragraphStyle
 {
     [self LYSetAttributeValue:paragraphStyle forKey:NSParagraphStyleAttributeName];
 }
@@ -90,7 +85,7 @@
     [self setTextColor:textColor];
 }
 
--(UIColor*)LYTextColor
+-(UIColor *)LYTextColor
 {
     return [self LYAttributeWithKey:NSForegroundColorAttributeName];
 }
@@ -104,7 +99,7 @@
     [self setFont:font];
 }
 
--(UIFont*)LYFont
+-(UIFont *)LYFont
 {
     return [self LYAttributeWithKey:NSFontAttributeName];
 }
@@ -136,7 +131,8 @@
 -(NSLineBreakMode)LYLineBreakMode
 {
     NSMutableParagraphStyle *paragrahStyle = [self LYParagraphStyle];
-    return [paragrahStyle lineBreakMode];
+    
+    return paragrahStyle.lineBreakMode;
 }
 
 #pragma mark - extensions
@@ -160,7 +156,7 @@
 
 -(void)setAttributedTextUsingString:(NSString *)string
 {
-    if(string == nil) string = @"";
+    if(string == nil){ string = @""; }
     
     NSDictionary *existingAttributes = [self LYAttributesDictionary];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:string attributes:existingAttributes];
@@ -171,7 +167,7 @@
 -(void)setAttributedTextUsingString:(NSString *)string
                           apparance:(id)appearance
 {
-    if(string == nil) string = @"";
+    if(string == nil) { string = @""; }
 
     UIColor *color = [appearance appearanceTextColor];
     UIColor *appearanceBackgroundColor = [appearance appearanceBackgroundColor];
@@ -188,13 +184,9 @@
         [self setLYTextColor:color];
     }
     
-    if(appearanceBackgroundColor) {
-        [self setAppearanceBackgroundColor:appearanceBackgroundColor];
-    }
+    if(appearanceBackgroundColor) { [self setAppearanceBackgroundColor:appearanceBackgroundColor]; }
     
-    if(appearanceHighlightedTextColor) {
-        [self setAppearanceHighlightedTextColor:appearanceHighlightedTextColor];
-    }
+    if(appearanceHighlightedTextColor) { [self setAppearanceHighlightedTextColor:appearanceHighlightedTextColor]; }
     
     [self setLYLineSpacing:lineSpacing];
     
@@ -208,17 +200,14 @@
 
 -(void)setLYStrikeOut:(BOOL)toStrikeout
 {
-    if (toStrikeout) {
-        [self LYSetAttributeValue:@(NSUnderlineStyleThick) forKey:NSStrikethroughStyleAttributeName];
-    } else {
-        [self LYSetAttributeValue:@(NSUnderlineStyleNone) forKey:NSStrikethroughStyleAttributeName];
-    }
+    if (toStrikeout) { [self LYSetAttributeValue:@(NSUnderlineStyleThick) forKey:NSStrikethroughStyleAttributeName]; }
+    else { [self LYSetAttributeValue:@(NSUnderlineStyleNone) forKey:NSStrikethroughStyleAttributeName]; }
 }
 
 -(BOOL)LYStrikeOut
 {
     NSNumber *strikeOut = [self LYAttributeWithKey:NSStrikethroughStyleAttributeName];
-    if(strikeOut == nil) return NO;
+    if(strikeOut == nil) { return NO; }
     
     return ([strikeOut isEqualToNumber:@(NSUnderlineStyleNone)] == NO);
 }

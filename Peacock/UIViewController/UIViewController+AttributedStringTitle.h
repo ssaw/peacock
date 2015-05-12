@@ -6,8 +6,9 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (AttributedStringTitleExtensions)
+
 // you should rarely, if ever, need this; it's for other classes to build out from
--(void)setAttributedTitle:(NSString*)titleText usingLabel:(UILabel*)titleView;
+-(void)setAttributedTitle:(NSString *)titleText usingLabel:(UILabel *)titleView;
 @end
 
 

@@ -7,11 +7,11 @@
 
 @interface UILabel (FontAppearance)
 
-@property (nonatomic, copy) UIFont *appearanceFont UI_APPEARANCE_SELECTOR;
-@property (nonatomic, copy) UIColor *appearanceTextColor UI_APPEARANCE_SELECTOR;
-@property (nonatomic, copy) UIColor *appearanceBackgroundColor UI_APPEARANCE_SELECTOR;
-@property (nonatomic, copy) UIColor *appearanceHighlightedTextColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic, copy, readwrite) UIFont *appearanceFont UI_APPEARANCE_SELECTOR;
+@property (nonatomic, copy, readwrite) UIColor *appearanceTextColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic, copy, readwrite) UIColor *appearanceBackgroundColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic, copy, readwrite) UIColor *appearanceHighlightedTextColor UI_APPEARANCE_SELECTOR;
 
-@property (nonatomic, assign) CGFloat appearanceLineSpacingParagraphStyle UI_APPEARANCE_SELECTOR;       // note: needs attributed strings to work
+@property (nonatomic, assign, readwrite) CGFloat appearanceLineSpacingParagraphStyle UI_APPEARANCE_SELECTOR;       // note: needs attributed strings to work
 
 @end

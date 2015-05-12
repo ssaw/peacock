@@ -9,9 +9,9 @@
 
 #pragma mark - appearanceSeparatorColor
 
--(UIColor*)appearanceSeparatorColor
+-(UIColor *)appearanceSeparatorColor
 {
-    return [self separatorColor];
+    return self.separatorColor;
 }
 
 -(void)setAppearanceSeparatorColor:(UIColor *)appearanceSeparatorColor

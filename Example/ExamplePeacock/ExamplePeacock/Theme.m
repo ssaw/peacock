@@ -13,6 +13,7 @@
 #import "GreenTextCell.h"
 #import "ViewController.h"
 #import "ButtonsViewController.h"
+#import "ExamplePeacock-Swift.h"
 
 //this needs to go on Peacock import
 #import "UIButton+LYAttributedButton.h"
@@ -32,6 +33,8 @@
     [[self class] cellStyle];
     
     [[self class] buttonStyle];
+    
+    [[self class] viewOnSwiftClass];
 }
 
 +(void)navigationStyle
@@ -91,6 +94,13 @@
 
     [[UIButton appearanceWhenContainedIn:[RedButtonView class], nil] setLYTextColor:red forState:UIControlStateNormal];
     [[UIButton appearanceWhenContainedIn:[RedButtonView class], nil] setLYTextColor:green forState:UIControlStateHighlighted];
+}
+
++(void)viewOnSwiftClass
+{
+    UIColor *orange = [UIColor orangeColor];
+    
+    [[swiftView appearance] setBackgroundColor:orange];
 }
 
 +(UIFont *)titleFontWithSize:(NSUInteger)size
