@@ -28,7 +28,7 @@ Most of the custom created properties start with Lyst prefix LY.
     [[LYTitleLabel appearanceWhenContainedIn:[LYProductView class], nil] setLYFont:TitleFont];
 ```
 
-There's a [short video](https://vimeo.com/115883292)  and [blog post](//todo.url.of.blog.post.of.lystq) on how-to's and best practices for UIAppearance and Peacock.
+There's a [short video](https://vimeo.com/115883292)  and [blog post](http://developers.lyst.com/2015/05/04/how-we-do-ui-style-at-lyst/) on how-to's and best practices for UIAppearance and Peacock.
 
 ### Creating a theme file
 We highly recommend creating a class to hold all your UI-styling code in a CSS-like fashion. And calling it as soon as possible when your app launches.
