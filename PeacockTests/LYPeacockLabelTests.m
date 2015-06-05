@@ -1,6 +1,5 @@
 //
-//  Created by Raimon Lapuente on 9/3/15.
-//  Copyright (c) 2015 Lyst Engineering. All rights reserved. MIT Licence.
+//  Copyright (c) 2015 Lyst Engineering. Some rights reserved. MIT Licence.
 //
 
 #import <UIKit/UIKit.h>

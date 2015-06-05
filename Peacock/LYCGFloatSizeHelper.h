@@ -1,6 +1,5 @@
 //
-//  Created by Michael May on 28/05/2014.
-//  Copyright (c) 2014-2015 Lyst Engineering. All rights reserved. MIT Licence.
+//  Copyright (c) 2014-2015 Lyst Engineering. Some rights reserved. MIT Licence.
 //
 
 #ifndef LYCGFLOATSIZEHELPER_H
