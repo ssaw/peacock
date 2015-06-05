@@ -1,6 +1,5 @@
 //
-//  Created by Michael May on 01/07/2014.
-//  Copyright (c) 2014-2015 Lyst. All rights reserved.
+//  Copyright (c) 2014-2015 Lyst Engineering. Some rights reserved. MIT Licence.
 //
 
 #import "UIButton+LYAttributedButton.h"

@@ -1,6 +1,5 @@
 //
-//  Created by Michael May on 28/11/2013.
-//  Copyright (c) 2013 Lyst. All rights reserved.
+//  Copyright (c) 2013-2015 Lyst Engineering. Some rights reserved. MIT Licence.
 //
 
 #import <UIKit/UIKit.h>
