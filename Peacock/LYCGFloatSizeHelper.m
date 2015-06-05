@@ -1,6 +1,6 @@
 //
 //  Created by Michael May on 28/05/2014.
-//  Copyright (c) 2014 Lyst. All rights reserved.
+//  Copyright (c) 2014-2015 Lyst Engineering. All rights reserved. MIT Licence.
 //
 //  Inspired by Kyle Fuller's work in this area but stripped back and written
 //  for just what we need
