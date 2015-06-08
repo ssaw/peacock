@@ -74,7 +74,7 @@ Available properties for Labels
 	@property (nonatomic, assign) BOOL LYStrikeOut;
 ```
 
-### NavigationBAr
+### NavigationBar
 Available properties for NavigationBar:
 
 ```objectivec
